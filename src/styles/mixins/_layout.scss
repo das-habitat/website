@@ -1,0 +1,8 @@
+@mixin container {
+	width: 100%;
+	max-width: 98rem;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 $offset-horizontal;
+	box-sizing: border-box;
+}

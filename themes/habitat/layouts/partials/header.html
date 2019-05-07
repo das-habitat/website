@@ -1,0 +1,17 @@
+<header class="header">
+	<h1 class="header__logo">
+		<a href="/"><img src="/ui/logo.svg" alt="Das Habitat" width="207" height="80"></a>
+	</h1>
+
+	<p class="header__claim">Nährboden für die&nbsp;Zukunft. <br>Deine offene Werkstatt.</p>
+
+	<nav class="header__nav">
+		{{- $currentPage := . -}}
+		{{- range .Site.Menus.main }}
+			<a href="{{ .URL }}" class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+				<span>{{ .Name }}</span>
+			</a>
+		{{- end }}
+	</nav>
+</aside>
+</header>

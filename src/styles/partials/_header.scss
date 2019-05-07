@@ -1,0 +1,34 @@
+.header {
+	@include container;
+
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+.header__logo {
+	margin: 0;
+	width: 20.7rem;
+	height: 8rem;
+
+	a {
+		display: block;
+		box-shadow: none;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		margin-left: -3rem;
+	}
+}
+
+.header__claim {
+	color: mix($color-brand-gray, #fff, 50%);
+}
+
+.header__nav {
+	> a + a {
+		margin-left: $offset-horizontal;
+	}
+}
