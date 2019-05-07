@@ -1,0 +1,8 @@
+baseURL = "/"
+languageCode = "de-de"
+title = "Das Habitat Augsburg e.V."
+theme = "habitat"
+publishDir = "dist"
+enableRobotsTXT = true
+defaultContentLanguage = "de"
+enableEmoji = true

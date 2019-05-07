@@ -1,0 +1,17 @@
+.statement {
+	margin: 5rem 0 7rem;
+	padding: 2.5rem 0;
+	background: $color-brand-yellow;
+	color: $color-brand-black;
+	font-size: 3.2rem;
+	line-height: 1.5625;
+	box-sizing: border-box;
+
+	> blockquote {
+		@include container;
+
+		> * {
+			max-width: 90rem;
+		}
+	}
+}

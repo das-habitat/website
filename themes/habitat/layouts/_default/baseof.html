@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ .Params.Title  }}{{ if .Params.Title }} | {{ end }}{{ .Site.Title }}</title>
+		{{- $webpack := .Site.Data.webpack.main -}}
+		<link rel="stylesheet" href="/assets{{ $webpack.css | relURL }}">
+		{{ if(.Params.meta_keywords) }}
+			<meta name="keywords" content="{{ delimit .Params.meta_keywords ", " }}">
+		{{- end -}}
+		<meta name="description" content="{{ .Params.meta_description }}">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:site_name" content="{{ .Site.Title }}">
+		<meta property="og:title" content="{{ .Params.Title }}">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="{{ .Permalink }}">
+		{{ if .Params.meta_image }}
+			<meta property="og:image" content="{{ .Params.meta_image }}">
+		{{- end -}}
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="{{ .Params.Title }}">
+		<meta name="twitter:description" content="{{ .Params.meta_description }}">
+		<meta name="twitter:domain" content="{{ .Site.BaseURL }}">
+		{{- if .Params.meta_image -}}
+			<meta name="twitter:image" content="{{ .Params.meta_image }}">
+		{{- end -}}
+	</head>
+	<body>
+		<div class="site">
+			{{- partial "header.html" . -}}
+			{{- block "before-page" . }}{{- end }}
+			<div class="page">
+				{{- block "before-main" . }}{{- end }}
+				<main>
+					{{- block "main" . }}{{- end }}
+				</main>
+				{{- block "after-main" . }}{{- end }}
+			</div>
+			{{- block "after-page" . }}{{- end }}
+			{{- partial "footer.html" . -}}
+		</div>
+		<script src="/assets{{ $webpack.js | relURL }}"></script>
+	</body>
+</html>
