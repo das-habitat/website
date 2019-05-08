@@ -18,5 +18,8 @@
     { "src": "^/(.*).html", "headers": {"cache-control": "public,max-age=0,must-revalidate"} },
     { "handle": "filesystem" },
     { "src": "/.*", "status": 404, "dest": "404.html" }
-  ]
+  ],
+  "github": {
+    "silent": true
+  }
 }
