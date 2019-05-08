@@ -10,8 +10,7 @@ module.exports = (env = {}) => ({
 
 	output: {
 		path: path.join(__dirname, 'dist', 'assets'),
-		filename: '[name].[hash:5].js',
-		chunkFilename: '[id].[hash:5].css',
+		filename: env.production ? '[name].[hash:5].js' : '[name].js',
 	},
 
 	module: {

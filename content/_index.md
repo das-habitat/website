@@ -3,19 +3,15 @@ draft: false
 statement: Das&nbsp;Habitat ist offene Werkstatt, Co-Working Space, Wohnzimmer für Macher, und Lebensraum für Visionäre. Das&nbsp;Habitat ist der Ort an dem alles möglich ist.
 ---
 
-Das Habitat ist Augsburgs neue offene Werkstatt. Hier kannst du Projekte von der Idee bis zur Fertigstellung umsetzen. Egal, ob es ein neuer Esstisch werden soll, du ein altes Möbelstück reparieren oder dich einfach ausprobieren möchtest: Unsere Fachberater stehen dir mit Rat und Tat zur Seite.
-
-Dahinter steht ein ehrenamtliches Team aus über 30 Mitgliedern, darunter
-Schreiner, Schlosser, aber auch Gestalter und Physiker. Das Team könnte also
-bunter nicht sein.
+Das Habitat ist Augsburgs neue offene Werkstatt. Hier kannst du Projekte von der Idee bis zur Fertigstellung umsetzen. Egal, ob es ein neuer Esstisch werden soll, du ein altes Möbelstück reparieren oder dich einfach ausprobieren möchtest: Unsere Fachberater stehen dir mit Rat und Tat zur&nbsp;Seite.
 
 ### Stage 1
 
-Im Moment steht uns und dir eine umfangreich ausgestattete Schreinerei zur Verfügung. Hier kannst du an professionellen Maschinen arbeiten, lernen und Kleines wie Großes schaffen.
+Im Moment bieten wir eine umfangreich ausgestattete Schreinerei zur Verfügung. Hier kannst du an professionellen Maschinen arbeiten, lernen und Kleines wie Großes schaffen.
 
-<h3>Stage 2</h3>
+### Stage 2
 
-Im Sommer 2019 ziehen wir in eine neue Halle um und erweitern unser Werkstattangebot. Eine Schlosserei, eine Siebdruckwerkstatt, eine Goldschmiede, Fräse und 3D-Drucker und vieles mehr wirst du in Zukunft nutzen können. Und nicht nur das: Wir wollen das Habitat zu einem Ort des Austausches, der
+Im Sommer 2019 ziehen wir in eine neue Halle um und erweitern unser Angebot. Eine Schlosserei, eine Siebdruckwerkstatt, eine Goldschmiede, Fräse und 3D-Drucker und vieles mehr wirst du in Zukunft nutzen können. Und nicht nur das: Wir wollen das Habitat zu einem Ort des Austausches, der
 Zusammenarbeit und des Verweilens machen. Dafür bauen wir unter anderem ein Co-Working Space und ein Café auf. Es wird Räume für Ausstellungen, Seminare und Vorträge geben. Das alles an einem Ort – in Augsburg - in deinem Habitat.
 
 <!--
