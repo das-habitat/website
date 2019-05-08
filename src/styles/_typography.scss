@@ -73,3 +73,9 @@ td {
 .meta {
 	color: mix($color-brand-gray, $color-brand-green, 50%);
 }
+
+.price {
+	display: block;
+	font-size: 3rem;
+	line-height: 3rem;
+}

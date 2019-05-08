@@ -23,14 +23,23 @@ body {
 .page {
 	@include container;
 
-	display: flex;
+	main {
+		margin-bottom: 5rem;
+	}
+
+	@media (min-width: 70rem) {
+		display: flex;
+	}
 }
 
 .sidebar {
 	display: block;
-	width: 30rem;
 	flex: 1 0 auto;
-	margin-left: $offset-horizontal * 3;
+
+	@media (min-width: 70rem) {
+		width: 30rem;
+		margin-left: $offset-horizontal * 3;
+	}
 }
 
 a {

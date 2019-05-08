@@ -60,11 +60,11 @@ weight: 300
 	</tbody>
 </table>
 
-Für alle, die eine Ermäßigung wollen? Ja. Wir wollen, dass jeder zu uns kommen kann. Schon ab 15€ im Monat können wir unsere Kosten decken und mit jedem Euro mehr unterstützt Du uns außerdem dabei noch besser zu werden.
+15€ für alle, die eine Ermäßigung wollen? Ja. Wir wollen, dass jeder zu uns kommen kann. Schon ab 15€ im Monat können wir unsere Kosten decken und mit jedem Euro mehr unterstützt Du uns außerdem dabei noch besser zu werden.
 
 ## Maschineneinweisungen
 
-Zu den Gruppenterminen 10€ pro Person. Wenn es ruhig ist und dein Fachberater gerade Zeit hat, klappt das auch spontan, frag einfach mal. Falls nicht, kannst du dir einen Einzelberatungstermin buchen.
+Zu den Gruppenterminen 10€ pro Person. Wenn es ruhig ist und dein Fachberater gerade Zeit hat, klappt das auch spontan, frag einfach mal nach. Falls nicht, kannst du dir einen Einzelberatungstermin buchen.
 
 Die Termine für die nächsten Einweisungen erfährst du aktuell [auf Facebook.][facebook]
 
@@ -74,7 +74,7 @@ Die Nutzung der großen Maschinen kostet **2€** pro fünf Minuten.
 
 ## Beratung
 
-Wenn du Hilfe bei der Planung eines Projekts brauchst beraten dich unsere Fachkräfte für **32€** pro Stunde.
+Wenn du Hilfe bei der Planung eines Projekts brauchst, beraten dich unsere Fachkräfte für **32€** pro Stunde.
 
 ## Supporter
 
