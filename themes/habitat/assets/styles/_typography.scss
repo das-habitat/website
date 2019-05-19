@@ -21,10 +21,6 @@ dl,
 p {
 	margin: 0;
 	padding: 0;
-
-	& + * {
-		margin-top: 2.5rem;
-	}
 }
 
 h1,
@@ -42,6 +38,18 @@ h2,
 
 	* + & {
 		margin-top: 4rem;
+	}
+}
+
+h3,
+.h3 {
+	font-size: inherit;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+
+	* + & {
+		margin-top: 2rem;
 	}
 }
 
