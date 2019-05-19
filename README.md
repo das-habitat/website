@@ -27,7 +27,9 @@ Ask @pichfl for access.
 
 ## File structure
 
-The project follows the basic file structure found in Hugo projects. The only exception is the `src` folder which is base for scripts and styles managed by Webpack.
+The project follows the basic file structure found in Hugo projects.
+
+The theme folder "habitat" makes the only exception with a custom `assets` folder that gets compiled by Webpack.
 
 [hugo]: https://gohugo.io
 [node]: https://nodejs.org

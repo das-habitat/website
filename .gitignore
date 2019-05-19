@@ -1,4 +1,9 @@
 node_modules
 resources
 dist
-/data/webpack.json
+/data/manifest.json
+.DS_Store
+/themes/habitat/static/assets/main.js
+/themes/habitat/static/assets/main.css
+/themes/habitat/static/assets/main.*.js
+/themes/habitat/static/assets/main.*.css
