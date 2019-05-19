@@ -7,8 +7,9 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "build": "webpack -p",
-    "start": "APP_ENV=dev webpack"
+    "build": "webpack --mode=production",
+    "start": "APP_ENV=dev webpack",
+    "now-build": "sh ./build.sh && HUGO_PATH='./hugo' webpack --mode=production"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",

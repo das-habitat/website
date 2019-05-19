@@ -19,11 +19,13 @@ function setEnv() {
 	return {
 		watch: false,
 		filename: '[name].[hash:5]',
-		command: 'hugo',
+		command: process.env.HUGO_PATH || 'hugo',
 	};
 }
 
 module.exports = (env = setEnv()) => {
+	console.log(process.env);
+
 	const config = {
 		watch: env.watch,
 
