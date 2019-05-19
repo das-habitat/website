@@ -6,3 +6,4 @@ publishDir = "dist"
 enableRobotsTXT = true
 defaultContentLanguage = "de"
 enableEmoji = true
+resourceDir = ".resources"
