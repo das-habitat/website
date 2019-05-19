@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>{{ .Params.Title  }}{{ if .Params.Title }} | {{ end }}{{ .Site.Title }}</title>
-		{{- $webpack := .Site.Data.webpack.main -}}
-		<link rel="stylesheet" href="/assets{{ $webpack.css | relURL }}">
+		<link rel="stylesheet" href="/assets{{ if eq (getenv "APP_ENV") "dev" }}main.css{{ else }}{{ index .Site.Data.manifest "main.css" | relURL }}{{ end }}">
+
 		{{ if(.Params.meta_keywords) }}
 			<meta name="keywords" content="{{ delimit .Params.meta_keywords ", " }}">
-		{{- end -}}
+		{{- end }}
 		<meta name="description" content="{{ .Params.meta_description }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta property="og:site_name" content="{{ .Site.Title }}">
@@ -39,6 +39,6 @@
 			{{- block "after-page" . }}{{- end }}
 			{{- partial "footer.html" . -}}
 		</div>
-		<script src="/assets{{ $webpack.js | relURL }}"></script>
+		<script type="text/javascript" src="/assets{{ if eq (getenv "APP_ENV") "dev" }}main.js{{ else }}{{ index .Site.Data.manifest "main.js" | relURL }}{{ end }}"></script>
 	</body>
 </html>
