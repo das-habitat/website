@@ -9,7 +9,7 @@ Eine Gemeinschaft, die es besser machen will, ist die Basis für einen neuen Leb
 
 ## Wer wir sind
 
-**Wir sind** Macher, Schreiner, Ingenieure, Schlosser, Spengler, Physiker, Programmierer, Nerds, Designer, Zahlenschubser, Schrauber, Graveure, Elektriker, Pixelschubser, Informatiker, Veranstaltungstechniker, Pädagogen, Fahrradmechaniker, und vieles mehr.
+**Wir sind** Macher, {{< shuffle "Schreiner" "Ingenieure" "Schlosser" "Spengler" "Physiker" "Programmierer" "Nerds" "Designer" "Zahlenschubser" "Schrauber" "Graveure" "Elektriker" "Pixelschubser" "Informatiker" "Veranstaltungstechniker" "Pädagogen" "Fahrradmechaniker" >}}, und vieles mehr.
 
 ## Unsere Motivation
 

@@ -21,3 +21,6 @@ insert_final_newline = false
 
 [*.{diff,md}]
 trim_trailing_whitespace = false
+
+[themes/*/layouts/{shortcodes,partials}/**/*.html]
+insert_final_newline = false
