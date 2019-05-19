@@ -1,4 +1,5 @@
 node_modules
 resources
 dist
-/data/webpack.json
+/data/manifest.json
+.DS_Store
