@@ -27,8 +27,13 @@
 	color: mix($color-brand-gray, #fff, 50%);
 }
 
-.header__nav {
+.header__nav,
+.header__subnav {
 	> a + a {
 		margin-left: $offset-horizontal;
 	}
+}
+
+.header__subnav {
+	margin-top: 2rem;
 }

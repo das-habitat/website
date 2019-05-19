@@ -8,10 +8,29 @@
 	<nav class="header__nav">
 		{{- $currentPage := . -}}
 		{{- range .Site.Menus.main }}
-			<a href="{{ .URL }}" class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+			{{- $isCurrent := ($currentPage.IsMenuCurrent "main" .) }}
+			{{- $isActive := (or $isCurrent ($currentPage.HasMenuCurrent "main" .)) }}
+			<a href="{{ .URL }}" class="{{ if $isActive }}active{{ end }}">
 				<span>{{ .Name }}</span>
 			</a>
 		{{- end }}
 	</nav>
-</aside>
+
+
+	{{- range .Site.Menus.main }}
+		{{- $isCurrent := ($currentPage.IsMenuCurrent "main" .) }}
+		{{- $hasCurrent := ($currentPage.HasMenuCurrent "main" .) }}
+		{{- $isActive := (or $isCurrent $hasCurrent) }}
+		{{- if (and $isActive .HasChildren) }}
+			<nav class="header__subnav">
+				<a href="{{ if $hasCurrent }}{{ $currentPage.Parent.RelPermalink }}{{else}}{{ $currentPage.RelPermalink }}{{ end }}"{{if not $hasCurrent }} class="active"{{ end }}>Übersicht</a>
+
+				{{- range .Children }}
+					<a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+						<span>{{ .Name }}</span>
+					</a>
+				{{- end }}
+			</nav>
+		{{- end }}
+	{{- end }}
 </header>

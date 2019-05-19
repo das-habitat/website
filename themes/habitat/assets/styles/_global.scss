@@ -24,6 +24,7 @@ body {
 	@include container;
 
 	main {
+		max-width: 60rem;
 		margin-bottom: 5rem;
 	}
 
@@ -57,7 +58,8 @@ a {
 	}
 
 	&:focus,
-	&:hover {
+	&:hover,
+	&.active {
 		color: $color-brand-blueAlt;
 		box-shadow: inset 0 -0.7rem 0 0 transparentize($color-brand-blue, 0.8),
 			0 0.3rem 0 0 transparentize($color-brand-blue, 0.8);
