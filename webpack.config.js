@@ -1,7 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const sass = require('sass');
-const CleanPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ShellPlugin = require('webpack-shell-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
@@ -24,8 +24,6 @@ function setEnv() {
 }
 
 module.exports = (env = setEnv()) => {
-	console.log(process.env);
-
 	const config = {
 		watch: env.watch,
 
@@ -67,7 +65,7 @@ module.exports = (env = setEnv()) => {
 		},
 
 		plugins: [
-			new CleanPlugin({
+			new CleanWebpackPlugin({
 				dry: false,
 				dangerouslyAllowCleanPatternsOutsideProject: true,
 				cleanOnceBeforeBuildPatterns: [
