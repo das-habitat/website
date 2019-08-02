@@ -9,7 +9,6 @@ Das Habitat Augsburg e.V.<br>
 Eberlestraße 29<br>
 86157 Augsburg<br>
 <kontakt@das-habitat.de><br>
-0172 199 81 51 (Florian Pichler)<br>
 
 ## Registereintrag
 
@@ -19,16 +18,18 @@ Registernummer: VR202180
 
 ## Vertreten durch
 
--   Sven Ten Pas (Vorstand)
--   Tim Thiede (Vorstand)
--   Mathias Schuh (Vorstand)
--   Hermann Steiner (Vorstand)
+-   Sven Ten Pas (Vorstand) (+49 174 310 71 79)
+-   Tim Thiede (Vorstand) (+49 172 135 03 82)
+-   Mathias Schuh (Vorstand) (+49 170 109 46 07)
+-   Hermann Steiner (Vorstand) (+49 174 848 69 41)
 
 ## Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV)
 
 Florian Pichler<br>
 Stadtjägerstr. 23<br>
-86152 Augsburg
+86152 Augsburg<br>
+<florian.pichler@das-habitat.de><br>
++49 172 199 81 51
 
 # Disclaimer - rechtliche Hinweise
 
