@@ -1,11 +1,11 @@
-<header class="header">
+<header id="top" class="header">
 	<h1 class="header__logo">
 		<a href="/"><img src="/assets/ui/logo.svg" alt="Das Habitat" width="207" height="80"></a>
 	</h1>
 
 	<p class="header__claim">Nährboden für die&nbsp;Zukunft. <br>Deine offene Werkstatt.</p>
 
-	<nav class="header__nav">
+	<nav id="nav" class="header__nav">
 		{{- $currentPage := . -}}
 		{{- range .Site.Menus.main }}
 			{{- $isCurrent := ($currentPage.IsMenuCurrent "main" .) }}
@@ -15,7 +15,6 @@
 			</a>
 		{{- end }}
 	</nav>
-
 
 	{{- range .Site.Menus.main }}
 		{{- $isCurrent := ($currentPage.IsMenuCurrent "main" .) }}
