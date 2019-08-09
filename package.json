@@ -8,8 +8,10 @@
   "private": true,
   "scripts": {
     "build": "webpack --mode=production",
+    "dev": "HUGO_PATH='./.hugo/hugo' APP_ENV=dev webpack",
     "start": "APP_ENV=dev webpack",
-    "now-build": "sh ./build.sh && HUGO_PATH='./hugo' webpack --mode=production"
+    "now-build": "sh ./download-hugo.sh; HUGO_PATH='./.hugo/hugo' webpack --mode=production",
+    "now-dev": "sh ./download-hugo.sh; HUGO_PATH='./.hugo/hugo' APP_ENV=dev webpack"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

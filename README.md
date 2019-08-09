@@ -16,6 +16,17 @@ Install dependencies by running `yarn`.
 
 Use `yarn start` to run a development server which reloads when you make changes.
 
+### Alternative
+
+If you don't have a global installation of Hugo, you can also download it locally and use that version.
+
+```bash
+sh download-hugo.sh
+
+# Use `dev` instead of `start` to use the Hugo version downloaded by the script above
+yarn dev
+```
+
 ## Deployment
 
 We use [Now][now] from Zeit to deploy the website.

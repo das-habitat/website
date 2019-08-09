@@ -6,3 +6,12 @@ singleQuote: true
 tabWidth: 4
 trailingComma: es5
 useTabs: true
+overrides:
+  - files: "**/*.md"
+    options:
+    tabWidth: 2
+    useTabs: false
+  - files: "{**/*.yaml,.prettierrc}"
+    options:
+    tabWidth: 2
+    useTabs: false

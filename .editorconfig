@@ -21,6 +21,8 @@ insert_final_newline = false
 
 [*.{diff,md}]
 trim_trailing_whitespace = false
+indent_style = space
+indent_size = 2
 
 [themes/*/layouts/{shortcodes,partials}/**/*.html]
 insert_final_newline = false
