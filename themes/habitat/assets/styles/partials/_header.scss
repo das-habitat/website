@@ -5,8 +5,7 @@
 	background-color: $color-brand-white;
 
 	@include media-l {
-		padding: 5rem 0;
-		margin-bottom: 5rem;
+		padding: var(--offset-vertical) 0 0;
 	}
 }
 
@@ -38,7 +37,7 @@
 	justify-self: right;
 
 	a + a {
-		margin-left: $offset-horizontal;
+		margin-left: $grid-column-gap;
 	}
 }
 
