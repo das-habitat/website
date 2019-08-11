@@ -1,4 +1,7 @@
-import './styles/index.scss';
 import 'instant.page';
 
-console.log('Das Habitat Augsburg e.V.');
+import './styles/index.scss';
+import './modules/menu';
+import './modules/matomo';
+
+console.log('Das Habitat Augsburg e.V. sucht Entwickler! Komm doch mal vorbei.');
