@@ -6,6 +6,9 @@
   "author": "Florian Pichler for Das Habitat Augsburg e.V.",
   "license": "UNLICENSED",
   "private": true,
+  "engines": {
+    "node" : ">=10"
+  },
   "scripts": {
     "build": "webpack --mode=production",
     "dev": "HUGO_PATH='./.hugo/hugo' APP_ENV=dev webpack",

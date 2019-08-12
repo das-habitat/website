@@ -18,7 +18,7 @@ function setEnv() {
 
 	return {
 		watch: false,
-		filename: '[name].[hash:5]',
+		filename: '[name].[contenthash:5]',
 		command: process.env.HUGO_PATH || 'hugo',
 	};
 }
