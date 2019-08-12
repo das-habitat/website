@@ -1,4 +1,6 @@
 {{- define "before-page" }}
+	{{ partial "contact.html" (dict "context" . "class" "t-home__contact")  }}
+
 	<div class="statement">
 		<blockquote>
 			<p>{{ htmlUnescape .Params.statement }}</p>
@@ -7,5 +9,5 @@
 {{- end }}
 
 {{ define "main" }}
-	{{ .Content }}
+    {{ .Content }}
 {{ end }}

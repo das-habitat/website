@@ -1,7 +1,7 @@
 .statement {
-	@include box($color-brand-yellow);
+	@include box;
 
-	margin: 5rem 0 7rem;
+	margin: calc(3 * var(--offset-vertical)) 0 0;
 	color: $color-brand-black;
 	box-sizing: border-box;
 	grid-column: 2 / span 5;

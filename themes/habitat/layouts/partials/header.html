@@ -2,14 +2,29 @@
 	<a href="/" class="header__logo"><img src="/assets/ui/logo.svg" alt="Das Habitat" width="207" height="80"></a>
 
 	<nav id="nav" class="header__nav">
-		{{- $currentPage := . -}}
-		{{- range .Site.Menus.main }}
-			{{- $isCurrent := ($currentPage.IsMenuCurrent "main" .) }}
-			{{- $isActive := (or $isCurrent ($currentPage.HasMenuCurrent "main" .)) }}
-			<a href="{{ .URL }}" class="{{ if $isActive }}active{{ end }}">
-				{{ .Name }}
-			</a>
-		{{- end }}
+		<ul>
+			{{- $currentPage := . -}}
+			{{- range .Site.Menus.main }}
+				{{- $isCurrent := ($currentPage.IsMenuCurrent "main" .) }}
+				{{- $isActive := (or $isCurrent ($currentPage.HasMenuCurrent "main" .)) }}
+				<li>
+					<a href="{{ .URL }}" class="{{ if $isActive }}active{{ end }}">
+						{{ .Name }}
+					</a>
+					{{ if .HasChildren }}
+						<ul class="sub-menu">
+						{{ range .Children }}
+							<li>
+								<a href="{{ .URL }}" class="{{ if $isActive }}active{{ end }}">
+									{{ .Name }}
+								</a>
+							</li>
+						{{ end }}
+						</ul>
+					{{ end }}
+				</li>
+			{{- end }}
+		</ul>
 	</nav>
 
 	<blockquote class="header__claim">
@@ -18,21 +33,4 @@
 			Deine offene Werkstatt.
 		</p>
 	</blockquote>
-
-	{{- range .Site.Menus.main }}
-		{{- $isCurrent := ($currentPage.IsMenuCurrent "main" .) }}
-		{{- $hasCurrent := ($currentPage.HasMenuCurrent "main" .) }}
-		{{- $isActive := (or $isCurrent $hasCurrent) }}
-		{{- if (and $isActive .HasChildren) }}
-			<nav class="header__subnav">
-				<a href="{{ if $hasCurrent }}{{ $currentPage.Parent.RelPermalink }}{{else}}{{ $currentPage.RelPermalink }}{{ end }}"{{if not $hasCurrent }} class="active"{{ end }}>Übersicht</a>
-
-				{{- range .Children }}
-					<a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-						{{ .Name }}
-					</a>
-				{{- end }}
-			</nav>
-		{{- end }}
-	{{- end }}
 </header>

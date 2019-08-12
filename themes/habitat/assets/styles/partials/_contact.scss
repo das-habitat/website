@@ -6,4 +6,8 @@
 	* + * {
 		margin-top: 2.5rem;
 	}
+
+	.aux + * {
+		margin-top: 0;
+	}
 }

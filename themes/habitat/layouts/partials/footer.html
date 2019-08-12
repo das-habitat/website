@@ -1,32 +1,30 @@
 <footer class="footer">
-	<div>
+	<div class="footer__info">
+		Das Habitat
+		{{ partial "contact.html" (dict "context" .) }}
+	</div>
+
+	<nav>
 		<div>
-			Das Habitat
-			{{ partial "contact.html" (dict "context" .) }}
+
 		</div>
+		<div>
 
-		<nav>
-			<div>
+		</div>
+	</nav>
 
-			</div>
-			<div>
+	<p class="footer__copyright">&copy; 2018–{{ now.Format "2006"}} Das Habitat Augsburg e.V.</p>
+	<p class="footer__legal">
+		<a href="/impressum/">Impressum</a>
+		<a href="/datenschutz/">Datenschutz</a>
+	</p>
 
-			</div>
-		</nav>
-	</div>
+	<aside class="footer__sponsors">
+			<h3>Unsere Sponsoren, Unterstützer, Stifter, Gönner und einfach fantatischen Partner.</h3>
 
-	<div>
-		<p>&copy; 2018–2019 Das Habitat Augsburg e.V.</p>
-		<p>
-			<a href="/impressum/">Impressum</a>
-			<a href="/datenschutz/">Datenschutz</a>
-		</p>
-	</div>
-
-	<div>
-		<h3>Unsere Sponsoren, Unterstützer, Stifter, Gönner und einfach fantatischen Partner.</h3>
+			<ul></ul>
 
 
-		<p>Du oder dein Unternehmen wollt uns unterstützen? <a href="/kontakt">Meldet euch bei uns.</a></p>
-	</div>
+			<p>Du oder dein Unternehmen wollt uns unterstützen? <a href="/kontakt">Meldet euch bei uns.</a></p>
+	</aside>
 </footer>

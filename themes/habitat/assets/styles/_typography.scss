@@ -5,7 +5,7 @@ h4,
 h5,
 h6 {
 	margin: 0;
-	font-weight: 700;
+	font-weight: 600;
 	color: $color-brand-black;
 }
 
@@ -44,7 +44,7 @@ h2,
 h3,
 .h3 {
 	font-size: inherit;
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 	margin-bottom: 1rem;
 
@@ -87,4 +87,36 @@ td {
 	display: block;
 	font-size: 3rem;
 	line-height: 3rem;
+}
+
+.large {
+	font-weight: 500;
+	color: $color-brand-gray;
+
+	font-size: 1.6rem;
+	line-height: calc(28 / 16);
+
+	@include media-l {
+		font-size: 1.8rem;
+		line-height: calc(35 / 18);
+	}
+}
+
+.larger {
+	font-weight: 500;
+	font-size: 1.9rem;
+	line-height: calc(28 / 19);
+
+	@include media-l {
+		font-size: 2.3rem;
+		line-height: calc(40 / 23);
+	}
+}
+
+.aux {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	height: 0;
+	overflow: hidden;
 }

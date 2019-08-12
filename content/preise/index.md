@@ -2,7 +2,7 @@
 title: Preise
 draft: false
 menu: main
-weight: 300
+weight: 500
 ---
 
 <table>

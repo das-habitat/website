@@ -17,20 +17,20 @@ $breakpoint-l: 880px;
 	--grid-column: calc(28 / 320 * 100vw);
 	--grid-colums: 1fr repeat(6, var(--grid-column)) 1fr;
 	--grid-column-gap: 2.4rem;
-	--inner-grid-columns: repeat(8, var(--grid-column));
+	--grid-inner-columns: repeat(8, var(--grid-column));
 	--offset-vertical: 2.4rem;
 
 	@media (min-width: $breakpoint-l) {
 		--grid-column: calc(90 / 1200 * 100vw);
 		--grid-colums: 1fr repeat(8, var(--grid-column)) 1fr;
 		--grid-column-gap: 4rem;
-		--inner-grid-columns: repeat(8, var(--grid-column));
+		--grid-inner-columns: repeat(8, var(--grid-column));
 		--offset-vertical: 2.5rem;
 	}
 }
 
 $grid-columns: var(--grid-colums);
 $grid-column-gap: var(--grid-column-gap);
-$inner-grid-columns: var(--inner-grid-columns);
+$grid-inner-columns: var(--grid-inner-columns);
 
 $offset-vertical: var(--offset-vertical);

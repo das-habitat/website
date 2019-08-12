@@ -1,25 +1,15 @@
-@mixin box($color: none) {
+@mixin box {
+	--tint: rgba(0, 0, 0, 0);
+
 	padding: 2rem 2.4rem;
-
-	@if $color == none {
-		background-color: $color-brand-white;
-		// prettier-ignore
-		box-shadow:
-			0 0 2px 0 transparentize($color-brand-gray, 0.9),
-			0 2px 3px -2px transparentize($color-brand-gray, 0.77),
-			0 3px 8px -3px transparentize($color-brand-gray, 0.77),
-			0 7px 30px -5px transparentize($color-brand-gray, 0.77);
-	} @else {
-		background-color: $color;
-		// prettier-ignore
-		box-shadow:
-			0 0 2px 0 transparentize($color-brand-gray, 0.9),
-			0 2px 3px -2px transparentize($color-brand-gray, 0.77),
-			0 3px 8px -3px transparentize($color-brand-gray, 0.77),
-			0 7px 30px -5px transparentize($color-brand-gray, 0.77),
-			0 0 80px -2px transparentize($color, 0.7);
-	}
-
+	background-color: var(--tint);
+	// prettier-ignore
+	box-shadow:
+		0 0 2px 0 transparentize($color-brand-gray, 0.9),
+		0 2px 3px -2px transparentize($color-brand-gray, 0.77),
+		0 3px 8px -3px transparentize($color-brand-gray, 0.77),
+		0 7px 30px -5px transparentize($color-brand-gray, 0.77),
+		0 0 90px -45px var(--tint);
 	@include media-l {
 		padding: 2.4rem 3.2rem;
 	}

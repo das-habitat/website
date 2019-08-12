@@ -9,7 +9,7 @@ html,
 body {
 	background: $color-brand-white;
 	color: $color-brand-black;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 html {
@@ -22,12 +22,20 @@ body {
 }
 
 .site {
-	display: grid;
-	grid-template-columns: $grid-columns;
-	grid-column-gap: $grid-column-gap;
+	@include grid-columns;
 
 	> * {
 		grid-column: 2 / -2;
+	}
+}
+
+.main {
+	@include grid-inner-columns;
+
+	grid-row-gap: calc(3 * var(--offset-vertical));
+
+	> * {
+		grid-column: 1 / -1;
 	}
 }
 
