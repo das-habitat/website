@@ -7,7 +7,31 @@ $color-brand-green: #008a59;
 $color-brand-greenAlt: #45a734;
 $color-brand-white: #fcfcfa;
 $color-brand-black: #0f0f0e;
-$color-brand-gray: #4c4d4a;
+$color-brand-gray: mix(#4c4d4a, $color-brand-white, 75%);
+$color-brand-gray-inverted: mix(#4c4d4a, $color-brand-white, 50%);
 $color-brand-pale: #809979;
 
+$breakpoint-l: 880px;
+
+:root {
+	--grid-column: calc(28 / 320 * 100vw);
+	--grid-colums: 1fr repeat(6, var(--grid-column)) 1fr;
+	--grid-column-gap: 2.4rem;
+	--inner-grid-columns: repeat(8, var(--grid-column));
+	--offset-vertical: 2.4rem;
+
+	@media (min-width: $breakpoint-l) {
+		--grid-column: calc(90 / 1200 * 100vw);
+		--grid-colums: 1fr repeat(8, var(--grid-column)) 1fr;
+		--grid-column-gap: 4rem;
+		--inner-grid-columns: repeat(8, var(--grid-column));
+		--offset-vertical: 2.5rem;
+	}
+}
+
+$grid-columns: var(--grid-colums);
+$grid-column-gap: vaR(--grid-column-gap);
+$inner-grid-columns: var(--inner-grid-columns);
+
 $offset-horizontal: 3rem;
+$offset-vertical: var(--offset-vertical);

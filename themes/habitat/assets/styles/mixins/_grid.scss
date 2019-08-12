@@ -1,0 +1,11 @@
+@mixin grid-columns() {
+	display: grid;
+	grid-template-columns: $grid-columns;
+	grid-column-gap: $grid-column-gap;
+}
+
+@mixin grid-inner-columns() {
+	display: grid;
+	grid-template-columns: $grid-inner-columns;
+	grid-column-gap: $grid-column-gap;
+}

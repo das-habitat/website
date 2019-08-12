@@ -1,0 +1,9 @@
+.contact {
+	blockquote {
+		color: $color-brand-gray;
+	}
+
+	* + * {
+		margin-top: 2.5rem;
+	}
+}

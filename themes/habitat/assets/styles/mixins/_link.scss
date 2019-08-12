@@ -1,0 +1,46 @@
+@mixin link {
+	&,
+	&:link,
+	&:visited {
+		color: $color-brand-blueAlt;
+		text-decoration: none;
+		font-weight: 700;
+		box-shadow: 0 2px 0 0 transparentize($color-brand-blueAlt, 0.7);
+	}
+
+	&:focus,
+	&:hover,
+	&.active {
+		color: $color-brand-blue;
+		box-shadow: 0 2px 0 0 $color-brand-blueAlt;
+	}
+}
+
+@mixin link-plain {
+	&,
+	&:link,
+	&:visited,
+	&:hover,
+	&:focus,
+	&:active {
+		box-shadow: none;
+	}
+}
+
+@mixin link-inverted {
+	&,
+	&:link,
+	&:visited {
+		color: $color-brand-white;
+		text-decoration: none;
+		font-weight: 700;
+		box-shadow: 0 2px 0 0 transparentize($color-brand-white, 0.7);
+	}
+
+	&:focus,
+	&:hover,
+	&.active {
+		color: $color-brand-white;
+		box-shadow: 0 2px 0 0 $color-brand-white;
+	}
+}

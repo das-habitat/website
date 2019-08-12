@@ -1,11 +1,11 @@
 {{- define "before-page" }}
-	{{- if .Params.statement }}
+	{{ partial "contact.html" (dict "context" . "class" "t-home__contact")  }}
+
 	<div class="statement">
 		<blockquote>
 			<p>{{ htmlUnescape .Params.statement }}</p>
 		</blockquote>
 	</div>
-	{{- end }}
 {{- end }}
 
 {{- define "main" }}

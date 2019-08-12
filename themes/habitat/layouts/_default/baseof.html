@@ -32,17 +32,15 @@
 	</head>
 	<body>
 		<div class="site">
-			{{- partial "header.html" . -}}
-			{{- block "before-page" . }}{{- end }}
-			<div class="page">
-				{{- block "before-main" . }}{{- end }}
-				<main>
-					{{- block "main" . }}{{- end }}
-				</main>
-				{{- block "after-main" . }}{{- end }}
-			</div>
-			{{- block "after-page" . }}{{- end }}
-			{{- partial "footer.html" . -}}
+		{{- partial "header.html" . -}}
+		{{- block "before-page" . }}{{- end }}
+		{{- block "before-main" . }}{{- end }}
+		<main class="main">
+			{{- block "main" . }}{{- end }}
+		</main>
+		{{- block "after-main" . }}{{- end }}
+		{{- block "after-page" . }}{{- end }}
+		{{- partial "footer.html" . -}}
 		</div>
 		<script type="text/javascript" src="/assets{{ if eq (getenv "APP_ENV") "dev" }}/main.js{{ else }}{{ index .Site.Data.manifest "main.js" | relURL }}{{ end }}"></script>
 		{{ if not (eq (getenv "APP_ENV") "dev") }}

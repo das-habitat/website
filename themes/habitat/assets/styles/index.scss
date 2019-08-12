@@ -3,17 +3,26 @@
 // External modules
 @import 'normalize';
 
+// Config
+@import 'config';
+
 // Toolkit
 @import 'functions/inline-svg';
-@import 'mixins/layout';
+@import 'mixins/box';
+@import 'mixins/media';
+@import 'mixins/plain';
+@import 'mixins/grid';
+@import 'mixins/link';
 
 // Global
-@import 'config';
 @import 'global';
 @import 'typography';
 
 // Partials
-@import 'partials/breadcrumbs';
 @import 'partials/footer';
 @import 'partials/header';
+@import 'partials/contact';
 @import 'partials/statement';
+
+// Templates
+@import 'templates/home';

@@ -1,9 +1,5 @@
 <header id="top" class="header">
-	<h1 class="header__logo">
-		<a href="/"><img src="/assets/ui/logo.svg" alt="Das Habitat" width="207" height="80"></a>
-	</h1>
-
-	<p class="header__claim">Nährboden für die&nbsp;Zukunft. <br>Deine offene Werkstatt.</p>
+	<a href="/" class="header__logo"><img src="/assets/ui/logo.svg" alt="Das Habitat" width="207" height="80"></a>
 
 	<nav id="nav" class="header__nav">
 		{{- $currentPage := . -}}
@@ -11,10 +7,17 @@
 			{{- $isCurrent := ($currentPage.IsMenuCurrent "main" .) }}
 			{{- $isActive := (or $isCurrent ($currentPage.HasMenuCurrent "main" .)) }}
 			<a href="{{ .URL }}" class="{{ if $isActive }}active{{ end }}">
-				<span>{{ .Name }}</span>
+				{{ .Name }}
 			</a>
 		{{- end }}
 	</nav>
+
+	<blockquote class="header__claim">
+		<p>
+			Nährboden für die Zukunft.<br>
+			Deine offene Werkstatt.
+		</p>
+	</blockquote>
 
 	{{- range .Site.Menus.main }}
 		{{- $isCurrent := ($currentPage.IsMenuCurrent "main" .) }}
@@ -26,7 +29,7 @@
 
 				{{- range .Children }}
 					<a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-						<span>{{ .Name }}</span>
+						{{ .Name }}
 					</a>
 				{{- end }}
 			</nav>

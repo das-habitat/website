@@ -1,39 +1,114 @@
 .header {
-	@include container;
+	@include grid-columns;
 
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+	grid-column: 1/-1;
+	background-color: $color-brand-white;
+
+	@include media-l {
+		padding: 5rem 0;
+		margin-bottom: 5rem;
+	}
 }
 
 .header__logo {
-	margin: 0;
+	@include link-plain;
+
+	display: block;
+	box-shadow: none;
 	width: 20.7rem;
 	height: 8rem;
-
-	a {
-		display: block;
-		box-shadow: none;
-	}
+	grid-column: 2;
+	overflow: hidden;
+	justify-self: left;
+	transition: width 0.2s ease;
 
 	img {
 		display: block;
-		width: 100%;
-		height: 100%;
+		width: 20.7rem;
+		height: 8rem;
 		margin-left: -3rem;
+		transition: margin-left 0.2s ease;
 	}
 }
 
-.header__claim {
-	color: mix($color-brand-gray, #fff, 50%);
-}
+.header__nav {
+	grid-column: 3 / -2;
+	text-align: right;
+	align-self: center;
+	justify-self: right;
 
-.header__nav,
-.header__subnav {
-	> a + a {
+	a + a {
 		margin-left: $offset-horizontal;
 	}
 }
 
+.header__claim {
+	margin-bottom: $offset-vertical;
+	grid-column: 2 / -2;
+	color: $color-brand-gray;
+}
+
 .header__subnav {
 	margin-top: 2rem;
+}
+
+.header__toggle {
+	@include plain;
+	@include link;
+
+	grid-column: -5 / -2;
+	text-align: right;
+	align-self: center;
+	justify-self: right;
+	cursor: pointer;
+
+	outline: 0;
+}
+
+div[aria-labelledby='menu-button'] {
+	display: none;
+}
+
+.header--expanded {
+	background: $color-brand-black;
+	margin: 0 0 calc(2 * var(--offset-vertical));
+	padding-bottom: var(--offset-vertical);
+}
+
+.header--expanded .header__toggle {
+	@include link-inverted;
+}
+
+.header--expanded .header__logo {
+	width: 4.3rem;
+
+	img {
+		filter: invert(100%);
+		margin-left: -6.7rem;
+	}
+}
+
+.header--expanded .header__claim {
+	color: $color-brand-gray-inverted;
+}
+
+.header--expanded div[aria-labelledby='menu-button'] {
+	display: block;
+}
+
+.header--expanded .header__nav {
+	text-align: left;
+	align-self: center;
+	justify-self: stretch;
+	grid-column: 2/-2;
+	padding-bottom: var(--offset-vertical);
+}
+
+.header--expanded .header__nav a {
+	@include plain;
+	@include link-inverted;
+
+	display: block;
+	margin: calc(var(--offset-vertical) / 2) 0 0;
+	padding: calc(var(--offset-vertical) / 2) 0 0;
 }
