@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "http://das-habitat.de"
 languageCode = "de-de"
 title = "Das Habitat Augsburg e.V."
 theme = "habitat"

@@ -7,7 +7,7 @@
 
 		{{- if(.Params.meta_keywords) -}}
 			<meta name="keywords" content="{{ delimit .Params.meta_keywords ", " }}">
-		{{- end -}}
+		{{- end }}
 		<meta name="description" content="{{ .Params.meta_description }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta property="og:site_name" content="{{ .Site.Title }}">
