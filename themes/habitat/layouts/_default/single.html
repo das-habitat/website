@@ -1,11 +1,15 @@
 {{- define "before-page" }}
+{{- if .Params.statement }}
 	<div class="statement">
 		<blockquote>
 			<p>{{ htmlUnescape .Params.statement }}</p>
 		</blockquote>
 	</div>
 {{- end }}
+{{- end }}
 
 {{ define "main" }}
-	{{ .Content }}
+	<main class="main{{ if .Params.grid}} main--grid{{ end }}">
+		{{ .Content }}
+	</main>
 {{ end }}

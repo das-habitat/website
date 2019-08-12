@@ -29,7 +29,7 @@ body {
 	}
 }
 
-.main {
+.main--grid {
 	@include grid-inner-columns;
 
 	grid-row-gap: calc(3 * var(--offset-vertical));

@@ -6,6 +6,7 @@ menu:
     main:
         parent: workshops
         weight: 100
+grid: true
 ---
 
 {{< css "cs3 c4 larger" >}}

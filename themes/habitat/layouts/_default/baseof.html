@@ -35,9 +35,7 @@
 		{{- partial "header.html" . -}}
 		{{- block "before-page" . }}{{- end }}
 		{{- block "before-main" . }}{{- end }}
-		<main class="main">
-			{{- block "main" . }}{{- end }}
-		</main>
+		{{- block "main" . }}{{- end }}
 		{{- block "after-main" . }}{{- end }}
 		{{- block "after-page" . }}{{- end }}
 		{{- partial "footer.html" . -}}
