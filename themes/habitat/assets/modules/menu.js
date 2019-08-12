@@ -1,5 +1,5 @@
 (() => {
-	const nav = document.querySelector('#nav');
+	const nav = document.querySelector('.header__nav');
 	const header = nav.parentElement;
 	const menuButton = document.createElement('button');
 	const menuButtonText = 'Menü';
