@@ -1,6 +1,6 @@
 baseURL = "http://das-habitat.de"
 languageCode = "de-de"
-title = "Das Habitat Augsburg e.V."
+title = "Das Habitat"
 theme = "habitat"
 publishDir = "dist"
 enableRobotsTXT = true
