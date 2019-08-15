@@ -1,0 +1,41 @@
+.feature {
+	@include link-plain;
+}
+
+.feature__img {
+	width: var(--col3);
+	margin-right: var(--grid-column-gap);
+	flex: 0 0 auto;
+	@include link-plain;
+
+	img {
+		width: 100%;
+		height: auto;
+		flex: 0 0 auto;
+	}
+}
+
+.feature__content {
+	display: flex;
+	font-size: 1.8rem;
+	color: $color-brand-gray;
+	line-height: calc(30 / 18);
+}
+
+.feature--reverse {
+	.feature__title {
+		float: right;
+		width: var(--col3);
+	}
+
+	.feature__content {
+		clear: right;
+		flex-flow: row-reverse;
+		text-align: right;
+	}
+
+	.feature__img {
+		margin-right: 0;
+		margin-left: var(--grid-column-gap);
+	}
+}

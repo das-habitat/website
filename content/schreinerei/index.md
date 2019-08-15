@@ -6,6 +6,11 @@ menu:
     workshops:
         weight: 100
 grid: true
+stage:
+    src: https://via.placeholder.com/1000x750
+    width: 1000
+    height: 750
+    alt: 'Placekitten'
 ---
 
 {{< css "cs3 c4 larger" >}}

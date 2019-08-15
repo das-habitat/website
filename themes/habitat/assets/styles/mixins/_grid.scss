@@ -8,4 +8,5 @@
 	display: grid;
 	grid-template-columns: $grid-inner-columns;
 	grid-column-gap: $grid-column-gap;
+	grid-auto-flow: row dense;
 }

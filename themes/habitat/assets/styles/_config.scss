@@ -20,6 +20,22 @@ $breakpoint-l: 880px;
 	--grid-inner-columns: repeat(8, var(--grid-column));
 	--offset-vertical: 2.4rem;
 
+	--col2: calc(2 * var(--grid-column) + 1 * var(--grid-column-gap));
+	--col3: calc(3 * var(--grid-column) + 2 * var(--grid-column-gap));
+
+	--color-brand-yellow: #{$color-brand-yellow};
+	--color-brand-orange: #{$color-brand-orange};
+	--color-brand-red: #{$color-brand-red};
+	--color-brand-blue: #{$color-brand-blue};
+	--color-brand-blueAlt: #{$color-brand-blueAlt};
+	--color-brand-green: #{$color-brand-green};
+	--color-brand-greenAlt: #{$color-brand-greenAlt};
+	--color-brand-white: #{$color-brand-white};
+	--color-brand-black: #{$color-brand-black};
+	--color-brand-gray: #{$color-brand-gray};
+	--color-brand-gray-inverted: #{$color-brand-gray-inverted};
+	--color-brand-pale: #{$color-brand-pale};
+
 	@media (min-width: $breakpoint-l) {
 		--grid-column: calc(90 / 1200 * 100vw);
 		--grid-colums: 1fr repeat(8, var(--grid-column)) 1fr;

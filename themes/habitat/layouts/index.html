@@ -1,5 +1,11 @@
 {{- define "before-page" }}
-	{{ partial "contact.html" (dict "context" . "class" "t-home__contact")  }}
+	{{ partial "contact.html" (dict "context" . "class" "t-home__contact") }}
+
+	{{- with .Params.stage }}
+	<figure class="stage">
+		<img src="{{ .src }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}">
+	</figure>
+	{{- end }}
 
 	<div class="statement t-home__statement">
 		<blockquote>
@@ -11,17 +17,16 @@
 {{- define "main" }}
 	<main class="main main--grid">
 		{{ .Content }}
+
+		<aside class="sidebar">
+			<h2>Anderswo</h2>
+			<p>Folge us und schau dir an was wir und ihr im Habitat schafft.</p>
+
+			<ul>
+				<li><a href="https://www.facebook.com/habitataugsburg/"><i class="icon">Facebook</i> /habitataugsburg</a></li>
+				<li><a href="https://www.instagram.com/das_habitat_augsburg/"><i class="icon">Instagram</i> @das_habitat_augsburg</a></li>
+				<li><a href="https://twitter.com/@habitataugsburg"><i class="icon">Twitter</i> @habitataugsburg</a></li>
+			</ul>
+		</aside>
 	</main>
-{{- end }}
-
-{{- define "after-main" }}
-	<aside class="sidebar">
-		<h2>Anderswo</h2>
-
-		<ul>
-			<li><a href="https://www.facebook.com/habitataugsburg/">Facebook</a></li>
-			<li><a href="https://www.instagram.com/das_habitat_augsburg/">Instagram</a></li>
-			<li><a href="https://twitter.com/@habitataugsburg">Twitter</a></li>
-		</ul>
-	</aside>
 {{- end }}

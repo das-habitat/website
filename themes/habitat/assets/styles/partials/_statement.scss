@@ -1,6 +1,7 @@
 .statement {
 	@include box;
 
+	--tint: #{$color-brand-white};
 	margin: calc(3 * var(--offset-vertical)) 0 calc(3 * var(--offset-vertical));
 	color: $color-brand-black;
 	box-sizing: border-box;

@@ -1,0 +1,18 @@
+{{- $href := (.Get "href") -}}
+<div class="feature {{ if .Get "reverse" }}feature--reverse{{ end }}{{ with .Get "className" }} {{.}}{{ end }}">
+	<h2 class="feature__title">
+		<a href="{{ $href }}">
+			{{ .Get "title" }}
+		</a>
+	</h2>
+
+	<div class="feature__content">
+		<a href="{{ $href }}" class="feature__img">
+			<img src="{{ .Get "src" }}" alt="" width="{{ .Get "width" }}" height="{{ .Get "height" }}">
+		</a>
+
+		<div>
+			{{ .Inner | markdownify }}
+		</div>
+	</div>
+</div>

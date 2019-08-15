@@ -1,0 +1,9 @@
+.stage {
+	grid-column: 4/-2;
+}
+
+.stage + .statement {
+	position: relative;
+	z-index: 2;
+	margin-top: calc(-6 * var(--offset-vertical));
+}
