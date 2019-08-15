@@ -3,8 +3,7 @@ title: Schreinerei
 draft: false
 statement: 'Möbelbau, Küchenbau, Restauration, Zuschnitt, Drechseln, Fräsen, Furnier, Schleifen, Pressen, Hobeln, und mehr: in der Schreinerei.'
 menu:
-    main:
-        parent: workshops
+    workshops:
         weight: 100
 grid: true
 ---

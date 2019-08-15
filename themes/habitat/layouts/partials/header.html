@@ -2,20 +2,42 @@
 	<a href="/" class="header__logo"><img src="/assets/ui/logo.svg" alt="Das Habitat" width="207" height="80"></a>
 
 	<nav id="nav" class="header__nav">
-		<ul>
+		<ul role="menubar">
+			<li role="none">
+				<a href="/" class="" aria-expanded="false" aria-haspopup="true" role="menuitem" tabindex="0">
+					Werkstätten
+				</a>
+				<ul class="sub-menu" role="menu" aria-hidden="true" aria-label="{{ .Name }}">
+				{{- range .Site.Menus.workshops }}
+					{{- $isCurrent := ($.IsMenuCurrent "main" .) }}
+					<li>
+						<a href="{{ .URL }}" class="{{ if $isCurrent }}active{{ end }}" tabindex="0">
+							{{ .Name }}
+						</a>
+					</li>
+				{{- end }}
+				</ul>
+			</li>
+
 			{{- $currentPage := . -}}
 			{{- range .Site.Menus.main }}
 				{{- $isCurrent := ($currentPage.IsMenuCurrent "main" .) }}
-				{{- $isActive := (or $isCurrent ($currentPage.HasMenuCurrent "main" .)) }}
-				<li>
-					<a href="{{ .URL }}" class="{{ if $isActive }}active{{ end }}">
-						{{ .Name }}
-					</a>
+				<li role="none">
 					{{ if .HasChildren }}
-						<ul class="sub-menu">
+						<a href="{{ .URL }}" class="{{ if $isCurrent }}active{{ end }}" aria-expanded="false" aria-haspopup="true" role="menuitem" tabindex="0">
+							{{ .Name }}
+						</a>
+					{{ else }}
+						<a href="{{ .URL }}" class="{{ if $isCurrent }}active{{ end }}" role="menuitem">
+							{{ .Name }}
+						</a>
+					{{ end }}
+					{{ if .HasChildren }}
+						<ul class="sub-menu" role="menu" aria-hidden="true" aria-label="{{ .Name }}">
 						{{ range .Children }}
+							{{- $isCurrent := ($.IsMenuCurrent "main" .) }}
 							<li>
-								<a href="{{ .URL }}" class="{{ if $isActive }}active{{ end }}">
+								<a href="{{ .URL }}" class="{{ if $isCurrent }}active{{ end }}" tabindex="0">
 									{{ .Name }}
 								</a>
 							</li>

@@ -36,6 +36,19 @@
 	align-self: center;
 	justify-self: right;
 
+	ul,
+	li {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		list-style: none;
+	}
+
+	[role='menu'] {
+		padding: 2.5rem;
+	}
+
 	> ul {
 		&,
 		> li {
@@ -52,9 +65,6 @@
 		ul {
 			position: absolute;
 		}
-	}
-
-	a + a {
 	}
 }
 
@@ -86,7 +96,7 @@ div[aria-labelledby='menu-button'] {
 }
 
 .header--expanded {
-	background: $color-brand-black;
+	background: $color-brand-blueAlt;
 	margin: 0 0 calc(2 * var(--offset-vertical));
 	padding-bottom: var(--offset-vertical);
 }
@@ -105,7 +115,7 @@ div[aria-labelledby='menu-button'] {
 }
 
 .header--expanded .header__claim {
-	color: $color-brand-gray-inverted;
+	color: mix($color-brand-blueAlt, $color-brand-white, 40%);
 }
 
 .header--expanded div[aria-labelledby='menu-button'] {
@@ -118,13 +128,75 @@ div[aria-labelledby='menu-button'] {
 	justify-self: stretch;
 	grid-column: 2/-2;
 	padding-bottom: var(--offset-vertical);
+
+	ul,
+	li {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	[aria-haspopup='true'] + [role='menu'] {
+		position: relative;
+		top: 0;
+		box-shadow: none;
+
+		li + li {
+			border: 0;
+		}
+	}
+
+	[aria-haspopup='true'] + [role='menu'] a,
+	a {
+		@include link-inverted;
+		@include plain;
+
+		display: block;
+		margin: calc(var(--offset-vertical) / 2) 0 0;
+		padding: calc(var(--offset-vertical) / 2) 0 0;
+	}
 }
 
-.header--expanded .header__nav a {
-	@include plain;
-	@include link-inverted;
+[aria-haspopup='true'] + [role='menu'] {
+	display: none;
+	position: absolute;
+	top: 2.2rem;
+	right: 0;
+	min-width: calc(var(--grid-column) + var(--grid-column-gap));
+	@include box;
+	padding-top: 1.25rem;
 
+	--tint: #{$color-brand-blueAlt};
+
+	@include media-l {
+		padding: 1.25rem 2.5rem;
+	}
+
+	&:after {
+		display: none;
+	}
+
+	li {
+		display: block;
+
+		& + li {
+			border-top: 3px solid mix($color-brand-blueAlt, $color-brand-white, 80%);
+		}
+	}
+
+	a {
+		@include link-inverted;
+		@include link-plain;
+		display: block;
+		text-align: left;
+		padding: 1.25rem 0 calc(1.25rem - 3px);
+	}
+}
+
+[role='menubar'] li:focus-within [role='menu'],
+[role='menubar'] li:hover [role='menu'],
+[aria-haspopup='true']:hover + [role='menu'],
+[aria-haspopup='true']:focus + [role='menu'],
+[aria-expanded='true'] + [role='menu'] {
 	display: block;
-	margin: calc(var(--offset-vertical) / 2) 0 0;
-	padding: calc(var(--offset-vertical) / 2) 0 0;
 }

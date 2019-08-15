@@ -1,5 +1,7 @@
 {{- define "before-page" }}
 {{- if .Params.statement }}
+	<h1>{{ .Title }}</h1>
+
 	<div class="statement">
 		<blockquote>
 			<p>{{ htmlUnescape .Params.statement }}</p>
