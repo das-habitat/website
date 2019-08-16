@@ -1,7 +1,7 @@
 baseURL = "http://das-habitat.de"
 languageCode = "de-de"
 title = "Das Habitat"
-theme = "habitat"
+theme = ["hugo-debugprint", "habitat"]
 publishDir = "dist"
 enableRobotsTXT = true
 defaultContentLanguage = "de"
