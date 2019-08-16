@@ -1,4 +1,6 @@
 .sidebar {
-	grid-column: -3 / -1;
-	grid-row: 2;
+	@include media-lg {
+		grid-column: -3 / -1;
+		grid-row: 2;
+	}
 }

@@ -1,10 +1,9 @@
 .header {
-	@include grid-columns;
+	@include grid-flex;
 
-	grid-column: 1/-1;
 	background-color: $color-brand-white;
 
-	@include media-l {
+	@include media-lg {
 		padding: var(--offset-vertical) 0 0;
 	}
 }
@@ -31,10 +30,15 @@
 }
 
 .header__nav {
-	grid-column: 3 / -1;
+	display: none;
 	text-align: right;
 	align-self: center;
 	justify-self: right;
+
+	@include media-lg {
+		display: block;
+		grid-column: 3 / -1;
+	}
 
 	ul,
 	li {
@@ -74,7 +78,7 @@
 	grid-column: 1 / -1;
 	color: $color-brand-gray;
 
-	@include media-l {
+	@include media-lg {
 		display: block;
 	}
 }
@@ -103,6 +107,8 @@ div[aria-labelledby='menu-button'] {
 .header--expanded {
 	background: $color-brand-blueAlt;
 	margin: 0 0 calc(2 * var(--offset-vertical));
+	padding-left: var(--offset-outer);
+	padding-right: var(--offset-outer);
 	padding-bottom: var(--offset-vertical);
 }
 
@@ -129,10 +135,11 @@ div[aria-labelledby='menu-button'] {
 }
 
 .header--expanded .header__nav {
+	display: block;
+	width: 100%;
 	text-align: left;
 	align-self: center;
 	justify-self: stretch;
-	grid-column: 1 / -1;
 	padding-bottom: var(--offset-vertical);
 
 	ul,
@@ -174,7 +181,7 @@ div[aria-labelledby='menu-button'] {
 
 	--tint: #{$color-brand-blueAlt};
 
-	@include media-l {
+	@include media-lg {
 		padding: 1.25rem 2.5rem;
 	}
 

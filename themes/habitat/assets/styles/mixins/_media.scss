@@ -4,7 +4,7 @@
 	}
 }
 
-@mixin media-l {
+@mixin media-lg {
 	@media (min-width: $breakpoint-l) {
 		@content;
 	}

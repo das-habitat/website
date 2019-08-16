@@ -3,10 +3,14 @@
 }
 
 .feature__img {
-	width: var(--col3);
+	width: column-width(1);
 	margin-right: var(--grid-column-gap);
 	flex: 0 0 auto;
 	@include link-plain;
+
+	@include media-lg {
+		width: column-width(3);
+	}
 
 	img {
 		width: 100%;
@@ -24,8 +28,10 @@
 
 .feature--reverse {
 	.feature__title {
-		float: right;
-		width: var(--col3);
+		@include media-lg {
+			float: right;
+			width: column-width(3);
+		}
 	}
 
 	.feature__content {

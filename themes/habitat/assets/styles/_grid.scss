@@ -16,7 +16,7 @@
 	}
 }
 
-@include media-l {
+@include media-lg {
 	@for $i from 1 through 7 {
 		.cs#{$i}-lg {
 			grid-column-start: $i;

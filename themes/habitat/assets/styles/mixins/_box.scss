@@ -11,7 +11,7 @@
 		0 7px 30px -5px transparentize($color-brand-gray, 0.77),
 		0 0 90px -45px var(--tint);
 
-	@include media-l {
+	@include media-lg {
 		padding: 2.4rem 3.2rem;
 	}
 
@@ -22,7 +22,7 @@
 		margin: calc(#{1.2rem} - 2px) 0 calc(1.2rem - 1px);
 		background: $color-brand-black;
 
-		@include media-l {
+		@include media-lg {
 			margin: calc(#{2.5rem + 1.25rem} - 2px) 0 calc(1.25rem - 1px);
 		}
 	}

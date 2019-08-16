@@ -1,7 +1,7 @@
 .stage {
 	grid-column: 2 / -1;
 
-	@include media-l {
+	@include media-lg {
 		grid-column: 3/-1;
 		margin-top: calc(-3 * var(--offset-vertical));
 	}
@@ -11,4 +11,5 @@
 	position: relative;
 	z-index: 2;
 	margin-top: calc(-6 * var(--offset-vertical));
+	margin-bottom: 0;
 }

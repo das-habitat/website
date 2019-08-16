@@ -96,7 +96,7 @@ td {
 	font-size: 1.6rem;
 	line-height: calc(28 / 16);
 
-	@include media-l {
+	@include media-lg {
 		font-size: 1.8rem;
 		line-height: calc(35 / 18);
 	}
@@ -107,7 +107,7 @@ td {
 	font-size: 1.9rem;
 	line-height: calc(28 / 19);
 
-	@include media-l {
+	@include media-lg {
 		font-size: 2.3rem;
 		line-height: calc(40 / 23);
 	}

@@ -10,7 +10,7 @@
 	line-height: calc(24 / 15);
 	align-self: end;
 
-	@include media-l {
+	@include media-lg {
 		grid-column: 1 / span 6;
 		font-size: 2.8rem;
 		line-height: calc(45 / 28);

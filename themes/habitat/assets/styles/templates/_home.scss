@@ -3,5 +3,11 @@
 }
 
 .t-home__contact {
-	grid-column: 1 / span 2;
+	@include media-s {
+		grid-row: 3;
+	}
+
+	@include media-lg {
+		grid-column: 1 / span 2;
+	}
 }

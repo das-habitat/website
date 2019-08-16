@@ -1,13 +1,49 @@
+@mixin offset-outer {
+	margin-left: var(--offset-outer);
+	margin-right: var(--offset-outer);
+
+	@include media-lg {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@mixin grid() {
+	display: grid;
+	grid-template-columns: $grid-columns;
+	grid-column-gap: $grid-column-gap;
+	grid-row-gap: $grid-row-gap;
+
+	@include media-lg {
+		width: var(--grid-width);
+	}
+}
+
 @mixin grid-columns() {
 	display: grid;
 	grid-template-columns: $grid-columns;
 	grid-column-gap: $grid-column-gap;
-	margin-left: 1.6rem;
-	margin-right: 1.6rem;
+	grid-row-gap: $grid-row-gap;
 
-	@include media-l {
+	@include media-lg {
 		width: var(--grid-width);
-		margin-left: auto;
-		margin-right: auto;
 	}
+
+	@include offset-outer;
+}
+
+@mixin grid-flex() {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
+	@include media-lg {
+		width: var(--grid-width);
+	}
+
+	@include offset-outer;
+}
+
+@function column-width($columns: 1) {
+	@return calc(#{$columns} * var(--grid-column) + #{$columns - 1} * var(--grid-column-gap));
 }

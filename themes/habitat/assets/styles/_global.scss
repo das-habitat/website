@@ -22,9 +22,7 @@ body {
 }
 
 .main--grid {
-	@include grid-columns;
-
-	grid-row-gap: calc(3 * var(--offset-vertical));
+	@include grid;
 
 	> * {
 		grid-column: 1 / -1;
