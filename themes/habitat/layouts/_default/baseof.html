@@ -33,11 +33,13 @@
 	<body>
 		<div class="site">
 		{{- partial "header.html" . -}}
-		{{- block "before-page" . }}{{- end }}
-		{{- block "before-main" . }}{{- end }}
-		{{- block "main" . }}{{- end }}
-		{{- block "after-main" . }}{{- end }}
-		{{- block "after-page" . }}{{- end }}
+		<div class="page">
+			{{- block "before-page" . }}{{- end }}
+			{{- block "before-main" . }}{{- end }}
+			{{- block "main" . }}{{- end }}
+			{{- block "after-main" . }}{{- end }}
+			{{- block "after-page" . }}{{- end }}
+		</div>
 		{{- partial "footer.html" . -}}
 		</div>
 		<script type="text/javascript" src="/assets{{ if eq (getenv "APP_ENV") "dev" }}/main.js{{ else }}{{ index .Site.Data.manifest "main.js" | relURL }}{{ end }}"></script>

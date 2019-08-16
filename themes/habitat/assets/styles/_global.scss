@@ -21,16 +21,8 @@ body {
 	line-height: calc(25 / 15);
 }
 
-.site {
-	@include grid-columns;
-
-	> * {
-		grid-column: 2 / -2;
-	}
-}
-
 .main--grid {
-	@include grid-inner-columns;
+	@include grid-columns;
 
 	grid-row-gap: calc(3 * var(--offset-vertical));
 

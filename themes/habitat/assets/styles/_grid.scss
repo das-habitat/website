@@ -1,73 +1,39 @@
-.cs1 {
-	grid-column-start: 1;
+@for $i from 1 through 6 {
+	.cs#{$i}-sm {
+		grid-column-start: $i;
+	}
 }
 
-.cs2 {
-	grid-column-start: 2;
+@for $i from 1 through 6 {
+	.cs#{$i}-sm {
+		grid-column-end: span $i;
+	}
 }
 
-.cs3 {
-	grid-column-start: 3;
+@for $i from 1 through 6 {
+	.cs#{$i}-sm {
+		grid-column-end: -$i;
+	}
 }
 
-.cs4 {
-	grid-column-start: 4;
-}
+@include media-l {
+	@for $i from 1 through 7 {
+		.cs#{$i}-lg {
+			grid-column-start: $i;
+		}
+	}
 
-.cs5 {
-	grid-column-start: 5;
-}
+	@for $i from 1 through 7 {
+		.cs#{$i}-lg {
+			grid-column-end: span $i;
+		}
+	}
 
-.cs6 {
-	grid-column-start: 6;
-}
-
-.cs7 {
-	grid-column-start: 7;
-}
-
-.c1 {
-	grid-column-end: span 1;
-}
-
-.c2 {
-	grid-column-end: span 2;
-}
-
-.c3 {
-	grid-column-end: span 3;
-}
-
-.c4 {
-	grid-column-end: span 4;
-}
-
-.c5 {
-	grid-column-end: span 5;
-}
-
-.c-1 {
-	grid-column-end: -1;
-}
-
-.c-2 {
-	grid-column-end: -2;
-}
-
-.c-3 {
-	grid-column-end: -3;
-}
-
-.col1-s4 {
-	grid-column: 1 / span 4;
-}
-
-.col3-s4 {
-	grid-column: 3 / span 4;
-}
-
-.col7--1 {
-	grid-column: 7 / -1;
+	@for $i from 1 through 7 {
+		.cs#{$i}-lg {
+			grid-column-end: -$i;
+		}
+	}
 }
 
 .g-end {

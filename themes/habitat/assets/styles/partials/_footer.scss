@@ -1,26 +1,28 @@
 .footer {
-	@include grid-columns;
-
-	grid-column: 1/-1;
 	margin-top: calc(3 * var(--offset-vertical));
 	background: mix($color-brand-pale, $color-brand-white, 20%);
+}
+
+.footer__inner {
+	@include grid-columns;
 
 	> * {
+		grid-column: 1 / -1;
 		margin: 0 0 var(--offset-vertical);
 	}
 }
 
 .footer__info {
-	grid-column: 2 / span 4;
+	grid-column: 1 / span 4;
 	margin: calc(2 * var(--offset-vertical)) 0;
 }
 
 .footer__copyright {
-	grid-column: 2 / span 4;
+	grid-column: 1 / span 4;
 }
 
 .footer__legal {
-	grid-column: 6 / span 4;
+	grid-column: 5 / span 4;
 
 	> a + a {
 		margin-left: var(--offset-vertical);
@@ -28,14 +30,8 @@
 }
 
 .footer__sponsors {
-	@include grid-columns;
-
 	margin: 0;
 	padding: calc(2 * var(--offset-vertical)) 0;
 	grid-column: 1/-1;
 	background: mix($color-brand-pale, $color-brand-white, 30%);
-
-	> * {
-		grid-column: 2/-2;
-	}
 }

@@ -14,11 +14,13 @@ $color-brand-pale: #809979;
 $breakpoint-l: 880px;
 
 :root {
-	--grid-column: calc(28 / 320 * 100vw);
-	--grid-colums: 1fr repeat(6, var(--grid-column)) 1fr;
-	--grid-column-gap: 2.4rem;
-	--grid-inner-columns: repeat(8, var(--grid-column));
 	--offset-vertical: 2.4rem;
+	--offset-horizontal: 2.4rem;
+
+	--grid-column: calc(calc(100vw - calc(1.6rem * 2)) / 6);
+	--grid-colums: repeat(6, 1fr);
+	--grid-column-gap: var(--offset-horizontal);
+	--grid-width: calc(6 * var(--grid-column) + 5 * var(--grid-column-gap));
 
 	--col2: calc(2 * var(--grid-column) + 1 * var(--grid-column-gap));
 	--col3: calc(3 * var(--grid-column) + 2 * var(--grid-column-gap));
@@ -38,15 +40,19 @@ $breakpoint-l: 880px;
 
 	@media (min-width: $breakpoint-l) {
 		--grid-column: calc(90 / 1200 * 100vw);
-		--grid-colums: 1fr repeat(8, var(--grid-column)) 1fr;
+		--grid-colums: repeat(8, var(--grid-column));
 		--grid-column-gap: 4rem;
-		--grid-inner-columns: repeat(8, var(--grid-column));
+		--grid-width: calc(8 * var(--grid-column) + 7 * var(--grid-column-gap));
 		--offset-vertical: 2.5rem;
+	}
+
+	@media (min-width: 1400px) {
+		--grid-width: 120rem;
+		--grid-column: calc(calc(var(--grid-width) - 7 * var(--grid-column-gap)) / 8);
 	}
 }
 
 $grid-columns: var(--grid-colums);
 $grid-column-gap: var(--grid-column-gap);
-$grid-inner-columns: var(--grid-inner-columns);
 
 $offset-vertical: var(--offset-vertical);

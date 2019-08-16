@@ -2,11 +2,12 @@
 	display: grid;
 	grid-template-columns: $grid-columns;
 	grid-column-gap: $grid-column-gap;
-}
+	margin-left: 1.6rem;
+	margin-right: 1.6rem;
 
-@mixin grid-inner-columns() {
-	display: grid;
-	grid-template-columns: $grid-inner-columns;
-	grid-column-gap: $grid-column-gap;
-	grid-auto-flow: row dense;
+	@include media-l {
+		width: var(--grid-width);
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
