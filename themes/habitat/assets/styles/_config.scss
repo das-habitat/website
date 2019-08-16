@@ -46,8 +46,8 @@ $breakpoint-l: 880px;
 		--offset-vertical: 2.5rem;
 	}
 
-	@media (min-width: 1400px) {
-		--grid-width: 120rem;
+	@media (min-width: 1441px) {
+		--grid-width: 114.4rem;
 		--grid-column: calc(calc(var(--grid-width) - 7 * var(--grid-column-gap)) / 8);
 	}
 }

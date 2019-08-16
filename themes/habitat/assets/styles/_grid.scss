@@ -24,13 +24,13 @@
 	}
 
 	@for $i from 1 through 7 {
-		.cs#{$i}-lg {
+		.c#{$i}-lg {
 			grid-column-end: span $i;
 		}
 	}
 
 	@for $i from 1 through 7 {
-		.cs#{$i}-lg {
+		.c-#{$i}-lg {
 			grid-column-end: -$i;
 		}
 	}
