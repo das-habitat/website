@@ -11,6 +11,7 @@ stage:
     width: 1000
     height: 750
     alt: 'Placekitten'
+layout: workshop
 ---
 
 {{< css "cs3-lg c4-lg larger" >}}

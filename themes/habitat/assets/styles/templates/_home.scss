@@ -3,7 +3,7 @@
 }
 
 .t-home__contact {
-	@include media-s {
+	@include media-sm {
 		grid-row: 3;
 	}
 

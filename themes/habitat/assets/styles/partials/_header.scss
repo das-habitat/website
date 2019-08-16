@@ -8,6 +8,10 @@
 	}
 }
 
+.header--home {
+	margin-bottom: var(--offset-vertical);
+}
+
 .header__logo {
 	@include link-plain;
 
@@ -74,12 +78,16 @@
 
 .header__claim {
 	display: none;
-	margin-bottom: $offset-vertical;
 	grid-column: 1 / -1;
 	color: $color-brand-gray;
 
+	@include media-sm {
+		margin-bottom: $offset-vertical;
+	}
+
 	@include media-lg {
 		display: block;
+		width: 100%;
 	}
 }
 

@@ -1,0 +1,16 @@
+{{ define "main" }}
+	{{- with (.Param "technical") }}
+	<table>
+		{{ range . }}
+			<tr>
+				<th> {{ .label }} </th>
+				<td>{{ .value }}</td>
+			</tr>
+		{{ end }}
+	</table>
+	{{- end }}
+
+	<main class="main{{ if .Params.grid}} main--grid{{ end }}">
+		{{ .Content }}
+	</main>
+{{ end }}

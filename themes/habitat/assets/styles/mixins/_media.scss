@@ -1,4 +1,4 @@
-@mixin media-s {
+@mixin media-sm {
 	@media (max-width: #{$breakpoint-l - 1px}) {
 		@content;
 	}
