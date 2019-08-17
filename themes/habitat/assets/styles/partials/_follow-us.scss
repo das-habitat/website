@@ -1,0 +1,22 @@
+.follow-us {
+	list-style: none;
+
+	li {
+		padding: calc(var(--offset-vertical) / 2) 0;
+	}
+
+	a {
+		@include link-plain;
+	}
+
+	span {
+		@include link;
+	}
+
+	.icon {
+		vertical-align: middle;
+		height: calc(var(--offset-vertical));
+		fill: $color-brand-blueAlt;
+		margin-right: calc(var(--offset-vertical) / 4);
+	}
+}

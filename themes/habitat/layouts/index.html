@@ -19,14 +19,7 @@
 		{{ .Content }}
 
 		<aside class="sidebar">
-			<h2>Anderswo</h2>
-			<p>Folge us und schau dir an was wir und ihr im Habitat schafft.</p>
-
-			<ul>
-				<li><a href="https://www.facebook.com/habitataugsburg/"><i class="icon">Facebook</i> /habitataugsburg</a></li>
-				<li><a href="https://www.instagram.com/das_habitat_augsburg/"><i class="icon">Instagram</i> @das_habitat_augsburg</a></li>
-				<li><a href="https://twitter.com/@habitataugsburg"><i class="icon">Twitter</i> @habitataugsburg</a></li>
-			</ul>
+			{{ partial "follow-us.html" . }}
 		</aside>
 	</main>
 {{- end }}
