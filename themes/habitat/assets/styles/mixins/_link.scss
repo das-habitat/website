@@ -11,7 +11,7 @@
 	&:hover,
 	&.active {
 		color: $color-brand-blue;
-		box-shadow: 0 2px 0 0 $color-brand-blueAlt;
+		box-shadow: 0 2px 0 0 $color-brand-blue;
 	}
 }
 
@@ -23,6 +23,21 @@
 	&:focus,
 	&:active {
 		box-shadow: none;
+	}
+}
+
+@mixin link-plain-default {
+	&,
+	&:link,
+	&:visited {
+		box-shadow: none;
+	}
+
+	&:focus,
+	&:hover,
+	&.active {
+		color: $color-brand-blue;
+		box-shadow: 0 2px 0 0 $color-brand-blue;
 	}
 }
 

@@ -1,13 +1,17 @@
 {{ define "main" }}
 	{{- with (.Param "technical") }}
-	<table>
-		{{ range . }}
-			<tr>
-				<th> {{ .label }} </th>
-				<td>{{ .value }}</td>
-			</tr>
-		{{ end }}
-	</table>
+	<div class="box cs1-lg c5-lg">
+		<table class="table table--technical">
+			<tbody>
+				{{ range . }}
+				<tr>
+					<th> {{ .label }} </th>
+					<td>{{ .value }}</td>
+				</tr>
+				{{ end }}
+			</tbody>
+		</table>
+	</div>
 	{{- end }}
 
 	<main class="main{{ if .Params.grid}} main--grid{{ end }}">

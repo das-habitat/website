@@ -18,19 +18,21 @@
 
 
 {{ define "main" }}
-	<nav class="submenu">
-		<ul>
-			{{- range .Pages }}
-			<li>
-				<a href="{{ .RelPermalink }}">
-					{{ .Title }}
-				</a>
-			</li>
-			{{- end }}
-		</ul>
-	</nav>
-
 	<main class="main{{ if .Params.grid}} main--grid{{ end }}">
 		{{ .Content }}
+
+		<nav class="submenu submenu--workshop">
+			<h2>Unsere Ausstattung</h2>
+
+			<ul>
+			{{- range .Pages }}
+				<li>
+					<a href="{{ .RelPermalink }}">
+						{{ .Title }}
+					</a>
+				</li>
+			{{- end }}
+			</ul>
+		</nav>
 	</main>
 {{ end }}
