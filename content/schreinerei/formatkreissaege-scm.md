@@ -1,6 +1,7 @@
 ---
 title: Formatkreissäge SCM SI 150
 draft: false
+layout: machine
 technical:
     - label: Sägeblattdurchmesser
       value: 250 – 300 mm
@@ -22,7 +23,6 @@ technical:
       value: 4.000 U/min
     - label: Motorleistung
       value: 4 kW
-layout: machine
 ---
 
-Unsere SCM Formatkreissäge – die "kleinere" der beiden – wird prinzipiell eher für Querschnitte eingesetzt, steht aber immer auch dann zur Verfügung, wenn die "große" F45 besetzt ist. Genauso präzise und sicher ist sie allemal. Manch ein Benutzer tut sich hier auch für den Einstieg leichter, da die Maschine kompakter und übersichtlicher ist..
+Unsere SCM – die etwas kleinere unserer Formatkreissägen – wird prinzipiell eher für Querschnitte eingesetzt, steht aber immer auch dann zur Verfügung, wenn die "große" F45 besetzt ist. Genauso präzise und sicher ist sie allemal. Manch ein Benutzer tut sich hier auch für den Einstieg leichter, da die Maschine kompakter und übersichtlicher ist..
