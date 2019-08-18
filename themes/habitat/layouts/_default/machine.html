@@ -1,4 +1,8 @@
 {{ define "main" }}
+	<h1>{{ .Title }}</h1>
+
+	<a href="../">&larr; Schreinerei</a>
+
 	{{- with (.Param "technical") }}
 	<div class="box cs1-lg c5-lg">
 		<table class="table table--technical">
@@ -13,6 +17,14 @@
 		</table>
 	</div>
 	{{- end }}
+
+	{{ $nextPage := (default (index (first 1 .CurrentSection.Pages) 0) .PrevInSection) -}}
+
+	<a href="{{ $nextPage.Permalink }}">{{ $nextPage.Title }} &rarr;</a>
+
+	{{ $prevPage := (default (index (last 1 .CurrentSection.Pages) 0) .NextInSection) -}}
+
+	<a href="{{ $prevPage.Permalink }}" title="{{ $prevPage.Title }}">&larr;</a>
 
 	<main class="main{{ if .Params.grid}} main--grid{{ end }}">
 		{{ .Content }}
