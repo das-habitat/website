@@ -1,20 +1,22 @@
 ---
-title: CNC Fräse "Rührgerät"
+title: Holz-CNC-Fräse "Rührgerät"
 draft: false
 layout: machine
 technical:
+    - label: Erbauer
+      value: Tom Rühr
     - label: Achsen
       value: 3 (X, Y, Z)
-    - label: Spindeldrehzahl
-      value: 2000 - 20000 rpm
+    - label: Spindel
+      value: ER20 6000-20000 rpm, wassergekühlt
+    - label: Werkzeugdurchmesser
+      value: 1-13mm
     - label: Fräsgeschwindigkeit
       value: bis 1200 mm/min je nach Holz und gewünschter Ergebnisqualität
     - label: Verfahrgeschwindigkeit
       value: bis 4500 mm/min
-    - label: Verfahrweg X/Y
-      value: ~ 50 × 105 cm
-    - label: Verfahrweg Z
-      value: ~ 30 cm
+    - label: Antrieb
+      value: Closed-Loop Schrittmotoren
     - label: Durchlass unter Portal
       value: ca. 30 cm (je Fräser)
 ---
