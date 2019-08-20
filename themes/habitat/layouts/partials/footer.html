@@ -25,8 +25,15 @@
 		<div class="footer__inner">
 			<h3>Unsere Sponsoren, Unterstützer, Stifter, Gönner und einfach fantatischen Partner.</h3>
 
-			<ul></ul>
-
+			<ul class="sponsors">
+				{{- range .Site.Data.sponsoren }}
+					<li>
+						<a href="{{ .href }}">
+							<img src="/logos/{{ .id }}.svg" alt="{{ .name }} - {{ .description }}" height="50">
+						</a>
+					</li>
+				{{- end }}
+			</ul>
 
 			<p>Du oder dein Unternehmen wollt uns unterstützen? <a href="/kontakt">Meldet euch bei uns.</a></p>
 		</div>

@@ -5,6 +5,7 @@
 
 .footer__inner {
 	@include grid-columns;
+	grid-row-gap: 0;
 
 	> * {
 		grid-column: 1 / -1;
