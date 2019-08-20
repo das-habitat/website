@@ -10,6 +10,6 @@
 .stage + .statement {
 	position: relative;
 	z-index: 2;
-	margin-top: calc(-6 * var(--offset-vertical));
+	margin-top: calc(-10 * var(--offset-vertical));
 	margin-bottom: 0;
 }

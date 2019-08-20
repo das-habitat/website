@@ -16,11 +16,11 @@
 {{- end }}
 {{- end }}
 
-
 {{ define "main" }}
 	<main class="main{{ if .Params.grid}} main--grid{{ end }}">
 		{{ .Content }}
 
+		{{- if .Pages }}
 		<nav class="submenu submenu--workshop">
 			<h2>Unsere Ausstattung</h2>
 
@@ -34,5 +34,6 @@
 			{{- end }}
 			</ul>
 		</nav>
+		{{- end }}
 	</main>
 {{ end }}

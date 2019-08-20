@@ -7,10 +7,10 @@ menu:
         weight: 100
 grid: true
 stage:
-    src: https://via.placeholder.com/1000x750
+    src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/website/schreinerei.jpg
     width: 1000
     height: 750
-    alt: 'Placekitten'
+    alt: 'Blick in die Schreinerei'
 layout: workshop
 ---
 
@@ -22,7 +22,7 @@ Unsere voll ausgestattete Schreinerei mit professionellen Maschinen und Arbeitsp
 Ganz klassisch mit der Hand verzapft und gehobelt oder mit modernen Laminierverfahren und auf unserer CNC-Fräse bearbeitet.
 {{< /css >}}
 
-{{< css "cs4-lg c2-lg large" >}}
+{{< css "cs4-lg c3-lg large" >}}
 Unsere Schreinerei-Maschinen und deren Einrichtung entspricht den aktuellen Sicherheitsstandards. Unsere zentrale Absaugung sorgt für eine staubfreie Atmosphäre, in der sich angenehm arbeiten lässt. Im Bankraum findest du Ruhe vor dem größten Lärm und kannst dich mit viel Platz voll und ganz auf Feinarbeiten und Montage deiner Projekte konzentrieren.
 {{< /css >}}
 
