@@ -10,7 +10,7 @@ stage:
     alt: 'Lagerregal mit Brettern'
 ---
 
-{{< feature className="cs1-lg c5-lg" title="Schreinerei" href="/schreinerei/" src="https://via.placeholder.com/800x600" width="800" height="600" >}}
+{{< feature className="cs1-lg c5-lg" title="Schreinerei" href="/schreinerei/" src="https://res.cloudinary.com/das-habitat/image/upload/w_404,h_303,c_fill,f_auto/website/schreinerei.jpg" width="404" height="303" >}}
 Auf über 600m² steht dir eine voll ausgestattete Schreinerei mit Arbeitsplätzen und professionellen Maschinen zur Verfügung um deine Projekte umzusetzen.
 {{< /feature >}}
 
@@ -18,7 +18,7 @@ Auf über 600m² steht dir eine voll ausgestattete Schreinerei mit Arbeitsplätz
 Auf knapp 1000 m² stellen wir in verschiedenen Werkstätten professionelle Maschinen und Werkzeuge bereit. Schulung, Betreuung und Beratung werden ehrenamtlich durch die Fachberater unseres Teams geleistet.
 {{< /css >}}
 
-{{< feature className="cs1-lg c5-lg" title="Schlosserei" href="/schlosserei/" src="https://via.placeholder.com/800x600" width="800" height="600" reverse="true" >}}
+{{< feature className="cs1-lg c5-lg" title="Schlosserei" href="/schlosserei/" src="https://res.cloudinary.com/das-habitat/image/upload/w_404,h_303,c_fill,f_auto/website/schlosserei.jpg" width="404" height="303" reverse="true" >}}
 Wer ein ausgewachsenes Projekt umzusetzen hat, kommt um unsere Schlosserei nicht herum. Vom Zuschnitt übers Biegen und Zerspanen bis zum Schweißen ist hier alles möglich.
 {{< /feature >}}
 
