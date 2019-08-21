@@ -34,6 +34,12 @@
 		<div class="site">
 		{{- partial "header.html" . -}}
 		<div class="page">
+			<blockquote class="claim{{ if .IsHome }} t-home__claim{{ end }}">
+				<p>
+				Nährboden für die Zukunft.<br>
+				Deine offene Werkstatt.
+				</p>
+			</blockquote>
 			{{- block "before-page" . }}{{- end }}
 			{{- block "before-main" . }}{{- end }}
 			{{- block "main" . }}{{- end }}

@@ -1,0 +1,26 @@
+.page {
+	@include grid-columns;
+
+	> * {
+		grid-column: 1 / -1;
+	}
+}
+
+.page__title {
+	margin-top: var(--offset-vertical);
+
+	@include media-lg {
+		margin-top: calc(2 * var(--offset-vertical));
+		grid-column: 3 / span 4;
+		grid-row: 1;
+
+		& + .stage {
+			margin-top: calc(-2 * var(--grid-row-gap));
+			grid-row: 2;
+
+			& + .statement {
+				grid-row: 2;
+			}
+		}
+	}
+}

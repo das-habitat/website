@@ -1,0 +1,26 @@
+.nav {
+	font-size: 2.8rem;
+	line-height: calc(40 / 28);
+	font-weight: 600;
+	color: $color-brand-blueAlt;
+
+	a {
+		@include link-plain-default;
+	}
+}
+
+.nav--up {
+	@include media-lg {
+		grid-column: 1 / span 2;
+		grid-row: 1;
+	}
+}
+
+.nav--paginate {
+	margin-top: calc(3 * var(--offset-vertical));
+
+	a {
+		display: block;
+		margin-bottom: var(--offset-vertical);
+	}
+}

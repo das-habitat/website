@@ -8,7 +8,7 @@
 	grid-column: 1 / span 5;
 	font-size: 1.5rem;
 	line-height: calc(24 / 15);
-	align-self: end;
+	align-self: start;
 
 	@include media-lg {
 		grid-column: 1 / span 6;

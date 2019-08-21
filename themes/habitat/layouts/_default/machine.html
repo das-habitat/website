@@ -1,10 +1,24 @@
 {{ define "main" }}
-	<h1>{{ .Title }}</h1>
 
-	<a href="../">&larr; Schreinerei</a>
+	<nav class="nav nav--up t-machine__up">
+		<a href="../">&larr; Schreinerei</a>
+	</nav>
 
+	{{- with .Params.stage }}
+	<figure class="stage t-machine__stage">
+		<img src="{{ .src }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}">
+	</figure>
+	{{- end }}
+
+	<figure class="stage t-machine__stage">
+		<img src="https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/website/start.jpg" alt="Lagerregal mit Brettern" width="1000" height="750">
+	</figure>
+
+	{{- $title := .Title }}
 	{{- with (.Param "technical") }}
-	<div class="box cs1-lg c5-lg">
+	<div class="t-machine__technical">
+		<h1>{{ $title }}</h1>
+
 		<table class="table table--technical">
 			<tbody>
 				{{ range . }}
@@ -18,15 +32,20 @@
 	</div>
 	{{- end }}
 
-	{{ $nextPage := (default (index (first 1 .CurrentSection.Pages) 0) .PrevInSection) -}}
+	<nav class="nav nav--paginate t-machine__paginate">
+		{{- $nextPage := (default (index (first 1 .CurrentSection.Pages) 0) .PrevInSection) -}}
+		{{- $prevPage := (default (index (last 1 .CurrentSection.Pages) 0) .NextInSection) -}}
+		<a href="{{ $nextPage.Permalink }}">{{ $nextPage.Title }} &rarr;</a>
+		<a href="{{ $prevPage.Permalink }}" title="{{ $prevPage.Title }}">&larr;</a>
+	</nav>
 
-	<a href="{{ $nextPage.Permalink }}">{{ $nextPage.Title }} &rarr;</a>
-
-	{{ $prevPage := (default (index (last 1 .CurrentSection.Pages) 0) .NextInSection) -}}
-
-	<a href="{{ $prevPage.Permalink }}" title="{{ $prevPage.Title }}">&larr;</a>
-
-	<main class="main{{ if .Params.grid}} main--grid{{ end }}">
-		{{ .Content }}
+	<main class="main main--grid">
+		{{- if .Params.grid}}
+			{{ .Content }}
+		{{- else }}
+			<div class="t-machine__content">
+				{{ .Content }}
+			</div>
+		{{- end }}
 	</main>
 {{ end }}

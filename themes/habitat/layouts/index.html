@@ -2,7 +2,7 @@
 	{{ partial "contact.html" (dict "context" . "class" "t-home__contact") }}
 
 	{{- with .Params.stage }}
-	<figure class="stage">
+	<figure class="stage t-home__stage">
 		<img src="{{ .src }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}">
 	</figure>
 	{{- end }}

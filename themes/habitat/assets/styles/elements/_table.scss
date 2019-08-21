@@ -35,4 +35,22 @@ table {
 			border-top: 3px solid $color-brand-gray-10;
 		}
 	}
+
+	@include media-sm {
+		tr,
+		th,
+		td {
+			display: block;
+		}
+
+		th {
+			padding-bottom: 0;
+		}
+
+		td,
+		tr + tr td {
+			padding-top: 0;
+			border-top: 0;
+		}
+	}
 }

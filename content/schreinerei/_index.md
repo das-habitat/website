@@ -22,11 +22,8 @@ Unsere voll ausgestattete Schreinerei mit professionellen Maschinen und Arbeitsp
 Ganz klassisch mit der Hand verzapft und gehobelt oder mit modernen Laminierverfahren und auf unserer CNC-Fräse bearbeitet.
 {{< /css >}}
 
-{{< css "cs4-lg c3-lg large" >}}
+{{< css "before-lg cs4-lg c3-lg large" >}}
 Unsere Schreinerei-Maschinen und deren Einrichtung entspricht den aktuellen Sicherheitsstandards. Unsere zentrale Absaugung sorgt für eine staubfreie Atmosphäre, in der sich angenehm arbeiten lässt. Im Bankraum findest du Ruhe vor dem größten Lärm und kannst dich mit viel Platz voll und ganz auf Feinarbeiten und Montage deiner Projekte konzentrieren.
-{{< /css >}}
-
-{{< css >}}
 
 ## Material
 

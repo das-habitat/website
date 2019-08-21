@@ -34,6 +34,10 @@
 			grid-column-end: -$i;
 		}
 	}
+
+	.before-lg {
+		margin-top: calc(2 * var(--offset-vertical));
+	}
 }
 
 .g-end {

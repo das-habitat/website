@@ -1,6 +1,15 @@
 .footer {
 	margin-top: calc(3 * var(--offset-vertical));
 	background: mix($color-brand-pale, $color-brand-white, 20%);
+
+	a {
+		&,
+		&:link,
+		&:visited {
+			color: inherit;
+			box-shadow: 0 2px 0 0 transparentize($color-brand-black, 0.7);
+		}
+	}
 }
 
 .footer__inner {

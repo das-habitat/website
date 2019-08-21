@@ -1,6 +1,7 @@
 .header {
 	@include grid-flex;
 
+	position: relative;
 	background-color: $color-brand-white;
 
 	@include media-lg {
@@ -76,21 +77,6 @@
 	}
 }
 
-.header__claim {
-	display: none;
-	grid-column: 1 / -1;
-	color: $color-brand-gray;
-
-	@include media-sm {
-		margin-bottom: $offset-vertical;
-	}
-
-	@include media-lg {
-		display: block;
-		width: 100%;
-	}
-}
-
 .header__subnav {
 	margin-top: 2rem;
 }
@@ -131,11 +117,6 @@ div[aria-labelledby='menu-button'] {
 		filter: invert(100%);
 		margin-left: -6.7rem;
 	}
-}
-
-.header--expanded .header__claim {
-	display: block;
-	color: mix($color-brand-blueAlt, $color-brand-white, 40%);
 }
 
 .header--expanded div[aria-labelledby='menu-button'] {

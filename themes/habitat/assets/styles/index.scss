@@ -13,22 +13,25 @@
 @import 'mixins/plain';
 @import 'mixins/grid';
 @import 'mixins/link';
+@import 'mixins/typography';
 
 // Global
 @import 'global';
 @import 'typography';
+@import 'page';
 
 // Elements
 @import 'elements/table';
 
 // Partials
 @import 'partials/box';
+@import 'partials/claim';
 @import 'partials/contact';
 @import 'partials/feature';
 @import 'partials/footer';
 @import 'partials/follow-us';
 @import 'partials/header';
-@import 'partials/page';
+@import 'partials/nav';
 @import 'partials/sidebar';
 @import 'partials/stage';
 @import 'partials/statement';
@@ -40,3 +43,4 @@
 
 // Templates
 @import 'templates/home';
+@import 'templates/machine';

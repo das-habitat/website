@@ -26,6 +26,8 @@ p {
 h1,
 .h1 {
 	margin-bottom: 2.5rem;
+	font-size: 2.8rem;
+	line-height: calc(40 / 28);
 
 	* + & {
 		margin-top: 10rem;
@@ -34,6 +36,7 @@ h1,
 
 h2,
 .h2 {
+	margin-top: calc(2 * var(--offset-vertical));
 	margin-bottom: 1rem;
 
 	* + & {
@@ -61,6 +64,16 @@ blockquote {
 	padding: 0;
 }
 
+p,
+table,
+ul,
+ol,
+dl {
+	* + & {
+		margin-top: var(--offset-vertical);
+	}
+}
+
 .meta {
 	color: mix($color-brand-gray, $color-brand-green, 50%);
 }
@@ -72,7 +85,7 @@ blockquote {
 }
 
 .large {
-	font-weight: 500;
+	font-weight: 450;
 	color: $color-brand-gray;
 
 	font-size: 1.6rem;
@@ -85,14 +98,7 @@ blockquote {
 }
 
 .larger {
-	font-weight: 500;
-	font-size: 1.9rem;
-	line-height: calc(28 / 19);
-
-	@include media-lg {
-		font-size: 2.3rem;
-		line-height: calc(40 / 23);
-	}
+	@include typography-larger;
 }
 
 .align-right {

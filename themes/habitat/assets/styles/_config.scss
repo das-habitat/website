@@ -22,7 +22,7 @@ $breakpoint-l: 880px;
 	--grid-column: calc(calc(100vw - calc(var(--offset-outer) * 2)) / 6);
 	--grid-colums: repeat(6, 1fr);
 	--grid-column-gap: var(--offset-horizontal);
-	--grid-row-gap: calc(2 * var(--offset-vertical));
+	--grid-row-gap: var(--offset-vertical);
 	--grid-width: calc(6 * var(--grid-column) + 5 * var(--grid-column-gap));
 
 	--color-brand-yellow: #{$color-brand-yellow};
@@ -42,7 +42,6 @@ $breakpoint-l: 880px;
 		--grid-column: calc(90 / 1200 * 100vw);
 		--grid-colums: repeat(8, var(--grid-column));
 		--grid-column-gap: 4rem;
-		--grid-row-gap: calc(3 * var(--offset-vertical));
 		--grid-width: calc(8 * var(--grid-column) + 7 * var(--grid-column-gap));
 		--offset-vertical: 2.5rem;
 	}

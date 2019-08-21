@@ -1,13 +1,36 @@
-.t-home__statement {
+.t-home__claim {
+	@include media-sm {
+		display: block;
+		grid-row: 3;
+		grid-column: 2 / -1;
+	}
+}
+
+.t-home__stage {
+	@include media-sm {
+		grid-row: 1;
+		padding-bottom: calc(3 * var(--offset-vertical));
+	}
+}
+
+.t-home__stage + .t-home__statement {
 	--tint: #{$color-brand-yellow};
+	grid-row: 1;
+
+	@include media-lg {
+		margin-top: calc(17 * var(--offset-vertical));
+	}
 }
 
 .t-home__contact {
 	@include media-sm {
-		grid-row: 3;
+		grid-row: 4;
+		grid-column: 2 / -1;
 	}
 
 	@include media-lg {
+		margin-top: calc(3 * var(--offset-vertical));
 		grid-column: 1 / span 2;
+		grid-row: 1;
 	}
 }
