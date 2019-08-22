@@ -31,8 +31,8 @@
 	<nav class="nav nav--paginate t-machine__paginate">
 		{{- $nextPage := (default (index (first 1 .CurrentSection.Pages) 0) .PrevInSection) -}}
 		{{- $prevPage := (default (index (last 1 .CurrentSection.Pages) 0) .NextInSection) -}}
-		<a href="{{ $nextPage.Permalink }}">{{ $nextPage.Title }} &rarr;</a>
-		<a href="{{ $prevPage.Permalink }}" title="{{ $prevPage.Title }}">&larr;</a>
+		<a href="{{ $nextPage.RelPermalink }}">{{ $nextPage.Title }} &rarr;</a>
+		<a href="{{ $prevPage.RelPermalink }}" title="{{ $prevPage.Title }}">&larr;</a>
 	</nav>
 
 	<main class="main main--grid">
