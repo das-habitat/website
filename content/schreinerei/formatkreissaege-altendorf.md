@@ -25,6 +25,11 @@ technical:
       value: 5,5 kW
     - label: Höhenverstellung und Neigung des Sägeblatts
       value: hydraulisch
+stage:
+    src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/maschinen/altendorf-1.jpg
+    width: 1000
+    height: 750
+    alt: 'Blick auf die Altendorf F45'
 ---
 
 "Die Altendorf" - eine F45 findet sich in nahezu jeder Schreinerei nicht nur in Deutschland, und das aus gutem Grund. Altendorf ist Erfinder und Marktführer bei Formatkreissägen mit Schiebetisch und hat damit die Sicherheit, Präzision und Benutzbarkeit von Kreissägen revolutioniert. Das merkt jeder, der mit unserer, zwar schon etwas länger im Dienst stehenden, aber dafür nicht weniger präzisen, F45 einmal gearbeitet hat, sofort. Sie ist für alle klassischen Formatierungen von Platten- und Vollholz zu gebrauchen - Ablängen, auf Format schneiden, präzise Gehrungs- und Winkelschnitte und Hinterschnitte von 0-47°.
