@@ -11,7 +11,15 @@ overrides:
     options:
     tabWidth: 2
     useTabs: false
-  - files: "{**/*.yaml,.prettierrc}"
+  - files: "**/*.yaml"
+    options:
+    tabWidth: 2
+    useTabs: false
+  - files: ".prettierrc"
+    options:
+    tabWidth: 2
+    useTabs: false
+  - files: "now.json"
     options:
     tabWidth: 2
     useTabs: false
