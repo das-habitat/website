@@ -2,7 +2,7 @@
 title: 'Über uns'
 draft: false
 menu: 'main'
-weight: 400
+weight: 500
 ---
 
 Eine Gemeinschaft, die es besser machen will, ist die Basis für einen neuen Lebensraum, für neue Ideen, für das Habitat.

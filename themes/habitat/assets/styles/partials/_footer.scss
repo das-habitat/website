@@ -22,6 +22,16 @@
 	}
 }
 
+.footer__logo {
+	display: block;
+	margin: -2.5rem 0 0 -3rem;
+}
+
+.footer__claim {
+	color: $color-brand-gray;
+	margin-bottom: var(--offset-vertical);
+}
+
 .footer__info {
 	grid-column: 1 / span 4;
 	margin: calc(2 * var(--offset-vertical)) 0;
@@ -32,7 +42,8 @@
 }
 
 .footer__legal {
-	grid-column: 5 / span 4;
+	grid-column: -3 / span 2;
+	justify-self: end;
 
 	> a + a {
 		margin-left: var(--offset-vertical);
@@ -44,4 +55,9 @@
 	padding: calc(2 * var(--offset-vertical)) 0;
 	grid-column: 1/-1;
 	background: mix($color-brand-pale, $color-brand-white, 30%);
+}
+
+.footer__note {
+	padding: var(--offset-vertical) 0 0;
+	background: mix($color-brand-pale, $color-brand-white, 40%);
 }

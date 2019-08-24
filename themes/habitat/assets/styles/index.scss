@@ -21,6 +21,7 @@
 @import 'page';
 
 // Elements
+@import 'elements/offsets';
 @import 'elements/table';
 
 // Partials
@@ -28,15 +29,16 @@
 @import 'partials/claim';
 @import 'partials/contact';
 @import 'partials/feature';
-@import 'partials/footer';
 @import 'partials/follow-us';
+@import 'partials/footer';
 @import 'partials/header';
 @import 'partials/nav';
 @import 'partials/sidebar';
+@import 'partials/sponsors';
 @import 'partials/stage';
 @import 'partials/statement';
 @import 'partials/submenu';
-@import 'partials/sponsors';
+@import 'partials/tabs';
 
 // Grid helper
 @import 'grid';

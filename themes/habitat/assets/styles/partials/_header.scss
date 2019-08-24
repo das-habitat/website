@@ -75,6 +75,17 @@
 			position: absolute;
 		}
 	}
+
+	[aria-haspopup] {
+		padding-right: 1.5rem;
+		background: inline-svg(
+				'<svg width="9" height="4" xmlns="http://www.w3.org/2000/svg"><path d="M1.315 0h6.37a.5.5 0 0 1 .332.874L4.5 4 .983.874A.5.5 0 0 1 1.315 0z" fill="#4773A8" fill-rule="evenodd"/></svg>'
+			)
+			100% 50% no-repeat;
+		background-size: 0.9rem 0.4rem;
+		cursor: pointer;
+		pointer-events: none;
+	}
 }
 
 .header__subnav {

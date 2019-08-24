@@ -1,24 +1,35 @@
 <footer class="footer">
 	<div class="footer__inner">
 		<div class="footer__info">
-			Das Habitat
+		<img class="footer__logo" src="/assets/ui/logo.svg" alt="Das Habitat" width="207" height="80">
+
+		<blockquote class="footer__claim">
+			<p>
+				Nährboden für die Zukunft.<br>Deine offene Werkstatt.
+			</p>
+		</blockquote>
 			{{ partial "contact.html" (dict "context" .) }}
 		</div>
 
 		<nav>
 			<div>
-
+				<h3><a href="/">Werkstätten</a></h3>
+				<ul>
+					<li>
+						<a href="/bueros/">Büros</a>
+					</li>
+					<li>
+						<a href="/schreinerei/">Schreinerei</a>
+					</li>
+					<li>
+						<a href="/schlosserei/">Schlosserei</a>
+					</li>
+				</ul>
 			</div>
 			<div>
 
 			</div>
 		</nav>
-
-		<p class="footer__copyright">&copy; 2018–{{ now.Format "2006"}} Das Habitat Augsburg e.V.</p>
-		<p class="footer__legal">
-			<a href="/impressum/">Impressum</a>
-			<a href="/datenschutz/">Datenschutz</a>
-		</p>
 	</div>
 
 	<aside class="footer__sponsors">
@@ -36,6 +47,17 @@
 			</ul>
 
 			<p>Du oder dein Unternehmen wollt uns unterstützen? <a href="/kontakt">Meldet euch bei uns.</a></p>
+		</div>
+	</aside>
+
+	<aside class="footer__note">
+		<div class="footer__inner">
+
+			<p class="footer__copyright">&copy; 2018–{{ now.Format "2006"}} Das Habitat Augsburg e.V.</p>
+	<p class="footer__legal">
+		<a href="/impressum/">Impressum</a>
+		<a href="/datenschutz/">Datenschutz</a>
+	</p>
 		</div>
 	</aside>
 </footer>

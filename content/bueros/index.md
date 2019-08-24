@@ -2,10 +2,10 @@
 title: Co-Working & Büros
 draft: false
 menu:
-    main:
-        identifier: bueros
-        weight: 200
-        name: Büros
+  main:
+    identifier: bueros
+    weight: 200
+    name: Büros
 ---
 
 Platz für dein Projekt. Auch für digitale Arbeit. Co-Working im Habitat heißt, dass wir uns um alles kümmern und du ungestört arbeiten kannst.

@@ -1,0 +1,30 @@
+.tabs {
+	border-bottom: 3px solid $color-brand-blue;
+
+	ul,
+	li,
+	a,
+	strong {
+		display: block;
+	}
+
+	ul {
+		display: flex;
+		list-style: none;
+	}
+
+	a,
+	strong {
+		padding: 1.3rem 2.5rem 1.2rem;
+		font-weight: 600;
+	}
+
+	a {
+		@include link-plain;
+	}
+
+	strong {
+		color: $color-brand-white;
+		background: $color-brand-blue;
+	}
+}

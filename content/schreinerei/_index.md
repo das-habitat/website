@@ -3,14 +3,14 @@ title: Schreinerei
 draft: false
 statement: 'Möbelbau, Küchenbau, Restauration, Zuschnitt, Drechseln, Fräsen, Furnier, Schleifen, Pressen, Hobeln, und mehr: in der Schreinerei.'
 menu:
-    workshops:
-        weight: 100
+  workshops:
+    weight: 100
 grid: true
 stage:
-    src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/website/schreinerei.jpg
-    width: 1000
-    height: 750
-    alt: 'Blick in die Schreinerei'
+  src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/website/schreinerei.jpg
+  width: 1000
+  height: 750
+  alt: 'Blick in die Schreinerei'
 layout: workshop
 ---
 

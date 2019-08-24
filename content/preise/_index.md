@@ -1,8 +1,13 @@
 ---
-title: Preise
+title: Angebot & Preise
+linkTitle: Private Nutzung
 draft: false
-menu: main
-weight: 500
+menu:
+  main:
+    name: 'Preise'
+    weight: 400
+layout: tabs
+weight: 100
 ---
 
 <table>

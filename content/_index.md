@@ -4,10 +4,10 @@ title: 'Deine offene Werkstatt in Augsburg'
 meta_description: 'Schreinerei, Schlosserei, FabLab, Siebdruck, Büros, Coworking und mehr auf über 1000 m². Lebensraum für deine Projekte.'
 statement: Das&nbsp;Habitat ist offene Werkstatt, Coworking Space, Wohnzimmer für Macher, und Lebensraum für Visionäre, ein Zuhause für alle. Das&nbsp;Habitat ist der Ort an dem alles möglich wird.
 stage:
-    src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/website/start.jpg
-    width: 1000
-    height: 750
-    alt: 'Lagerregal mit Brettern'
+  src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/website/start.jpg
+  width: 1000
+  height: 750
+  alt: 'Lagerregal mit Brettern'
 ---
 
 {{< feature className="cs1-lg c5-lg" title="Schreinerei" href="/schreinerei/" src="https://res.cloudinary.com/das-habitat/image/upload/w_404,h_303,c_fill,f_auto/website/schreinerei.jpg" width="404" height="303" >}}
