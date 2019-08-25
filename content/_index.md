@@ -8,6 +8,9 @@ stage:
   width: 1000
   height: 750
   alt: 'Lagerregal mit Brettern'
+sitemap:
+  changeFreq: hourly
+  priority: 1.0
 ---
 
 {{< feature className="cs1-lg c5-lg" title="Schreinerei" href="/schreinerei/" src="https://res.cloudinary.com/das-habitat/image/upload/w_404,h_303,c_fill,f_auto/website/schreinerei.jpg" width="404" height="303" >}}
