@@ -12,9 +12,14 @@ stage:
   width: 1000
   height: 750
   alt: 'Siebe belichten unter UV-Licht'
+grid: true
 ---
 
+{{< css "cs3-lg c4-lg larger" >}}
 Drucken. Und zwar richtig.
+{{< /css >}}
+
+{{< css "cs3-lg c4-lg" >}}
 
 Im Siebdruckverfahren lassen sich ein- und mehrfarbige Drucke auf verschiedenen Untergründen produzieren. Dabei wird das Motiv mittels einer farbundurchlässigen Schicht auf ein feines Farbdurchlässiges Sieb übertragen. Die Farbe kann später nur noch an den gewünschten Stellen durch das Sieb auf das Werkstück übertragen werden.
 
@@ -30,3 +35,5 @@ Bei mehrfarbigen Drucken wird Motiv auf verschiedene Siebe aufgeteilt. Jeweils e
   - 6x A5
   - 4x A4
   - 1x A3
+
+{{< /css >}}
