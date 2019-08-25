@@ -7,6 +7,11 @@ menu:
     weight: 300
     name: Siebdruck
 statement: 'T-Shirts bedrucken, Plakate, Einladungen, Schilder, Postkarten, Visitenkarten, Kunstdrucke'
+stage:
+  src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/website/siebdruck.jpg
+  width: 1000
+  height: 750
+  alt: 'Siebe belichten unter UV-Licht'
 ---
 
 Drucken. Und zwar richtig.
