@@ -1,3 +1,13 @@
+.grid {
+	@include grid;
+
+	* + & {
+		@include media-lg {
+			margin-top: calc(2 * var(--offset-vertical));
+		}
+	}
+}
+
 @for $i from 1 through 6 {
 	.cs#{$i}-sm {
 		grid-column-start: $i;

@@ -7,9 +7,10 @@ $color-brand-green: #008a59;
 $color-brand-greenAlt: #45a734;
 $color-brand-white: #fcfcfa;
 $color-brand-black: #0f0f0e;
-$color-brand-gray: mix(#4c4d4a, $color-brand-white, 75%);
-$color-brand-gray-inverted: mix(#4c4d4a, $color-brand-white, 50%);
+$color-brand-gray: mix(#4c4d4a, $color-brand-white, 85%);
+$color-brand-gray-inverted: mix($color-brand-gray, $color-brand-white, 50%);
 $color-brand-gray-10: transparentize($color-brand-gray, 0.9);
+$color-brand-gray-50: mix($color-brand-gray, $color-brand-white, 50%);
 $color-brand-pale: #809979;
 
 $breakpoint-l: 880px;
