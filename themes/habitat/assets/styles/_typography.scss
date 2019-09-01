@@ -77,6 +77,17 @@ dl {
 	}
 }
 
+nav {
+	display: block;
+
+	ul,
+	li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+
 .meta {
 	color: mix($color-brand-gray, $color-brand-green, 50%);
 }

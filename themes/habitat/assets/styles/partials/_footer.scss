@@ -20,11 +20,40 @@
 		grid-column: 1 / -1;
 		margin: 0 0 var(--offset-vertical);
 	}
+
+	nav {
+		@include media-lg {
+			grid-column: 4 / -1;
+		}
+
+		display: flex;
+
+		h3 {
+			font-weight: 600;
+			font-size: inherit;
+			line-height: inherit;
+		}
+
+		div {
+			padding-top: calc(2 * var(--offset-vertical));
+
+			+ div {
+				margin-left: calc(2 * var(--offset-horizontal));
+			}
+		}
+
+		a {
+			@include link-plain-default;
+
+			display: inline-block;
+			margin-bottom: var(--offset-vertical);
+		}
+	}
 }
 
 .footer__logo {
 	display: block;
-	margin: -2.5rem 0 0 -3rem;
+	margin: -3rem 0 0 -3rem;
 }
 
 .footer__claim {
@@ -33,7 +62,7 @@
 }
 
 .footer__info {
-	grid-column: 1 / span 4;
+	grid-column: 1 / span 3;
 	margin: calc(2 * var(--offset-vertical)) 0;
 }
 
@@ -51,6 +80,7 @@
 }
 
 .footer__sponsors {
+	overflow: hidden;
 	margin: 0;
 	padding: calc(2 * var(--offset-vertical)) 0;
 	grid-column: 1/-1;
