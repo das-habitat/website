@@ -56,8 +56,10 @@ module.exports = (env = setEnv()) => {
 						{
 							loader: 'sass-loader',
 							options: {
-								includePaths: ['node_modules/normalize.css'],
-								implementaton: sass,
+								implementation: sass,
+								sassOptions: {
+									includePaths: ['node_modules/normalize.css'],
+								},
 							},
 						},
 					],
