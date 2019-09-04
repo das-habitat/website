@@ -1,4 +1,4 @@
-{{- $current := print "/" (index (split .context.URL "/") 1) "/" -}}
+{{- $current := print "/" (index (split .context.RelPermalink "/") 1) "/" -}}
 {{- $menu := index .context.Site.Menus .menu -}}
 {{- $active := false -}}
 {{- range $menu -}}
