@@ -21,7 +21,7 @@ Bürgermeister Ackermann Straße stadteinwärts bis zur Kreuzung beim Dehner (Re
 
 ## Parkplätze
 
-Wir haben vier Prakplätze vor unserer Werkstatt für unsere Kunden während den Öffnungszeiten angemietet.
+Wir haben vier Parkplätze vor unserer Werkstatt für unsere Kunden während den Öffnungszeiten angemietet.
 
 ## Anfragen
 
