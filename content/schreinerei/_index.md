@@ -12,6 +12,7 @@ stage:
   height: 750
   alt: 'Blick in die Schreinerei'
 layout: workshop
+description: Auf über 600m² steht dir eine voll ausgestattete Schreinerei mit Arbeitsplätzen und professionellen Maschinen zur Verfügung um deine Projekte umzusetzen.
 ---
 
 {{< css "cs3-lg c4-lg larger" >}}

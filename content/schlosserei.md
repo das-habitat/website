@@ -1,5 +1,6 @@
 ---
 title: Schlosserei
+description: 'Wer ein ausgewachsenes Projekt umzusetzen hat, kommt um unsere Schlosserei nicht herum. Vom Zuschnitt übers Biegen und Zerspanen bis zum Schweißen ist hier alles möglich.'
 draft: false
 layout: workshop
 statement: 'Fügen: Schweißen (MIG, MAG, WIG, Autogen), Löten, Schrauben - Zerspanen: Fräsen, Bohren, Sägen, Schleifen, Gewindeschneiden, Gewindebohren - Umformen: Pressen, Kanten, Biegen, Walzen - Urformen: Schmelzen, Giessen'
@@ -8,7 +9,7 @@ menu:
     weight: 200
 grid: true
 stage:
-  src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/website/schlosserei.jpg
+  src: https://res.cloudinary.com/das-habitat/q_auto:best,w_1000,h_750,c_fill,f_auto,dpr_auto/website/schlosserei.jpg
   width: 1000
   height: 750
   alt: 'Lagerregal mit Brettern'

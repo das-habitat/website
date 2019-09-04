@@ -1,8 +1,9 @@
+{{- $page := (.Page.Site.GetPage (.Get "path")) }}
 {{- $href := (.Get "href") -}}
 <div class="feature {{ if .Get "reverse" }}feature--reverse{{ end }}{{ with .Get "className" }} {{.}}{{ end }}">
 	<h2 class="feature__title">
-		<a href="{{ $href }}">
-			{{ .Get "title" }}
+		<a href="{{ $page.RelPermalink }}">
+			{{ $page.Title }}
 		</a>
 	</h2>
 
@@ -12,7 +13,11 @@
 		</a>
 
 		<div>
-			{{ .Inner | markdownify }}
+			{{- if isset $page.Params "description" }}
+				<p>{{ $page.Params.description }}</p>
+			{{- else }}
+				{{- .Inner | markdownify }}
+			{{- end }}
 		</div>
 	</div>
 </div>

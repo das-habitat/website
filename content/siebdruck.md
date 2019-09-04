@@ -1,5 +1,6 @@
 ---
 title: Siebdruck
+description: 'Von funktionaler Beschriftung bis zum künstlerischen Experiment: Drucken auf Papier, auf Textil und auf vielen weitere Untergründen.'
 draft: false
 menu:
   workshops:
@@ -8,7 +9,7 @@ menu:
     name: Siebdruck
 statement: 'Einfarbig und mehrfarbig, flächig und gerastert. T-Shirts bedrucken, Plakate und Poster, Einladungen, Schilder, Visitenkarten, Kunstdrucke.'
 stage:
-  src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/website/siebdruck.jpg
+  src: https://res.cloudinary.com/das-habitat/q_auto:best,w_1000,h_750,c_fill,f_auto,dpr_auto/v1566763116/website/siebdruck.jpg
   width: 1000
   height: 750
   alt: 'Siebe belichten unter UV-Licht'
