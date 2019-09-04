@@ -42,16 +42,16 @@
 			<h3>Unsere Sponsoren, Unterstützer, Stifter, Gönner und einfach fantatischen Partner.</h3>
 
 			<ul class="sponsors">
-				{{- range .Site.Data.sponsoren }}
+				{{- range (shuffle .Site.Data.sponsoren) }}
 					<li>
-						<a href="{{ .href }}">
+						<a href="{{ .href }}" target="_blank" ref="nofollow">
 							<img src="/logos/{{ .id }}.svg" alt="{{ .name }} - {{ .description }}" height="50">
 						</a>
 					</li>
 				{{- end }}
 			</ul>
 
-			<p>Du oder dein Unternehmen wollt uns unterstützen? <a href="/kontakt">Meldet euch bei uns.</a></p>
+			<p>Du oder dein Unternehmen wollt uns und unser Projekt unterstützen? <a href="/kontakt">Meldet euch bei uns.</a></p>
 		</div>
 	</aside>
 
@@ -61,7 +61,7 @@
 			<p class="footer__copyright">&copy; 2018–{{ now.Format "2006"}} Das Habitat Augsburg e.V.</p>
 	<p class="footer__legal">
 		<a href="/impressum/">Impressum</a>
-		<a href="/datenschutz/">Datenschutz</a>
+		<a href="/datenschutz/">{{ with .Site.GetPage "/datenschutz" }}{{ .Title }}{{ end }}</a>
 	</p>
 		</div>
 	</aside>

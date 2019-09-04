@@ -3,7 +3,7 @@
 	list-style: none;
 
 	li {
-		display: inline;
+		display: inline-block;
 	}
 
 	a {
@@ -19,5 +19,16 @@
 		height: calc(5 * var(--offset-vertical));
 		width: auto;
 		margin: calc(-0.5 * var(--offset-vertical)) calc(-1 * var(--offset-vertical));
+	}
+
+	@include media-sm {
+		a {
+			height: calc(2 * var(--offset-vertical));
+		}
+
+		img {
+			height: calc(3 * var(--offset-vertical));
+			margin: calc(-0.5 * var(--offset-vertical)) calc(-0.25 * var(--offset-vertical));
+		}
 	}
 }

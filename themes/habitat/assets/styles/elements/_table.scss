@@ -11,13 +11,43 @@ table {
 		text-align: left;
 		font-weight: 400;
 	}
-}
 
-table.table--pricing {
-	margin-top: 0;
+	* + th {
+		color: $color-brand-gray-50;
+		font-size: 1.2rem;
+		letter-spacing: 0.1rem;
+		line-height: calc(25 / 12);
+		text-transform: uppercase;
+	}
 }
 
 .table--pricing {
+	* + & {
+		margin-top: var(--offset-vertical);
+	}
+
+	@include media-sm {
+		&,
+		tbody,
+		tr,
+		th,
+		td {
+			display: block;
+		}
+
+		tbody + tbody {
+			margin-top: var(--offset-vertical);
+		}
+
+		tbody tr:first-child th + th {
+			display: none;
+		}
+
+		[data-title]:before {
+			content: attr(data-title) ': ';
+		}
+	}
+
 	@include media-lg {
 		tbody {
 			border-bottom: 3px solid $color-brand-gray-10;
@@ -51,14 +81,6 @@ table.table--pricing {
 			vertical-align: top;
 		}
 
-		th {
-			color: $color-brand-gray-50;
-			font-size: 1.2rem;
-			letter-spacing: 0.1rem;
-			line-height: calc(25 / 12);
-			text-transform: uppercase;
-		}
-
 		th:first-child {
 			text-transform: none;
 			letter-spacing: normal;
@@ -71,11 +93,11 @@ table.table--pricing {
 			}
 
 			&:nth-child(2) {
-				width: var(--grid-column);
+				width: calc(var(--grid-column) * 1.5);
 			}
 
 			&:nth-child(3) {
-				width: var(--grid-column);
+				width: calc(var(--grid-column) * 1.5);
 			}
 
 			&:nth-child(4) {

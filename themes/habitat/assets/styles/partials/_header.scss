@@ -9,10 +9,6 @@
 	}
 }
 
-.header--home {
-	margin-bottom: var(--offset-vertical);
-}
-
 .header__logo {
 	@include link-plain;
 

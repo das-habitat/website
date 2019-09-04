@@ -10,9 +10,7 @@
 	margin-top: var(--offset-vertical);
 
 	@include media-lg {
-		margin-top: calc(2 * var(--offset-vertical));
-		grid-column: 3 / span 4;
-		grid-row: 1;
+		margin-top: 0;
 
 		& + .stage {
 			margin-top: calc(-2 * var(--grid-row-gap));
@@ -22,5 +20,15 @@
 				grid-row: 2;
 			}
 		}
+	}
+}
+
+.page__title--statement {
+	margin-top: var(--offset-vertical);
+
+	@include media-lg {
+		margin-top: calc(2 * var(--offset-vertical));
+		grid-row: 1;
+		grid-column: 3 / span 4;
 	}
 }

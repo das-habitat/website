@@ -1,16 +1,13 @@
--
-  name: Abstract
-  description: ''
+- name: Abstract
+  description: ""
   id: abstract
   href: https://www.abstract.com
--
-  name: anstiftung
-  description: 'Die anstiftung fördert, vernetzt und erforscht Räume und Netzwerke des Selbermachens.'
+- name: anstiftung
+  description: "Die anstiftung fördert, vernetzt und erforscht Räume und Netzwerke des Selbermachens."
   id: anstiftung
   href: https://anstiftung.de
--
-  name: Augsburg
-  description: ''
+- name: Augsburg
+  description: ""
   id: augsburg
   href: https://augsburg.de
 # -
@@ -18,9 +15,12 @@
 #   description: ''
 #   id: festool
 #   href: ''
--
-  name: GLS Bank
-  description: 'das macht Sinn'
+- name: Deutsche Postcode Lotterie
+  description: "Mit 30 Prozent aller Einnahmen der Deutschen Postcode Lotterie unterstützen wir Projekte aus den Bereichen Chancengleichheit, sozialer Zusammenhalt, Umwelt- und Naturschutz."
+  id: postcode
+  href: https://www.postcode-lotterie.de/projekte
+- name: GLS Bank
+  description: "das macht Sinn"
   id: gls
   href: https://www.gls.de/gemeinnuetzige-kunden/
 # -
@@ -28,28 +28,23 @@
 #   description: ''
 #   id: hsa
 #   href: ''
--
-  name: Notion
-  description: ''
+- name: Notion
+  description: ""
   id: notion
   href: https://www.notion.so
--
-  name: Peerigon
-  description: 'Wir sind eine Augsburger Agentur spezialisiert auf Webentwicklung.'
+- name: Peerigon
+  description: "Wir sind eine Augsburger Agentur spezialisiert auf Webentwicklung."
   id: peerigon
   href: https://peerigon.com
--
-  name: Siegmund
-  description: 'Schweiß- und Spanntischsysteme'
+- name: Siegmund
+  description: "Schweiß- und Spanntischsysteme"
   id: siegmund
   href: https://www.siegmund.com
--
-  name: Slack
-  description: 'Whatever work you do, you can do it in Slack'
+- name: Slack
+  description: "Whatever work you do, you can do it in Slack"
   id: slack
   href: https://slack.com/
--
-  name: Verbund offener Werkstätten
-  description: 'Freiraum zum Selbermachen'
+- name: Verbund offener Werkstätten
+  description: "Freiraum zum Selbermachen"
   id: vow
   href: https://www.offene-werkstaetten.org

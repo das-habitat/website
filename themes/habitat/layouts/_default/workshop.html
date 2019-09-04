@@ -1,6 +1,6 @@
 {{- define "before-page" }}
 {{- if .Params.statement }}
-	<h1 class="page__title">{{ .Title }}</h1>
+	<h1 class="page__title page__title--statement">{{ .Title }}</h1>
 
 	{{- with .Params.stage }}
 	<figure class="stage">

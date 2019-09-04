@@ -1,6 +1,6 @@
 ---
 title: Kommerzielle Nutzung
-draft: false
+draft: true
 layout: tabs
 weight: 200
 ---

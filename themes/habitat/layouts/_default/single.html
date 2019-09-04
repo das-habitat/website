@@ -1,6 +1,6 @@
 {{- define "before-page" }}
-	<h1 class="page__title">{{ .Title }}</h1>
 {{- if .Params.statement }}
+	<h1 class="page__title page__title--statement">{{ .Title }}</h1>
 	{{- with .Params.stage }}
 	<figure class="stage">
 		<img src="{{ .src }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}">
@@ -12,6 +12,8 @@
 			<p>{{ htmlUnescape .Params.statement }}</p>
 		</blockquote>
 	</div>
+{{- else }}
+	<h1 class="page__title">{{ .Title }}</h1>
 {{- end }}
 {{- end }}
 

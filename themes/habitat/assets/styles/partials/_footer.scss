@@ -68,11 +68,17 @@
 
 .footer__copyright {
 	grid-column: 1 / span 4;
+
+	@include media-sm {
+		margin: 0;
+	}
 }
 
 .footer__legal {
-	grid-column: -3 / span 2;
-	justify-self: end;
+	@include media-lg {
+		grid-column: -5 / span 4;
+		justify-self: end;
+	}
 
 	> a + a {
 		margin-left: var(--offset-vertical);
@@ -85,6 +91,12 @@
 	padding: calc(2 * var(--offset-vertical)) 0;
 	grid-column: 1/-1;
 	background: mix($color-brand-pale, $color-brand-white, 30%);
+
+	p {
+		@include media-lg {
+			grid-column: 5 / span 3;
+		}
+	}
 }
 
 .footer__note {

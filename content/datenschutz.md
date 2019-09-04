@@ -1,12 +1,10 @@
 ---
-title: 'Datenschutz'
+title: 'Datenschutzerklärung'
 draft: false
 sitemap:
   changeFreq: yearly
   priority: 0.1
 ---
-
-# Datenschutzerklärung
 
 ## Allgemeiner Hinweis und Pflichtinformationen<br>Benennung der verantwortlichen Stelle
 

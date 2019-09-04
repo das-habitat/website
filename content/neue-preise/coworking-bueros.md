@@ -1,6 +1,6 @@
 ---
 title: Co-Working & Büros
-draft: false
+draft: true
 layout: tabs
 weight: 300
 ---

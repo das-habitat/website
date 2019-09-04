@@ -6,6 +6,10 @@
 			margin-top: calc(2 * var(--offset-vertical));
 		}
 	}
+
+	> * {
+		grid-column: 1 / -1;
+	}
 }
 
 @for $i from 1 through 6 {
