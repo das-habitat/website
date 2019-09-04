@@ -59,7 +59,7 @@
 				{{- range (shuffle .Site.Data.sponsoren) }}
 					<li>
 						<a href="{{ .href }}" target="_blank" ref="nofollow">
-							<img src="/logos/{{ .id }}.svg" alt="{{ .name }} - {{ .description }}" height="50">
+							<img src="/logos/{{ .id }}.svg" alt="{{ .name }} - {{ .description }}" height="50" loading="lazy">
 						</a>
 					</li>
 				{{- end }}
