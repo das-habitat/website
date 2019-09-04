@@ -29,9 +29,14 @@
 		display: flex;
 
 		h3 {
+			margin-bottom: var(--offset-vertical);
 			font-weight: 600;
 			font-size: inherit;
 			line-height: inherit;
+
+			a {
+				margin-bottom: 0;
+			}
 		}
 
 		div {
