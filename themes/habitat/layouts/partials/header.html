@@ -3,49 +3,10 @@
 
 	<nav id="nav" class="header__nav">
 		<ul role="menubar">
-			<li role="none">
-				<a href="/" class="" aria-expanded="false" aria-haspopup="true" role="menuitem" tabindex="0">
-					Werkstätten
-				</a>
-				<ul class="sub-menu" role="menu" aria-hidden="true" aria-label="{{ .Name }}">
-				{{- range .Site.Menus.workshops }}
-					{{- $isCurrent := ($.IsMenuCurrent "main" .) }}
-					<li>
-						<a href="{{ .URL }}" class="{{ if $isCurrent }}active{{ end }}" tabindex="0">
-							{{ .Name }}
-						</a>
-					</li>
-				{{- end }}
-				</ul>
-			</li>
-
-			{{- $currentPage := . -}}
-			{{- range .Site.Menus.main }}
-				{{- $isCurrent := ($currentPage.IsMenuCurrent "main" .) }}
-				<li role="none">
-					{{ if .HasChildren }}
-						<a href="{{ .URL }}" class="{{ if $isCurrent }}active{{ end }}" aria-expanded="false" aria-haspopup="true" role="menuitem" tabindex="0">
-							{{ .Name }}
-						</a>
-					{{ else }}
-						<a href="{{ .URL }}" class="{{ if $isCurrent }}active{{ end }}" role="menuitem">
-							{{ .Name }}
-						</a>
-					{{ end }}
-					{{ if .HasChildren }}
-						<ul class="sub-menu" role="menu" aria-hidden="true" aria-label="{{ .Name }}">
-						{{ range .Children }}
-							{{- $isCurrent := ($.IsMenuCurrent "main" .) }}
-							<li>
-								<a href="{{ .URL }}" class="{{ if $isCurrent }}active{{ end }}" tabindex="0">
-									{{ .Name }}
-								</a>
-							</li>
-						{{ end }}
-						</ul>
-					{{ end }}
-				</li>
-			{{- end }}
+			{{- partial "menu-item-dropdown.html" (dict "context" . "menu" "workshops" "title" "Werkstätten") }}
+			{{- partial "menu-items.html" (dict "context" . "from" 0 "to" 399) }}
+			{{- partial "menu-item-dropdown.html" (dict "context" . "menu" "events" "title" "Veranstaltungen") }}
+			{{- partial "menu-items.html" (dict "context" . "from" 400 "to" 9999) }}
 		</ul>
 	</nav>
 </header>
