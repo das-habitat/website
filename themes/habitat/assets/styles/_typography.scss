@@ -36,11 +36,10 @@ h1,
 
 h2,
 .h2 {
-	margin-top: calc(2 * var(--offset-vertical));
 	margin-bottom: 1rem;
 
 	* + & {
-		margin-top: 4rem;
+		margin-top: calc(2 * var(--offset-vertical));
 	}
 }
 

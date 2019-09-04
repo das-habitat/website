@@ -1,0 +1,5 @@
+@include media-lg {
+	.before-lg {
+		margin-top: calc(2 * var(--offset-vertical));
+	}
+}
