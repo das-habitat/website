@@ -15,7 +15,7 @@
 
 	.icon {
 		vertical-align: middle;
-		height: calc(var(--offset-vertical));
+		height: var(--offset-vertical);
 		fill: $color-brand-blueAlt;
 		margin-right: calc(var(--offset-vertical) / 4);
 	}

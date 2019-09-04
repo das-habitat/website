@@ -8,6 +8,6 @@
 	}
 
 	@include media-lg {
-		min-height: calc(4 * var(--offset-vertical));
+		min-height: var(--offset-vertical-4);
 	}
 }

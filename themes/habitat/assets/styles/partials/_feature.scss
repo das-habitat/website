@@ -1,5 +1,13 @@
 .feature {
 	@include link-plain;
+
+	* + & {
+		argin-top: var(--offset-vertical);
+
+		@include media-lg {
+			margin-top: var(--offset-vertical-2);
+		}
+	}
 }
 
 .feature__img {

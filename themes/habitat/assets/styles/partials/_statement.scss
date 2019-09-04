@@ -2,7 +2,7 @@
 	@include box;
 
 	--tint: #{$color-brand-white};
-	margin: calc(3 * var(--offset-vertical)) 0 calc(3 * var(--offset-vertical));
+	margin: var(--offset-vertical-3) 0 var(--offset-vertical-3);
 	color: $color-brand-black;
 	box-sizing: border-box;
 	grid-column: 1 / span 5;
@@ -14,5 +14,9 @@
 		grid-column: 1 / span 6;
 		font-size: 2.8rem;
 		line-height: calc(45 / 28);
+
+		+ main {
+			margin-top: calc(1 * var(--offset-vertical));
+		}
 	}
 }

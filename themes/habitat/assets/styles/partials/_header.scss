@@ -64,7 +64,7 @@
 		}
 
 		> li + li {
-			margin-left: $offset-vertical;
+			margin-left: var(--offset-vertical);
 		}
 
 		ul {
@@ -79,8 +79,7 @@
 			)
 			100% 50% no-repeat;
 		background-size: 0.9rem 0.4rem;
-		cursor: pointer;
-		pointer-events: none;
+		cursor: default;
 	}
 }
 
@@ -107,7 +106,7 @@ div[aria-labelledby='menu-button'] {
 
 .header--expanded {
 	background: $color-brand-blueAlt;
-	margin: 0 0 calc(2 * var(--offset-vertical));
+	margin: 0 0 var(--offset-vertical-2);
 	padding-left: var(--offset-outer);
 	padding-right: var(--offset-outer);
 	padding-bottom: var(--offset-vertical);

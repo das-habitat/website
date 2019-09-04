@@ -1,5 +1,5 @@
 .footer {
-	margin-top: calc(3 * var(--offset-vertical));
+	margin-top: var(--offset-vertical-3);
 	background: mix($color-brand-pale, $color-brand-white, 20%);
 
 	a {
@@ -35,7 +35,7 @@
 		}
 
 		div {
-			padding-top: calc(2 * var(--offset-vertical));
+			padding-top: var(--offset-vertical-2);
 
 			+ div {
 				margin-left: calc(2 * var(--offset-horizontal));
@@ -63,7 +63,7 @@
 
 .footer__info {
 	grid-column: 1 / span 3;
-	margin: calc(2 * var(--offset-vertical)) 0;
+	margin: var(--offset-vertical-2) 0;
 }
 
 .footer__copyright {
@@ -88,7 +88,7 @@
 .footer__sponsors {
 	overflow: hidden;
 	margin: 0;
-	padding: calc(2 * var(--offset-vertical)) 0;
+	padding: var(--offset-vertical-2) 0;
 	grid-column: 1/-1;
 	background: mix($color-brand-pale, $color-brand-white, 30%);
 

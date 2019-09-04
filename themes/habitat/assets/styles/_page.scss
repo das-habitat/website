@@ -27,7 +27,7 @@
 	margin-top: var(--offset-vertical);
 
 	@include media-lg {
-		margin-top: calc(2 * var(--offset-vertical));
+		margin-top: var(--offset-vertical-2);
 		grid-row: 1;
 		grid-column: 3 / span 4;
 	}

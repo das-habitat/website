@@ -9,7 +9,7 @@
 .t-home__stage {
 	@include media-sm {
 		grid-row: 1;
-		padding-bottom: calc(3 * var(--offset-vertical));
+		padding-bottom: var(--offset-vertical-3);
 	}
 }
 
@@ -29,7 +29,7 @@
 	}
 
 	@include media-lg {
-		margin-top: calc(3 * var(--offset-vertical));
+		margin-top: var(--offset-vertical-3);
 		grid-column: 1 / span 2;
 		grid-row: 1;
 	}

@@ -51,10 +51,12 @@ $breakpoint-l: 880px;
 		--grid-width: 114.4rem;
 		--grid-column: calc(calc(var(--grid-width) - 7 * var(--grid-column-gap)) / 8);
 	}
+
+	--offset-vertical-2: calc(2 * var(--offset-vertical));
+	--offset-vertical-3: calc(3 * var(--offset-vertical));
+	--offset-vertical-4: calc(4 * var(--offset-vertical));
 }
 
 $grid-columns: var(--grid-colums);
 $grid-column-gap: var(--grid-column-gap);
 $grid-row-gap: var(--grid-row-gap);
-
-$offset-vertical: var(--offset-vertical);

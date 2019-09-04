@@ -11,7 +11,7 @@
 
 		display: inline-block;
 		overflow: hidden;
-		height: calc(4 * var(--offset-vertical));
+		height: var(--offset-vertical-4);
 	}
 
 	img {
@@ -23,11 +23,11 @@
 
 	@include media-sm {
 		a {
-			height: calc(2 * var(--offset-vertical));
+			height: var(--offset-vertical-2);
 		}
 
 		img {
-			height: calc(3 * var(--offset-vertical));
+			height: var(--offset-vertical-3);
 			margin: calc(-0.5 * var(--offset-vertical)) calc(-0.25 * var(--offset-vertical));
 		}
 	}
