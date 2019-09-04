@@ -58,7 +58,7 @@
 			<ul class="sponsors">
 				{{- range (shuffle .Site.Data.sponsoren) }}
 					<li>
-						<a href="{{ .href }}" target="_blank" ref="nofollow">
+						<a href="{{ .href }}" target="_blank" rel="noopener">
 							<img src="/logos/{{ .id }}.svg" alt="{{ .name }} - {{ .description }}" height="50" loading="lazy">
 						</a>
 					</li>
