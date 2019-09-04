@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.Language.Lang }}">
 	{{- partial "head.html" . -}}
 	<body>
 		<div class="site">
@@ -23,5 +23,6 @@
 		{{ if not (eq (getenv "APP_ENV") "dev") }}
 		<noscript><img src="https://statistik.das-habitat.de/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></noscript>
 		{{- end }}
+		{{ "<!--" | safeHTML }} {{ with .GitInfo }}Hash: {{ .AbbreviatedHash }} - Author: {{ .AuthorName }}{{- end }} - Last modified: {{ .Lastmod }} {{ "-->" | safeHTML }}
 	</body>
 </html>
