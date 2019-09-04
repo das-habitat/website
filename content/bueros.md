@@ -7,7 +7,7 @@ menu:
     weight: 200
     name: Büros
 stage:
-  src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/website/aussen.jpg
+  src: https://res.cloudinary.com/das-habitat/q_auto:best,w_1000,h_750,c_fill,f_auto,dpr_auto/v1567587764/website/aussen.jpg
   width: 1000
   height: 750
   alt: 'Außenansicht des Habitats von oben'

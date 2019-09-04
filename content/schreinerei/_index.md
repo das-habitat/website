@@ -7,7 +7,7 @@ menu:
     weight: 100
 grid: true
 stage:
-  src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/website/schreinerei.jpg
+  src: https://res.cloudinary.com/das-habitat/q_auto:best,w_1000,h_750,c_fill,f_auto,dpr_auto/website/schreinerei.jpg
   width: 1000
   height: 750
   alt: 'Blick in die Schreinerei'
