@@ -1,9 +1,10 @@
 ---
 title: 'Impressum'
 draft: false
+sitemap:
+  changeFreq: yearly
+  priority: 0.1
 ---
-
-# Impressum
 
 Das Habitat Augsburg e.V.<br>
 Eberlestraße 29<br>
@@ -18,10 +19,13 @@ Registernummer: VR202180
 
 ## Vertreten durch
 
--   Sven Ten Pas (Vorstand) (+49 174 310 71 79)
--   Tim Thiede (Vorstand) (+49 172 135 03 82)
--   Mathias Schuh (Vorstand) (+49 170 109 46 07)
--   Hermann Steiner (Vorstand) (+49 174 848 69 41)
+- Sven Ten Pas (Vorstand) (+49 174 310 71 79)
+- Tim Thiede (Vorstand) (+49 172 135 03 82)
+- Mathias Schuh (Vorstand) (+49 170 109 46 07)
+- Hermann Steiner (Vorstand) (+49 174 848 69 41)
+
+Diese Rufnummern hier, weil wir wahrscheinlich verpflichtet sind diese anzugeben.
+Wenn du diese anrufst, rufst du einen Menschen ganz privat und persönlich an. Bitte mach das nur, wenn es wirklich wirklich nicht anders geht. Wir lieben unser Habitat sehr, aber wir können leider nicht immer dort sein.
 
 ## Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV)
 

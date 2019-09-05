@@ -5,7 +5,7 @@ h4,
 h5,
 h6 {
 	margin: 0;
-	font-weight: 500;
+	font-weight: 600;
 	color: $color-brand-black;
 }
 
@@ -26,6 +26,8 @@ p {
 h1,
 .h1 {
 	margin-bottom: 2.5rem;
+	font-size: 2.8rem;
+	line-height: calc(40 / 28);
 
 	* + & {
 		margin-top: 10rem;
@@ -37,53 +39,83 @@ h2,
 	margin-bottom: 1rem;
 
 	* + & {
-		margin-top: 4rem;
+		margin-top: var(--offset-vertical-2);
 	}
 }
 
 h3,
 .h3 {
-	font-size: inherit;
+	font-size: 1.8rem;
+	line-height: calc(25 / 18);
 	font-weight: 600;
-	text-transform: uppercase;
-	margin-bottom: 1rem;
 
 	* + & {
 		margin-top: 2rem;
+	}
+
+	+ p {
+		margin-top: 0;
 	}
 }
 
 li,
 dt,
-dd {
+dd,
+blockquote {
 	margin: 0;
 	padding: 0;
 }
 
-table {
-	width: 100%;
-	margin-left: -0.4rem;
-	margin-right: -0.4rem;
-	border-spacing: 0;
-	border-collapse: collapse;
-	border: 0;
+p,
+table,
+ul,
+ol,
+dl {
+	* + & {
+		margin-top: var(--offset-vertical);
+	}
 }
 
-th,
-td {
-	text-align: left;
-	padding: 0.5rem 1rem;
-	vertical-align: top;
-	background: mix($color-brand-pale, $color-brand-white, 10%);
-	border: 0.4rem solid $color-brand-white;
+nav {
+	display: block;
+
+	ul,
+	li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
 }
 
 .meta {
 	color: mix($color-brand-gray, $color-brand-green, 50%);
 }
 
-.price {
-	display: block;
-	font-size: 3rem;
-	line-height: 3rem;
+.large {
+	font-weight: 450;
+	color: $color-brand-gray;
+
+	font-size: 1.6rem;
+	line-height: calc(28 / 16);
+
+	@include media-lg {
+		font-size: 1.8rem;
+		line-height: calc(35 / 18);
+	}
+}
+
+.larger {
+	@include typography-larger;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.aux {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	height: 0;
+	overflow: hidden;
 }

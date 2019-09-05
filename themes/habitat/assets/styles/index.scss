@@ -3,17 +3,49 @@
 // External modules
 @import 'normalize';
 
+// Config
+@import 'config';
+
 // Toolkit
 @import 'functions/inline-svg';
-@import 'mixins/layout';
+@import 'mixins/box';
+@import 'mixins/media';
+@import 'mixins/plain';
+@import 'mixins/grid';
+@import 'mixins/link';
+@import 'mixins/typography';
 
 // Global
-@import 'config';
 @import 'global';
 @import 'typography';
+@import 'page';
+
+// Elements
+@import 'elements/offsets';
+@import 'elements/table';
 
 // Partials
-@import 'partials/breadcrumbs';
+@import 'partials/box';
+@import 'partials/claim';
+@import 'partials/contact';
+@import 'partials/feature';
+@import 'partials/follow-us';
 @import 'partials/footer';
 @import 'partials/header';
+@import 'partials/main';
+@import 'partials/nav';
+@import 'partials/note';
+@import 'partials/sidebar';
+@import 'partials/sponsors';
+@import 'partials/stage';
 @import 'partials/statement';
+@import 'partials/submenu';
+@import 'partials/tabs';
+
+// Grid helper
+@import 'grid';
+@import 'offsets';
+
+// Templates
+@import 'templates/home';
+@import 'templates/machine';

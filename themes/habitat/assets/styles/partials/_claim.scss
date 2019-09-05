@@ -1,0 +1,13 @@
+.claim {
+	grid-column: 1 / span 2;
+	grid-row: 1;
+	color: $color-brand-gray;
+
+	@include media-sm {
+		display: none;
+	}
+
+	@include media-lg {
+		min-height: var(--offset-vertical-4);
+	}
+}

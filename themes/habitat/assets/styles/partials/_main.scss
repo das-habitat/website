@@ -1,0 +1,7 @@
+main {
+	p {
+		@include media-lg {
+			max-width: calc(var(--grid-column) * 5 + var(--grid-column-gap) * 4);
+		}
+	}
+}

@@ -8,7 +8,8 @@ body,
 html,
 body {
 	background: $color-brand-white;
-	color: $color-brand-gray;
+	color: $color-brand-black;
+	font-weight: 450;
 }
 
 html {
@@ -17,52 +18,29 @@ html {
 
 body {
 	font-size: 1.5rem;
-	line-height: 1.6;
+	line-height: calc(25 / 15);
 }
 
-.page {
-	@include container;
+.main--grid {
+	@include grid;
 
-	main {
-		max-width: 60rem;
-		margin-bottom: 5rem;
-	}
-
-	@media (min-width: 70rem) {
-		display: flex;
-	}
-}
-
-.sidebar {
-	display: block;
-	flex: 1 0 auto;
-
-	@media (min-width: 70rem) {
-		width: 30rem;
-		margin-left: $offset-horizontal * 3;
+	> * {
+		grid-column: 1 / -1;
 	}
 }
 
 a {
-	&,
-	&:link,
-	&:visited {
-		margin: 0 -0.3rem;
-		padding: 0 0.3rem;
-		color: $color-brand-blue;
-		text-decoration: none;
-		font-weight: 600;
-		box-shadow: inset 0 -0.3rem 0 0 transparentize($color-brand-blue, 0.8),
-			0 0 0 0 transparentize($color-brand-blue, 0.8);
-		transition: box-shadow 0.1s ease-in;
-	}
+	@include link;
+}
 
-	&:focus,
-	&:hover,
-	&.active {
-		color: $color-brand-blueAlt;
-		box-shadow: inset 0 -0.7rem 0 0 transparentize($color-brand-blue, 0.8),
-			0 0.3rem 0 0 transparentize($color-brand-blue, 0.8);
-		transition: box-shadow 0.2s ease-out;
+figure {
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
 	}
 }

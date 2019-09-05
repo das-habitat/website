@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 HUGOVERSION=0.56.3
 HUGOARCHITECTURE=$(uname -m)
 HUGOPLATFORM=$(uname -s)
@@ -24,7 +26,16 @@ URL="https://github.com/gohugoio/hugo/releases/download/v$HUGOVERSION/hugo_${HUG
 
 rm -r ./.hugo
 mkdir ./.hugo
-curl -L -o ./.hugo/hugo.tar.gz -O $URL
-cd .hugo
+
+if [ "$NOW" = "1" ]; then
+	curl -s -L -o ./.hugo/hugo.tar.gz -O $URL
+else
+	curl -L -o ./.hugo/hugo.tar.gz -O $URL
+fi
+
+pushd .hugo
+
 tar -xzf ./hugo.tar.gz
 rm -r ./hugo.tar.gz
+
+popd

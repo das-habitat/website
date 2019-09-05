@@ -1,0 +1,11 @@
+@mixin media-sm {
+	@media (max-width: #{$breakpoint-l - 1px}) {
+		@content;
+	}
+}
+
+@mixin media-lg {
+	@media (min-width: $breakpoint-l) {
+		@content;
+	}
+}

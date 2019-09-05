@@ -1,0 +1,48 @@
+{{ define "main" }}
+	<nav class="nav nav--up t-machine__up">
+		<a href="../">&larr; Schreinerei</a>
+	</nav>
+
+	{{- with .Params.stage }}
+	<figure class="stage t-machine__stage">
+		<img src="{{ .src }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}">
+	</figure>
+	{{ else }}
+	<figure class="stage t-machine__stage">
+		<img src="/placeholder.svg" alt="" width="1000" height="750">
+	</figure>
+	{{- end }}
+
+	<div class="t-machine__technical">
+		<h1>{{ .Title }}</h1>
+		{{- with (.Param "technical") }}
+		<table class="table table--technical">
+			<tbody>
+				{{ range . }}
+				<tr>
+					<th> {{ .label }} </th>
+					<td>{{ .value }}</td>
+				</tr>
+				{{ end }}
+			</tbody>
+		</table>
+		{{- end }}
+	</div>
+
+	<nav class="nav nav--paginate t-machine__paginate">
+		{{- $nextPage := (default (index (first 1 .CurrentSection.Pages) 0) .PrevInSection) -}}
+		{{- $prevPage := (default (index (last 1 .CurrentSection.Pages) 0) .NextInSection) -}}
+		<a href="{{ $nextPage.RelPermalink }}">{{ $nextPage.Title }} &rarr;</a>
+		<a href="{{ $prevPage.RelPermalink }}" title="{{ $prevPage.Title }}">&larr;</a>
+	</nav>
+
+	<main class="main main--grid">
+		{{- if .Params.grid}}
+			{{ .Content }}
+		{{- else }}
+			<div class="t-machine__content">
+				{{ .Content }}
+			</div>
+		{{- end }}
+	</main>
+{{ end }}

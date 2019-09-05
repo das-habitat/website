@@ -1,0 +1,24 @@
+.submenu {
+	ul {
+		list-style: none;
+	}
+
+	li {
+		& + li {
+			margin-top: calc(var(--offset-vertical) / 2 - 2px);
+			padding-top: calc(var(--offset-vertical) / 2 - 1px);
+			border-top: 3px solid $color-brand-gray-10;
+		}
+	}
+
+	a {
+		@include link-plain-default;
+	}
+}
+
+.submenu--workshop {
+	@include media-lg {
+		grid-column: 1 / span 2;
+		grid-row: 2;
+	}
+}

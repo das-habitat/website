@@ -1,36 +1,12 @@
-<header class="header">
-	<h1 class="header__logo">
-		<a href="/"><img src="/assets/ui/logo.svg" alt="Das Habitat" width="207" height="80"></a>
-	</h1>
+<header id="top" class="header{{ if .IsHome }} header--home{{ end }}">
+	<a href="/" class="header__logo"><img src="/assets/ui/logo.svg" alt="Das Habitat" width="207" height="80"></a>
 
-	<p class="header__claim">Nährboden für die&nbsp;Zukunft. <br>Deine offene Werkstatt.</p>
-
-	<nav class="header__nav">
-		{{- $currentPage := . -}}
-		{{- range .Site.Menus.main }}
-			{{- $isCurrent := ($currentPage.IsMenuCurrent "main" .) }}
-			{{- $isActive := (or $isCurrent ($currentPage.HasMenuCurrent "main" .)) }}
-			<a href="{{ .URL }}" class="{{ if $isActive }}active{{ end }}">
-				<span>{{ .Name }}</span>
-			</a>
-		{{- end }}
+	<nav id="nav" class="header__nav">
+		<ul role="menubar">
+			{{- partial "menu-item-dropdown.html" (dict "context" . "menu" "workshops" "title" "Werkstätten") }}
+			{{- partial "menu-items.html" (dict "context" . "from" 0 "to" 399) }}
+			{{- partial "menu-item-dropdown.html" (dict "context" . "menu" "events" "title" "Veranstaltungen") }}
+			{{- partial "menu-items.html" (dict "context" . "from" 400 "to" 9999) }}
+		</ul>
 	</nav>
-
-
-	{{- range .Site.Menus.main }}
-		{{- $isCurrent := ($currentPage.IsMenuCurrent "main" .) }}
-		{{- $hasCurrent := ($currentPage.HasMenuCurrent "main" .) }}
-		{{- $isActive := (or $isCurrent $hasCurrent) }}
-		{{- if (and $isActive .HasChildren) }}
-			<nav class="header__subnav">
-				<a href="{{ if $hasCurrent }}{{ $currentPage.Parent.RelPermalink }}{{else}}{{ $currentPage.RelPermalink }}{{ end }}"{{if not $hasCurrent }} class="active"{{ end }}>Übersicht</a>
-
-				{{- range .Children }}
-					<a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-						<span>{{ .Name }}</span>
-					</a>
-				{{- end }}
-			</nav>
-		{{- end }}
-	{{- end }}
 </header>

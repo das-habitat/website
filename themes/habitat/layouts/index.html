@@ -1,48 +1,25 @@
 {{- define "before-page" }}
-	{{- if .Params.statement }}
-	<div class="statement">
+	{{ partial "contact.html" (dict "context" . "class" "t-home__contact") }}
+
+	{{- with .Params.stage }}
+	<figure class="stage t-home__stage">
+		<img src="{{ .src }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}">
+	</figure>
+	{{- end }}
+
+	<div class="statement t-home__statement">
 		<blockquote>
 			<p>{{ htmlUnescape .Params.statement }}</p>
 		</blockquote>
 	</div>
-	{{- end }}
 {{- end }}
 
 {{- define "main" }}
-	{{ .Content }}
-{{- end }}
+	<main class="main main--grid">
+		{{ .Content }}
 
-{{- define "after-main" }}
-	<aside class="sidebar">
-		<h2>Öffnungszeiten</h2>
-
-		<dl>
-			<dt>Freitag &amp; Samstag</dt>
-			<dd>15 bis 21 Uhr</dd>
-
-			<dt>Sonntag</dt>
-			<dd>11 bis 17 Uhr</dd>
-		</dl>
-
-		<h2>Anfahrt</h2>
-
-		<p>
-			Eberlestraße 29<br />
-			Gebäude D1 (ehemals B)<br />
-			86157 Augsburg
-		</p>
-
-		<h2>Kontakt</h2>
-		<p>
-			<a href="mailto:kontakt@das-habitat.de">kontakt@das-habitat.de</a>
-		</p>
-
-		<h2>Anderswo</h2>
-
-		<ul>
-			<li><a href="https://www.facebook.com/habitataugsburg/">Facebook</a></li>
-			<li><a href="https://www.instagram.com/das_habitat_augsburg/">Instagram</a></li>
-			<li><a href="https://twitter.com/@habitataugsburg">Twitter</a></li>
-		</ul>
-	</aside>
+		<aside class="sidebar">
+			{{ partial "follow-us.html" . }}
+		</aside>
+	</main>
 {{- end }}

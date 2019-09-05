@@ -1,0 +1,39 @@
+{{- define "before-page" }}
+{{- if .Params.statement }}
+	<h1 class="page__title page__title--statement">{{ .Title }}</h1>
+
+	{{- with .Params.stage }}
+	<figure class="stage">
+		<img src="{{ .src }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}">
+	</figure>
+	{{- end }}
+
+	<div class="statement">
+		<blockquote>
+			<p>{{ htmlUnescape .Params.statement }}</p>
+		</blockquote>
+	</div>
+{{- end }}
+{{- end }}
+
+{{ define "main" }}
+	<main class="main{{ if .Params.grid}} main--grid{{ end }}">
+		{{ .Content }}
+
+		{{- if .Pages }}
+		<nav class="submenu submenu--workshop">
+			<h2>Unsere Ausstattung</h2>
+
+			<ul>
+			{{- range .Pages }}
+				<li>
+					<a href="{{ .RelPermalink }}">
+						{{ .Title }}
+					</a>
+				</li>
+			{{- end }}
+			</ul>
+		</nav>
+		{{- end }}
+	</main>
+{{ end }}

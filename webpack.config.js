@@ -12,7 +12,8 @@ function setEnv() {
 		return {
 			watch: true,
 			filename: '[name]',
-			command: 'hugo serve --buildDrafts=true --buildFuture=true',
+			command:
+				'hugo serve --buildDrafts=true --buildFuture=true  --bind=0.0.0.0 --baseURL=http://0.0.0.0:1313',
 		};
 	}
 
@@ -55,8 +56,10 @@ module.exports = (env = setEnv()) => {
 						{
 							loader: 'sass-loader',
 							options: {
-								includePaths: ['node_modules/normalize.css'],
-								implementaton: sass,
+								implementation: sass,
+								sassOptions: {
+									includePaths: ['node_modules/normalize.css'],
+								},
 							},
 						},
 					],

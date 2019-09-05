@@ -1,0 +1,55 @@
+.grid {
+	@include grid;
+
+	* + & {
+		@include media-lg {
+			margin-top: var(--offset-vertical-2);
+		}
+	}
+
+	> * {
+		grid-column: 1 / -1;
+	}
+}
+
+@for $i from 1 through 6 {
+	.cs#{$i}-sm {
+		grid-column-start: $i;
+	}
+}
+
+@for $i from 1 through 6 {
+	.cs#{$i}-sm {
+		grid-column-end: span $i;
+	}
+}
+
+@for $i from 1 through 6 {
+	.c-#{$i}-sm {
+		grid-column-end: -$i;
+	}
+}
+
+@include media-lg {
+	@for $i from 1 through 7 {
+		.cs#{$i}-lg {
+			grid-column-start: $i;
+		}
+	}
+
+	@for $i from 1 through 7 {
+		.c#{$i}-lg {
+			grid-column-end: span $i;
+		}
+	}
+
+	@for $i from 1 through 7 {
+		.c-#{$i}-lg {
+			grid-column-end: -$i;
+		}
+	}
+}
+
+.g-end {
+	align-self: end;
+}

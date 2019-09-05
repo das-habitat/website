@@ -1,9 +1,10 @@
 ---
-title: 'Datenschutz'
+title: 'Datenschutzerklärung'
 draft: false
+sitemap:
+  changeFreq: yearly
+  priority: 0.1
 ---
-
-# Datenschutzerklärung
 
 ## Allgemeiner Hinweis und Pflichtinformationen<br>Benennung der verantwortlichen Stelle
 
@@ -39,13 +40,13 @@ Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, d
 
 In Server-Log-Dateien erhebt und speichert der Provider der Website automatisch Informationen, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
 
--   Besuchte Seite auf unserer Domain
--   Datum und Uhrzeit der Serveranfrage
--   Browsertyp und Browserversion
--   Verwendetes Betriebssystem
--   Referrer URL
--   Hostname des zugreifenden Rechners
--   IP-Adresse
+- Besuchte Seite auf unserer Domain
+- Datum und Uhrzeit der Serveranfrage
+- Browsertyp und Browserversion
+- Verwendetes Betriebssystem
+- Referrer URL
+- Hostname des zugreifenden Rechners
+- IP-Adresse
 
 Es findet keine Zusammenführung dieser Daten mit anderen Datenquellen statt. Grundlage der Datenverarbeitung bildet Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.
 

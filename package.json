@@ -7,14 +7,15 @@
   "license": "UNLICENSED",
   "private": true,
   "engines": {
-    "node" : ">=10"
+    "node": ">=10"
   },
   "scripts": {
     "build": "webpack --mode=production",
     "dev": "HUGO_PATH='./.hugo/hugo' APP_ENV=dev webpack",
     "start": "APP_ENV=dev webpack",
     "now-build": "sh ./download-hugo.sh; HUGO_PATH='./.hugo/hugo' webpack --mode=production",
-    "now-dev": "sh ./download-hugo.sh; HUGO_PATH='./.hugo/hugo' APP_ENV=dev webpack"
+    "now-dev": "sh ./download-hugo.sh; HUGO_PATH='./.hugo/hugo' APP_ENV=dev webpack",
+    "format": "prettier '**/*.scss' --write; prettier '**/*.js' --write"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -24,16 +25,21 @@
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
-    "sass": "^1.22.9",
-    "sass-loader": "^7.2.0",
+    "sass": "^1.22.10",
+    "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
-    "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
     "webpack-manifest-plugin": "^2.0.4",
     "webpack-shell-plugin": "^0.5.0"
   },
   "dependencies": {
-    "instant.page": "^1.2.2",
-    "normalize.css": "^8.0.1"
+    "instant.page": "^2.0.0",
+    "normalize.css": "^8.0.1",
+    "prettier": "^1.18.2"
+  },
+  "volta": {
+    "node": "10.16.3",
+    "yarn": "1.17.3"
   }
 }
