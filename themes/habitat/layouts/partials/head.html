@@ -3,7 +3,6 @@
 	<title>{{ .Params.Title  }}{{ if .Params.Title }} | {{ end }}{{ .Site.Title }}</title>
 	<link rel="stylesheet" href="/assets{{ if eq (getenv "APP_ENV") "dev" }}/main.css{{ else }}{{ index .Site.Data.manifest "main.css" | relURL }}{{ end }}" media="screen">
 	<link rel="canonical" href="{{ .Permalink }}"/>
-
 	{{- if(.Params.meta_keywords) -}}
 		<meta name="keywords" content="{{ delimit .Params.meta_keywords ", " }}">
 	{{- end }}
@@ -24,8 +23,7 @@
 	{{- if .Params.meta_image -}}
 		<meta name="twitter:image" content="{{ .Params.meta_image }}">
 	{{- end -}}
-
 	{{ if not (eq (getenv "APP_ENV") "dev") }}
-	<script type="text/javascript" async>var _paq = window._paq || []; _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']); (function() { var u="https://statistik.das-habitat.de/"; _paq.push(['setTrackerUrl', u+'matomo.php']); _paq.push(['setSiteId', '1']); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s); })();</script>
+	<script type="text/javascript" async>var _paq = window._paq || []; _paq.push(['disableCookies']); _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']); (function() { var u="https://statistik.das-habitat.de/"; _paq.push(['setTrackerUrl', u+'matomo.php']); _paq.push(['setSiteId', '1']); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s); })();</script>
 	{{- end }}
 </head>
