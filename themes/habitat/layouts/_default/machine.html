@@ -1,9 +1,7 @@
 {{ define "main" }}
-
 	<nav class="nav nav--up t-machine__up">
 		<a href="../">&larr; Schreinerei</a>
 	</nav>
-
 
 	{{- with .Params.stage }}
 	<figure class="stage t-machine__stage">
@@ -15,11 +13,9 @@
 	</figure>
 	{{- end }}
 
-	{{- $title := .Title }}
-	{{- with (.Param "technical") }}
 	<div class="t-machine__technical">
-		<h1>{{ $title }}</h1>
-
+		<h1>{{ .Title }}</h1>
+		{{- with (.Param "technical") }}
 		<table class="table table--technical">
 			<tbody>
 				{{ range . }}
@@ -30,8 +26,8 @@
 				{{ end }}
 			</tbody>
 		</table>
+		{{- end }}
 	</div>
-	{{- end }}
 
 	<nav class="nav nav--paginate t-machine__paginate">
 		{{- $nextPage := (default (index (first 1 .CurrentSection.Pages) 0) .PrevInSection) -}}
