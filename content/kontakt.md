@@ -17,7 +17,7 @@ Ab Königsplatz mit der Linie 3 Richtung Stadtbergen bis zur Haltestelle Eberles
 
 ## Anfahrt mit dem Auto
 
-Bürgermeister Ackermann Straße stadteinwärts bis zur Kreuzung beim Dehner (Reinölstraße/Eberlestraße). Dort rechts in die Eberlestraße abbiegen. Der Straße bis zum Dierig-Gelände folgen. Bei der Auffahrt aufs Gelände kannst du unser Logo schon von weitem sehen.
+Bürgermeister Ackermann Straße stadteinwärts bis zur Kreuzung beim Dehner (Reinöhlstraße/Eberlestraße). Dort rechts in die Eberlestraße abbiegen. Der Straße bis zum Dierig-Gelände folgen. Bei der Auffahrt aufs Gelände kannst du unser Logo schon von weitem sehen.
 
 ## Parkplätze
 
