@@ -26,10 +26,6 @@ Laien und Experten arbeiten gemeinschaftlich zusammen, geben Hilfe zur Selbsthil
 
 Gleichzeitig treffen Menschen aus der Nachbarschaft am Reparaturtisch aufeinander – das stärkt den lokalen Zusammenhalt und schafft neue Bekanntschaften. Das verstehen wir als Kultur des Reparierens.
 
-### Noch Fragen?
-
-Wende dich an <reparieren@das-habitat.de>. Das Event ist außerem auch <a href="https://www.facebook.com/events/394989911216337/" target="_blank" rel="noopener">auf Facebook</a> zu finden.
-
 {{< /css >}}
 
 {{< css "cs5-lg c4-lg before-lg" >}}
@@ -55,4 +51,14 @@ Nein. Wir versuchen nicht, Fachfirmen oder dem Handwerk Konkurrenz zu machen. Da
 ### Habt ihr Ersatzteile Marke XY da?
 
 Nein. Wir haben allgemein verwendbares Reparatur-Material vorrätig, das viele Fälle abdeckt. Ist der Bedarf spezieller, versuchen wir, die richtige Quelle oder Fachfirma ausfindig zu machen. Denkbar ist auch, dass wir ein Ersatzteil beim nächsten Repair-Café-Termin gemeinsam montieren.
+
+{{< /css >}}
+
+{{< css "cs3-lg c4-lg before-lg" >}}
+
+## Noch Fragen?
+
+Wende dich an <reparieren@das-habitat.de>. Das Event ist außerem auch <a href="https://www.facebook.com/events/394989911216337/" target="_blank" rel="noopener">auf Facebook</a> zu finden.
+
+PS: Wir sind auch im [Netzwerk Reperatur-Initiativen](https://www.reparatur-initiativen.de/repair-cafe-im-habitat?event=22759,2019-09-07).
 {{< /css >}}
