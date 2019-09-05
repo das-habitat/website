@@ -1,7 +1,7 @@
 ---
 title: Schreinerei
 draft: false
-statement: 'Möbelbau, Küchenbau, Restauration, Zuschnitt, Drechseln, Fräsen, Furnier, Schleifen, Pressen, Hobeln, und mehr: in der Schreinerei.'
+statement: 'Möbelbau, Küchenbau, Restauration, Sägen, Drechseln, Fräsen, Furnieren, Schleifen, Pressen, Hobeln und mehr in unserer Schreinerei.'
 menu:
   workshops:
     weight: 100
@@ -28,5 +28,5 @@ Unsere Schreinerei-Maschinen und deren Einrichtung entspricht den aktuellen Sich
 
 ## Material
 
-Kann man bei uns zu guten Preisen kaufen. Sprich uns vor Ort an oder schreib uns eine Nachricht.
+Kann man bei uns zu guten Preisen kaufen. Sprich uns vor Ort an oder [schreib uns eine Nachricht.](/kontakt/)
 {{< /css >}}

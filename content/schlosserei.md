@@ -20,5 +20,5 @@ Wer ein Projekt aus Metall umzusetzen hat, kommt um unsere Schlosserei nicht her
 {{< /css >}}
 
 {{< css "cs3-lg c4-lg" >}}
-Das Angebot richtet sich zu Beginn vorwiegend an private Nutzer, steht aber auch für die kommerzielle Nutzung zur Verfügung. Unsere Fachberater helfen dir dabei deine ersten Projekte zu planen und umzusetzen. In den Workshops lernst du schweißen und fräsen.
+Das Angebot richtet sich zu Beginn vorwiegend an private Nutzer, steht aber auch für die kommerzielle Nutzung zur Verfügung. Unsere Fachberater helfen dir dabei, deine ersten Projekte zu planen und umzusetzen. In den Workshops kannst du außerdem Schweißen und Fräsen lernen.
 {{< /css >}}

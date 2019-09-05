@@ -3,14 +3,14 @@ title: Rahmenpresse Feichtner & Barth RP 2500
 draft: false
 layout: machine
 technical:
-    - label: Breite
-      value: ''
-    - label: Höhe
-      value: ''
-    - label: Tiefe
-      value: ''
-    - label: Anzahl Pressen
-      value: '3'
+  - label: Breite
+    value: ''
+  - label: Höhe
+    value: ''
+  - label: Tiefe
+    value: ''
+  - label: Anzahl Pressen
+    value: '3'
 ---
 
 Die Rahmenpresse ist das verbindende Element für eure Massivholzplatten. Rahmenpresse nicht deshalb, weil man damit Rahmen presst (was allerdings auch gehen würde, wenn auch etwas komplizierter), sondern weil sie einen stabilen Rahmen für die Aufnahme des Pressgutes bildet, der sich nicht verzieht und eine gerade und stabile Verleimung garantiert.

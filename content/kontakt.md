@@ -7,7 +7,7 @@ menu:
     weight: 900
 ---
 
-## Das wichtigste auf einen Blick
+## Das Wichtigste auf einen Blick
 
 {{< contact >}}
 
@@ -25,7 +25,7 @@ Wir haben vier Parkplätze vor unserer Werkstatt für unsere Kunden während den
 
 ## Anfragen
 
-Am besten per E-Mail an die oben angegebene Adresse. Da wir alle ehrenamtlich arbeiten bring bitte etwas Geduld mit, wir versuchen aber jede Anfrage in 2-3 Tagen zu beantworten.
+Bevorzugt per E-Mail an die oben angegebene Adresse; Da wir alle ehrenamtlich arbeiten bring bitte etwas Geduld mit. Wir versuchen aber jede Anfrage in 2-3 Tagen zu beantworten.
 
 Du erreichst uns auch [auf Facebook](https://www.facebook.com/habitataugsburg/) oder [Instagram](https://www.instagram.com/das_habitat_augsburg/), aber über E-Mails können wir Dinge besser koordinieren, gerade wenn es schwierige Fragen sind, die wir vielleicht an bestimmte Mitglieder weiterleiten wollen.
 

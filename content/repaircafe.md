@@ -25,6 +25,11 @@ Durch das gemeinsame Reparieren setzen engagierte Bürgerinnen und Bürger ein Z
 Laien und Experten arbeiten gemeinschaftlich zusammen, geben Hilfe zur Selbsthilfe und regen so zu einem bewussten Konsumverhalten an.
 
 Gleichzeitig treffen Menschen aus der Nachbarschaft am Reparaturtisch aufeinander – das stärkt den lokalen Zusammenhalt und schafft neue Bekanntschaften. Das verstehen wir als Kultur des Reparierens.
+
+### Noch Fragen?
+
+Wende dich an <reparieren@das-habitat.de>. Das Event ist außerem auch <a href="https://www.facebook.com/events/394989911216337/" target="_blank" rel="noopener">auf Facebook</a> zu finden.
+
 {{< /css >}}
 
 {{< css "cs5-lg c4-lg before-lg" >}}
@@ -35,13 +40,13 @@ Gleichzeitig treffen Menschen aus der Nachbarschaft am Reparaturtisch aufeinande
 
 Private Geräte, Gebrauchsgegenstände, kleine Möbel, Musikinstrumente, Spielzeug, PCs, Haushalts- und Mediengeräte, Fahrräder. Wenn Du wissen möchtest, ob für ein bestimmtes Problem Fachleute anwesend sein werden, frag bitte an.
 
-### Was kann ich nicht mitbringen?
+### Was kann ich _nicht_ mitbringen?
 
 Autos, Motorräder, zu große Elektrogeräte, z.B. Waschmaschine, Kühlschrank, Fernseher. Außerdem Gegenstände, die gefährlich sein könnten.
 
 ### Muss ich mich anmelden?
 
-Nein. Beim ersten Termin am 7.9. arbeiten wir ohne Anmeldung
+Nein. Beim ersten Termin am 7.9.2019 kannst du auch ohne Anmeldung kommen.
 
 ### Bekomme ich Garantie?
 

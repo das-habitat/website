@@ -25,7 +25,7 @@
 }
 
 @for $i from 1 through 6 {
-	.cs#{$i}-sm {
+	.c-#{$i}-sm {
 		grid-column-end: -$i;
 	}
 }

@@ -3,18 +3,18 @@ title: Furnierpresse Ott JU 90
 draft: false
 layout: machine
 technical:
-    - label: Plattenlänge
-      value: 2.550 mm
-    - label: Plattenbreite
-      value: 1.200 mm
-    - label: Pressenöffnung
-      value: 400 mm
-    - label: Hydraulische Zylinder
-      value: 4 Stück
-    - label: Elektrische Heizplatten
-      value: max. 150 °C
-    - label: Temperaturregelung
-      value: oben/unten separat
+  - label: Plattenlänge
+    value: 2.550 mm
+  - label: Plattenbreite
+    value: 1.200 mm
+  - label: Pressenöffnung
+    value: 400 mm
+  - label: Hydraulische Zylinder
+    value: 4 Stück
+  - label: Elektrische Heizplatten
+    value: max. 150 °C
+  - label: Temperaturregelung
+    value: oben/unten separat
 ---
 
 Wenn ihr furnieren, Platten beschichten oder miteinander verleimen möchtet, dann geschieht das entweder unter Zuhilfenahme einer Unzahl von Schraubzwingen und Hilfskonstruktionen - oder komfortabel, sicher und schnell mit unserer Furnierpresse. Praktisch direkt neben [Furniersäge](./furniersaege/) und [Furniernähmaschine](./furniernaehmaschine/) angeordnet, könnt ihr die beheizte Presse aber nicht nur für rationelle Furnierarbeiten benutzen - mit entsprechenden Formen bestückt kann sie auch für das Pressen von Ski- oder Snowboardformen eingesetzt werden.

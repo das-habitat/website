@@ -1,6 +1,6 @@
 ---
 title: Siebdruck
-description: 'Von funktionaler Beschriftung bis zum künstlerischen Experiment: Drucken auf Papier, auf Textil und auf vielen weitere Untergründen.'
+description: 'Von funktionaler Beschriftung bis zum künstlerischen Experiment: Drucken auf Papier, Textil und auf vielen weitere Untergründen.'
 draft: false
 menu:
   workshops:

@@ -24,5 +24,5 @@ Auf knapp 1000 m² stellen wir in verschiedenen Werkstätten professionelle Masc
 {{< feature className="cs1-lg c5-lg" path="/siebdruck" src="https://res.cloudinary.com/das-habitat/q_auto:best,w_404,h_303,c_fill,f_auto,dpr_auto/website/siebdruck.jpg" width="404" height="303" />}}
 
 {{< css "cs2-lg c4-lg larger align-right" >}}
-Egal ob du etwas altes reparieren, etwas neues erschaffen, oder dich und deine Idee ausprobieren willst: Das Habitat ist der Ort für dein nächstes Projekt.
+Egal ob du etwas Altes reparieren, etwas Neues erschaffen, oder dich und deine Idee ausprobieren willst: Das Habitat ist der Ort für dein nächstes Projekt.
 {{< /css >}}
