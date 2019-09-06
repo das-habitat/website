@@ -1,4 +1,4 @@
-baseURL = "http://das-habitat.de"
+baseURL = "https://das-habitat.de"
 languageCode = "de-de"
 title = "Das Habitat"
 theme = ["hugo-debugprint", "habitat"]
