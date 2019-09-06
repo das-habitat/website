@@ -29,13 +29,12 @@ Wenn es um die Anfertigung profilierter Leisten, Überblattungen, Kanten und der
 {{< /css >}}
 
 {{< css "cs3-lg c4-lg" >}}
-Mit zahlreichen Profilmessern, einstellbaren Winkelschneidern und viel Zubehör ist unsere Tischfräse für (fast) jede Aufgabe gerüstet - für den Rest beraten wir euch gerne mit tausend Tricks und Kniffen, wie man es trotzdem sicher und effizient schaffen kann. Auch komplexe und kurvige Formen können im übrigen auf der Tischfräse bearbeitet werden, wie z.B. profilierte Türbogen aus Jugendstilaltbauten, selbstgebaute Fliegenfisch-Kescher, oder vergleichbares. Lasst euch überraschen – denn die Tischfräse ist die vielleicht vielseitigste Maschine in jeder Werkstatt, wir zeigen euch gerne ihre Möglichkeiten, bis hin zum Schleif-Igel, unserem putzigen Tierchen zum schleifen von Innenradien.
+Mit zahlreichen Profilmessern, einstellbaren Winkelschneidern und viel Zubehör ist unsere Tischfräse für (fast) jede Aufgabe gerüstet - für den Rest beraten wir euch gerne mit tausend Tricks und Kniffen, wie man es trotzdem sicher und effizient schaffen kann. Auch komplexe und kurvige Formen können im übrigen auf der Tischfräse bearbeitet werden, wie z.B. profilierte Türbogen aus Jugendstilaltbauten, selbstgebaute Fliegenfisch-Kescher, oder vergleichbares. Lasst euch überraschen – denn die Tischfräse ist die vielleicht vielseitigste Maschine in jeder Werkstatt, wir zeigen euch gerne ihre Möglichkeiten, bis hin zum Schleif-Igel, unserem putzigen Tierchen zum Schleifen von Innenradien.
 
 {{< /css >}}
 
 {{< css "cs1-lg c3-lg large align-right" >}}
 Der Vorschubapparat zieht größere Mengen an Werkstücken klaglos automatisch ein und hilft euch, mit wenig Kraftaufwand euer Ziel zu erreichen.
-bis hin zum Schleif-Igel, unserem putzigen Tierchen zum Schleifen von Innenradien.
 {{< /css >}}
 
 {{< css "cs4-lg c4-lg" >}}
