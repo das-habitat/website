@@ -27,6 +27,7 @@
 		}
 
 		display: flex;
+		flex-flow: row wrap;
 
 		h3 {
 			margin-bottom: var(--offset-vertical);
@@ -41,9 +42,10 @@
 
 		div {
 			padding-top: var(--offset-vertical-2);
+			margin-right: calc(2 * var(--offset-horizontal));
 
-			+ div {
-				margin-left: calc(2 * var(--offset-horizontal));
+			&:last-child {
+				margin-right: 0;
 			}
 		}
 

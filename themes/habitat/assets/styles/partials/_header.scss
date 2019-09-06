@@ -144,6 +144,10 @@ div[aria-labelledby='menu-button'] {
 		padding: 0;
 	}
 
+	[aria-haspopup='true'] {
+		display: none;
+	}
+
 	[aria-haspopup='true'] + [role='menu'] {
 		position: relative;
 		top: 0;

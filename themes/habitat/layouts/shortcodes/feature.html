@@ -1,5 +1,4 @@
 {{- $page := (.Page.Site.GetPage (.Get "path")) }}
-{{- $href := (.Get "href") -}}
 <div class="feature {{ if .Get "reverse" }}feature--reverse{{ end }}{{ with .Get "className" }} {{.}}{{ end }}">
 	<h2 class="feature__title">
 		<a href="{{ $page.RelPermalink }}">
@@ -8,7 +7,7 @@
 	</h2>
 
 	<div class="feature__content">
-		<a href="{{ $href }}" class="feature__img" role="presentation">
+		<a href="{{ $page.RelPermalink }}" class="feature__img" aria-hidden="true">
 			<img src="{{ .Get "src" }}" alt="" width="{{ .Get "width" }}" height="{{ .Get "height" }}">
 		</a>
 
