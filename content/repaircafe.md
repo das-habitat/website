@@ -60,5 +60,5 @@ Nein. Wir haben allgemein verwendbares Reparatur-Material vorrätig, das viele F
 
 Wende dich an <reparieren@das-habitat.de>. Das Event ist außerem auch <a href="https://www.facebook.com/events/394989911216337/" target="_blank" rel="noopener">auf Facebook</a> zu finden.
 
-PS: Wir sind auch im [Netzwerk Reperatur-Initiativen](https://www.reparatur-initiativen.de/repair-cafe-im-habitat?event=22759,2019-09-07).
+PS: Wir sind auch im [Netzwerk Reparatur-Initiativen](https://www.reparatur-initiativen.de/repair-cafe-im-habitat?event=22759,2019-09-07).
 {{< /css >}}

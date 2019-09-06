@@ -3,7 +3,7 @@ title: Schlosserei
 description: 'Wer ein ausgewachsenes Projekt umzusetzen hat, kommt um unsere Schlosserei nicht herum. Vom Zuschnitt übers Biegen und Zerspanen bis zum Schweißen ist hier alles möglich.'
 draft: false
 layout: workshop
-statement: 'Fügen: Schweißen (MIG, MAG, WIG, Autogen), Löten, Schrauben - Zerspanen: Fräsen, Bohren, Sägen, Schleifen, Gewindeschneiden, Gewindebohren - Umformen: Pressen, Kanten, Biegen, Walzen - Urformen: Schmelzen, Giessen'
+statement: 'Fügen: Schweißen (MIG, MAG, WIG, Autogen), Löten, Schrauben - Zerspanen: Fräsen, Bohren, Sägen, Schleifen, Gewindeschneiden, Gewindebohren - Umformen: Pressen, Kanten, Biegen, Walzen - Urformen: Schmelzen, Gießen'
 menu:
   workshops:
     weight: 200
