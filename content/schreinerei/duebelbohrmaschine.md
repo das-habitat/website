@@ -7,10 +7,10 @@ technical:
     value: 21
   - label: Teilung
     value: 32 mm
-  - label: Bohreraufnahme
-    value: '' #TODO
-  - label: Spannfläche
-    value: '' #TODO
+  #- label: Bohreraufnahme
+  #  value: '' #TODO
+  #- label: Spannfläche
+  #  value: '' #TODO
   - label: Bohrerschaft
     value: 10 mm
   - label: Bohrtiefe
