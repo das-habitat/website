@@ -42,7 +42,7 @@ Autos, Motorräder, zu große Elektrogeräte, z.B. Waschmaschine, Kühlschrank, 
 
 ### Muss ich mich anmelden?
 
-Nein. Beim ersten Termin am 7.9.2019 kannst du auch ohne Anmeldung kommen.
+Nein, komm einfach ohne Anmeldung vorbei. Wenn du denkst, dass dein Reparatur-Projekt etwas kompliziert werden könnte oder du spezielle Ersatzteile brauchen wirst, kannst du uns eine E-Mail schreiben (siehe Unten).
 
 ### Bekomme ich Garantie?
 
@@ -60,5 +60,5 @@ Nein. Wir haben allgemein verwendbares Reparatur-Material vorrätig, das viele F
 
 Wende dich an <reparieren@das-habitat.de>. Das Event ist außerem auch <a href="https://www.facebook.com/events/394989911216337/" target="_blank" rel="noopener">auf Facebook</a> zu finden.
 
-PS: Wir sind auch im [Netzwerk Reparatur-Initiativen](https://www.reparatur-initiativen.de/repair-cafe-im-habitat?event=22759,2019-09-07).
+PS: Wir sind auch im [Netzwerk Reparatur-Initiativen](https://www.reparatur-initiativen.de/repair-cafe-im-habitat).
 {{< /css >}}
