@@ -15,6 +15,11 @@ technical:
     value: 600 x 530 mm
   - label: Antriebsleistung
     value: 2,2 kW
+stage:
+  src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/maschinen/bandsaege.jpg
+  width: 1000
+  height: 750
+  alt: 'Blick auf die Bandsäge'
 ---
 
 Eine Bandsäge braucht man nicht oft, aber wenn, dann ist sie nicht wegzudenken, denn sie kann genau das, was die anderen Sägen nicht können: vor allem komplexe Form- und Kurvenschnitte oder Kreise sägen. Durch das dünne Blatt kann die Bandsäge materialsparend arbeiten und ist durch ihre große Durchlasshöhe dafür geeignet, dickere Holzbohlen und -Balken aufzutrennen.
