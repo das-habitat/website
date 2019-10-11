@@ -15,7 +15,7 @@ technical:
     value: 4.800 U/min
   - label: Sägeblatt
     value: 216mm
- stage:
+stage:
   src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/maschinen/holz_kappsaege_metabo.jpg
   width: 1000
   height: 750
