@@ -36,7 +36,7 @@ technical:
   - label: Motorleistung
     value: 1,5 kW
 stage:
-  src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/maschinen/holz_holz_duebelbohrmaschine.jpg
+  src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/maschinen/holz_duebelbohrmaschine.jpg
   width: 1000
   height: 750
   alt: 'Blick auf den Dübelautomat'    
