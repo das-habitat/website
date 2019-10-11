@@ -35,6 +35,11 @@ technical:
     value: für Lochreihe und Konstruktionsreihe
   - label: Motorleistung
     value: 1,5 kW
+stage:
+  src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/maschinen/holz_gannomat.jpg
+  width: 1000
+  height: 750
+  alt: 'Blick auf den Dübelautomat'    
 ---
 
 Um Reihenlochbohrungen für ganze Regalwände zu bohren ist eine präzise Bohrmaschine, die einzelne Löcher bohren kann, verständlicherweise nicht wirklich das optimale Gerät. Dafür steht euch bei uns allerdings der Gannomat zur Verfügung - hier könnt ihr bis zu 21 Löcher auf einmal bohren!
