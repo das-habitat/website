@@ -25,7 +25,7 @@ technical:
     value: 'Genauigkeit: 1/10 mm'
   - label: Motorleistung
     value: 4 kW
-    stage:
+stage:
   src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/maschinen/holz_hobel_hofmann.jpg
   width: 1000
   height: 750
