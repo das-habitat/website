@@ -1,5 +1,5 @@
 ---
-title: Abricht-Dickenhobel Hofmann AD51
+title: Abricht-Dickenhobel Hofmann AD510
 draft: false
 layout: machine
 technical:
@@ -17,7 +17,7 @@ technical:
     value: 4 mm
   - label: Schwenkung Abrichtanschlag
     value: 0° - 45°
-  - label: Hobelhöhe
+  - label: Durchlasshöhe Dickenhobel
     value: 3 - 250 mm
   - label: Vorschubgeschwindigkeit Dickenhobel
     value: 7 u. 14 m/min
@@ -25,6 +25,11 @@ technical:
     value: 'Genauigkeit: 1/10 mm'
   - label: Motorleistung
     value: 4 kW
+    stage:
+  src: https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/maschinen/holz_hobel_hofmann.jpg
+  width: 1000
+  height: 750
+  alt: 'Blick auf den Hobel'
 ---
 
 Der Dickenhobel bildet zusammen mit der Formatkreissäge die Grundlage der maschinellen Bearbeitung von Vollholz auf dem Weg zum fertigen Möbel. Die Abrichte wird genutzt, um das Material zunächst auf einer Seite gerade und ggf. winklig zu hobeln, der Dickenhobel, um das Material parallel auf Dicke zu bringen.
