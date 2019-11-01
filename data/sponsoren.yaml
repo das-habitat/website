@@ -19,6 +19,10 @@
   description: "Mit 30 Prozent aller Einnahmen der Deutschen Postcode Lotterie unterstützen wir Projekte aus den Bereichen Chancengleichheit, sozialer Zusammenhalt, Umwelt- und Naturschutz."
   id: postcode
   href: https://www.postcode-lotterie.de/projekte
+- name: Freiwilligen-Zentrum Augsburg
+  description: "Wir fördern das bürgerschaftliche Engagement in Augsburg seit 1997, indem wir interessierte Bürgerinnen und Bürger informieren und beraten, den Austausch zwischen aktiven Freiwilligen anregen und Verbände und Initiativen bei allen Fragen zum freiwilligen Engagement unterstützen."
+  id: freiwilligen-zentrum-augsburg
+  href: "https://www.freiwilligen-zentrum-augsburg.de"
 - name: GLS Bank
   description: "das macht Sinn"
   id: gls
@@ -48,3 +52,7 @@
   description: "Freiraum zum Selbermachen"
   id: vow
   href: https://www.offene-werkstaetten.org
+- name: Lifeguide - Leben in und um Augsburg
+  description: "Der Lifeguide ist ein Internetportal für nachhaltigen Konsum und Lebensstil in und um Augsburg"
+  id: lifeguide-augsburg
+  href: "http://lifeguide-augsburg.de/"
