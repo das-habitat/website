@@ -49,6 +49,14 @@ module.exports = (env = setEnv()) => {
 		module: {
 			rules: [
 				{
+					test: /.(jpg|jpeg|png|svg)$/,
+					use: [
+						{
+							loader: 'file-loader',
+						},
+					],
+				},
+				{
 					test: /\.(sa|sc|c)ss$/,
 					use: [
 						MiniCssExtractPlugin.loader,
