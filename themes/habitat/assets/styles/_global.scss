@@ -44,33 +44,3 @@ figure {
 		height: auto;
 	}
 }
-
-/* Temp */
-
-.anniversary {
-	min-height: 20rem;
-	padding: 4rem 4rem 4rem 50vw;
-	background: $color-brand-black url('/anniversary.svg') top left no-repeat;
-	background-size: 50vw auto;
-	border: 2rem solid $color-brand-white;
-	color: $color-brand-white;
-}
-
-.anniversary * {
-	max-width: 60rem;
-	padding: 0.5rem 1rem;
-	color: inherit;
-	background: $color-brand-black;
-	border-radius: 0.5rem;
-}
-
-.anniversary * + * {
-	margin-top: 1rem;
-}
-
-@media (max-width: 1000px) {
-	.anniversary {
-		background-size: 100vw auto;
-		padding: 40vw 4rem 4rem;
-	}
-}
