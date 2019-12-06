@@ -42,7 +42,7 @@ Zum Angebot gehören neben der üblichen Büroaustattung, Schreibtischen, bequem
 
 Neben spontaner Nutzung unserer Co-Working-Plätze bieten wir euch auch die Möglichkeit unsere Büros komplett zu mieten.
 
-Details sowie aktuelle Preise findet ihr [auf eBay Kleinanzeigen.](https://www.ebay-kleinanzeigen.de/s-anzeige/helle-bueros-ateliers-werkstaetten-in-pfersee-das-habitat/1210270192-277-7530)
+Details sowie aktuelle Preise findet ihr [auf eBay Kleinanzeigen.](https://www.ebay-kleinanzeigen.de/s-bestandsliste.html?userId=65577647)
 
 ## Co-Werkstatt
 
