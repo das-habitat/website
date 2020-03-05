@@ -1,13 +1,17 @@
 <footer class="footer">
 	<div class="footer__inner">
 		<div class="footer__info">
-		<img class="footer__logo" src="/assets/ui/logo.svg" alt="Das Habitat" width="207" height="80">
+			<img
+				class="footer__logo"
+				src="/assets/ui/logo.svg"
+				alt="Das Habitat"
+				width="207"
+				height="80"
+			/>
 
-		<blockquote class="footer__claim">
-			<p>
-				Nährboden für die Zukunft.<br>Deine offene Werkstatt.
-			</p>
-		</blockquote>
+			<blockquote class="footer__claim">
+				<p>Nährboden für die Zukunft.<br />Deine offene Werkstatt.</p>
+			</blockquote>
 			{{ partial "contact.html" (dict "context" .) }}
 		</div>
 
@@ -56,30 +60,45 @@
 
 	<aside class="footer__sponsors">
 		<div class="footer__inner">
-			<h3>Unsere Sponsoren, Unterstützer, Stifter, Gönner und einfach fantastischen Partner.</h3>
+			<h3>
+				Unsere Sponsoren, Unterstützer, Stifter, Gönner und einfach fantastischen Partner.
+			</h3>
 
 			<ul class="sponsors">
 				{{- range (shuffle .Site.Data.sponsoren) }}
-					<li>
-						<a href="{{ .href }}" target="_blank" rel="noopener">
-							<img src="/logos/{{ .id }}.svg" alt="{{ .name }} - {{ .description }}" height="50" loading="lazy">
-						</a>
-					</li>
+				<li>
+					<a href="{{ .href }}" target="_blank" rel="noopener">
+						<img
+							src="/logos/{{ .id }}.svg"
+							alt="{{ .name }} - {{ .description }}"
+							height="50"
+							loading="lazy"
+						/>
+					</a>
+				</li>
 				{{- end }}
 			</ul>
 
-			<p>Du oder dein Unternehmen wollt uns und unser Projekt unterstützen? <a href="/kontakt">Meldet euch bei uns.</a></p>
+			<p>
+				Du oder dein Unternehmen wollt uns und unser Projekt unterstützen?
+				<a href="/kontakt">Meldet euch bei uns.</a>
+			</p>
 		</div>
 	</aside>
 
 	<aside class="footer__note">
 		<div class="footer__inner">
+			<p class="footer__copyright">
+				&copy; 2018–{{ now.Format "2006"}} Das Habitat Augsburg e.V.
+			</p>
 
-			<p class="footer__copyright">&copy; 2018–{{ now.Format "2006"}} Das Habitat Augsburg e.V.</p>
-	<p class="footer__legal">
-		<a href="/impressum/">Impressum</a>
-		<a href="/datenschutz/">{{ with .Site.GetPage "/datenschutz" }}{{ .Title }}{{ end }}</a>
-	</p>
+			<p class="footer__legal">
+				<a href="/kontakt#kontoverbindung"></a>
+				<a href="/impressum/">Impressum</a>
+				<a href="/datenschutz/"
+					>{{ with .Site.GetPage "/datenschutz" }}{{ .Title }}{{ end }}</a
+				>
+			</p>
 		</div>
 	</aside>
 </footer>
