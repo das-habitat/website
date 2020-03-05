@@ -35,11 +35,8 @@ Wir haben eine Telefon-Nummer, aber da wir nicht rund um die Uhr erreichbar sein
 
 ## Kontoverbindung
 
-Das Habitat Augsburg e. V.
-
-IBAN: DE28 7205 0000 0251 7188 54
-
-BIC: AUGSDE77XXX
-
+Das Habitat Augsburg e. V.  
+IBAN: DE28 7205 0000 0251 7188 54  
+BIC: AUGSDE77XXX  
 Stadtsparkasse Augsburg
 
