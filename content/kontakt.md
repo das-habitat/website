@@ -1,5 +1,5 @@
 ---
-title: 'Kontakt & Anfahrt'
+title: 'Kontakt & Anfahrt & Kontoverbindung'
 draft: false
 menu:
   main:
@@ -32,3 +32,11 @@ Du erreichst uns auch [auf Facebook](https://www.facebook.com/habitataugsburg/) 
 ### Telefon
 
 Wir haben eine Telefon-Nummer, aber da wir nicht rund um die Uhr erreichbar sein können, wird euch häufig nur der Anrufbeantworter begrüßen. Diesen hören wir aber regelmäßig ab und rufen euch auf Wunsch gerne auch zurück, hinterlasst also eine Nachricht.
+
+### Kontoverbindung
+
+Das Habitat Augsburg e. V.
+IBAN: DE28 7205 0000 0251 7188 54
+BIC: AUGSDE77XXX
+Stadtsparkasse Augsburg
+
