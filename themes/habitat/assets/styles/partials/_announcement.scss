@@ -1,0 +1,15 @@
+.announcement {
+	background: $color-brand-black;
+	color: $color-brand-yellow;
+}
+
+.announcement__body {
+	@include offset-outer;
+	@include media-lg {
+		width: var(--grid-width);
+	}
+
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	font-size: 2.4rem;
+}
