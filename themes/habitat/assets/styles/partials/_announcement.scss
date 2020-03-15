@@ -1,6 +1,12 @@
 .announcement {
+	background: $color-brand-blue;
+	color: $color-brand-white;
+}
+
+.announcement--urgent {
 	background: $color-brand-black;
 	color: $color-brand-yellow;
+	font-size: 2.4rem;
 }
 
 .announcement__body {
@@ -11,5 +17,4 @@
 
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-	font-size: 2.4rem;
 }

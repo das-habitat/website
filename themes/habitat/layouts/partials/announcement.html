@@ -1,6 +1,6 @@
 {{- range where .context.Site.Data.announcements "active" true }}
 	{{- if .active }}
-	<section class="announcement">
+	<section class="announcement {{ if .urgent }}announcement--urgent{{ end }}">
 		<div class="announcement__body">
 			{{ .text | markdownify }}
 		</div>
