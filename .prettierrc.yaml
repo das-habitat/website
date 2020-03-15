@@ -7,11 +7,15 @@ tabWidth: 4
 trailingComma: es5
 useTabs: true
 overrides:
-  - files: "**/*.md"
+  - files: '**/*.md'
     options:
       tabWidth: 2
       useTabs: false
-  - files: "**/*.yaml"
+  - files: '**/*.yaml'
+    options:
+      tabWidth: 2
+      useTabs: false
+  - files: '**/*.json'
     options:
       tabWidth: 2
       useTabs: false

@@ -8,3 +8,5 @@ dist
 /themes/habitat/static/assets/main.*.js
 /themes/habitat/static/assets/main.*.css
 /.hugo
+
+.now

@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "website",
   "scope": "habitat",
   "alias": "das-habitat.de",
   "public": false,
@@ -15,9 +14,12 @@
     { "src": "/reparieren", "status": 301, "headers": { "Location": "/repaircafe/" } },
     { "src": "/reparieren/", "status": 301, "headers": { "Location": "/repaircafe/" } },
     { "src": "/imprint.html", "status": 301, "headers": { "Location": "/impressum/" } },
-    { "src": "^/assets/(.*)", "headers": {"cache-control": "max-age=31536000,immutable"} },
-    { "src": "^/images/(.*)", "headers": {"cache-control": "max-age=31536000,immutable"} },
-    { "src": "^/(.*).html", "headers": {"cache-control": "public,max-age=0,must-revalidate"} },
+    { "src": "^/assets/(.*)", "headers": { "cache-control": "max-age=31536000,immutable" } },
+    { "src": "^/images/(.*)", "headers": { "cache-control": "max-age=31536000,immutable" } },
+    {
+      "src": "^/(.*).html",
+      "headers": { "cache-control": "public,max-age=0,must-revalidate" }
+    },
     { "handle": "filesystem" },
     { "src": "/.*", "status": 404, "dest": "404.html" }
   ],
