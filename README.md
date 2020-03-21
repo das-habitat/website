@@ -4,17 +4,16 @@ Static website based on Hugo, using Webpack for asset compilation
 
 ## Requirements
 
--   [Hugo][hugo]
--   [Node.js][node]
--   [Yarn][yarn]
+- [Hugo][hugo]
+- [Node.js][node]
 
 On macOS it's recommened to install all of the above using [Homebrew][brew].
 
 ## Development
 
-Install dependencies by running `yarn`.
+Install hugo on your machine and install dependencies by running `npm install`.
 
-Use `yarn start` to run a development server which reloads when you make changes.
+Use `npm start` to run a development server which reloads when you make changes.
 
 ### Alternative
 
@@ -24,17 +23,12 @@ If you don't have a global installation of Hugo, you can also download it locall
 sh download-hugo.sh
 
 # Use `dev` instead of `start` to use the Hugo version downloaded by the script above
-yarn dev
+npm start dev
 ```
 
 ## Deployment
 
-We use [Now][now] from Zeit to deploy the website.
-
--   `now -S habitat` to deploy a test build
--   `now -S habitat --target production` to deploy the website
-
-Ask @pichfl for access.
+We use [Now][now] from Zeit to deploy the website. Ask @pichfl for access.
 
 ## File structure
 
@@ -44,6 +38,5 @@ The theme folder "habitat" makes the only exception with a custom `assets` folde
 
 [hugo]: https://gohugo.io
 [node]: https://nodejs.org
-[yarn]: http://yarnpkg.com
-[bree]: https://brew.sh
+[brew]: https://brew.sh
 [now]: https://zeit.co/now
