@@ -1,0 +1,11 @@
+name: Habitat
+license: UNLICENSED
+licenselink: ''
+description: ''
+homepage: 'https://das-habitat.de/'
+tags: []
+features: []
+min_version: 0.55.6
+author:
+  name: Florian Pichler
+  homepage: 'https://florianpichler.de'
