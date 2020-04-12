@@ -1,4 +1,5 @@
 const path = require('path');
+const fs = require('fs');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const sass = require('sass');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -6,21 +7,26 @@ const ShellPlugin = require('webpack-shell-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
 const theme = 'habitat';
+const hugoBinary = process.platform.startsWith('win')
+	? path.join('.hugo', 'hugo.exe')
+	: './.hugo/hugo';
+const useLocalHugo = fs.existsSync(hugoBinary);
 
 function setEnv() {
+	const binary = useLocalHugo ? hugoBinary : 'hugo';
+
 	if (process.env.APP_ENV === 'dev') {
 		return {
 			watch: true,
 			filename: '[name]',
-			command:
-				'hugo serve --buildDrafts=true --buildFuture=true  --bind=0.0.0.0 --baseURL=http://0.0.0.0:1313',
+			command: `${binary} serve --buildDrafts=true --buildFuture=true  --bind=0.0.0.0 --baseURL=http://0.0.0.0:1313`,
 		};
 	}
 
 	return {
 		watch: false,
 		filename: '[name].[contenthash:5]',
-		command: process.env.HUGO_PATH || 'hugo',
+		command: binary,
 	};
 }
 
@@ -42,7 +48,7 @@ module.exports = (env = setEnv()) => {
 
 		output: {
 			path: path.resolve(__dirname, 'themes', theme, 'static', 'assets'),
-			filename: env.filename + '.js',
+			filename: `${env.filename}.js`,
 			chunkFilename: '[id].chunk.js',
 		},
 
