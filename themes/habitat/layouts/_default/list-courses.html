@@ -1,0 +1,56 @@
+{{- define "before-page" }}
+{{- if .Params.statement }}
+	<h1 class="page__title page__title--statement">{{ .Title }}</h1>
+
+	{{- with .Params.stage }}
+	<figure class="stage">
+		<img src="{{ .src }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}">
+	</figure>
+	{{- end }}
+
+	<div class="statement">
+		<blockquote>
+			<p>{{ htmlUnescape .Params.statement }}</p>
+		</blockquote>
+	</div>
+{{- end }}
+{{- end }}
+
+{{ define "main" }}
+	<main class="main{{ if .Params.grid}} main--grid{{ end }}">
+		{{ .Content }}
+
+		{{- if .Pages }}
+			{{- range .Pages }}
+				{{ if .Params.tags }}<strong>Tags:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}
+				{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}
+			{{- end }}
+			<table class="table table--pricing">
+				{{- range .Pages }}
+					<tbody>
+						<tr>
+							<th rowspan="2"><img src="{{ .Params.teaser.src }}" alt="{{ .Params.teaser.alt }}" width="{{ .Params.teaser.width }}" height="{{ .Params.teaser.height }}"></th>
+							<th><h2>{{ .Title }}</h2></th>
+						</tr>
+						<tr>
+							<td>
+								<p><a href="{{ .RelPermalink }}"></p>
+									Details zum Kurs
+								</a>
+								<p>Voraussetzungen: {{- if .Params.preconditions.src }} <a href="{{ .Params.preconditions.src }}">{{ .Params.preconditions.text }}</a> {{- else }} keine {{ end }}</p>
+								<p>Preis (pro teilnehmende Person): {{ .Params.prize }}</p>
+								<p>Kurssprache: {{ .Params.language }}</p>
+								<p><a>
+									{{ if .Params.tags }}<strong>Tags:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}
+								</a></p>
+								<p><a>
+									{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}
+								</a></p>
+							</td>
+						</tr>
+					</tbody>
+				{{- end }}
+			</table>
+		{{- end }}
+	</main>
+{{ end }}

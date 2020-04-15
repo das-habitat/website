@@ -1,0 +1,43 @@
+{{- define "before-page" }}
+{{- if .Params.statement }}
+	<h1 class="page__title page__title--statement">{{ .Title }}</h1>
+	{{- with .Params.stage }}
+	<figure class="">
+		<table>
+			<tr>
+				<td><img src="{{ .left_src }}" alt="{{ .left_alt }}" width="{{ .width }}" height="{{ .height }}"></td>
+				<td><img src="{{ .middle_src }}" alt="{{ .middle_alt }}" width="{{ .width }}" height="{{ .height }}"></td>
+				<td><img src="{{ .right_src }}" alt="{{ .right_alt }}" width="{{ .width }}" height="{{ .height }}"></td>
+			</tr>
+		</table>
+	</figure>
+	{{- end }}
+
+	<div class="statement">
+		<blockquote>
+			<p>{{ htmlUnescape .Params.statement }}</p>
+		</blockquote>
+	</div>
+{{- else }}
+	<h1 class="page__title">{{ .Title }}</h1>
+{{- end }}
+{{- end }}
+
+{{ define "main" }}
+	<main class="main{{ if .Params.grid}} main--grid{{ end }}">
+		{{ .Content }}
+		<h2>Kursdetails</h2>
+		<div><strong>Voraussetzungen:</strong> {{- if .Params.preconditions.src }} <a href="{{ .Params.preconditions.src }}">{{ .Params.preconditions.text }}</a> {{- else }} keine {{ end }}</div>
+		<div><strong>Teilnehmeranzahl (min/max):</strong> {{ .Params.participants.min }} / {{ .Params.participants.max }}</div>
+		<div><strong>Mindestalter:</strong> {{ .Params.minage }}</div>
+		<div><strong>Schutzausrüstung:</strong> {{ .Params.safetyclothes }}</div>
+		<div><strong>Sicherheitshinweise:</strong> {{ .Params.safetyhints }}</div>
+		<div><strong>Kurssprache:</strong> {{ .Params.language }}</div>
+		<div><strong>Preis (pro teilnehmende Person):</strong> {{ .Params.prize }}</div>
+		<div><strong>Materialkosten:</strong> {{ .Params.materialcosts }}</div>
+		<div><strong>Dauer:</strong> {{ .Params.timeduration }}</div>
+		<div><strong>Bitte mitbringen:</strong> {{ .Params.ownequipment }}</div>
+		<h2>Termine</h2>
+		<div><strong>Die Buchung erfolgt über unser Ticketsystem!</strong> hier Link zu den Terminen im Ticketsystem einfügen</div>
+	</main>
+{{ end }}
