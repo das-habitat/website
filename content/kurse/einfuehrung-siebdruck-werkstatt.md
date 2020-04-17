@@ -16,7 +16,7 @@ stage:
   right_alt: 'Werkstatt-Starter Siebdruckwerkstatt'
   width: 400
   height: 750
-statement: 'Dies ist der Werkstatt-Starter für die Siebdruckwerkstatt. Er ist die Voraussetzung um selbständig in der Siebdruckwerkstatt arbeiten zu dürfen.'
+statement: 'Dies ist der Werkstatt-Starter für die Siebdruckwerkstatt. Er ist die Voraussetzung um selbständig in der Siebdruckwerkstatt arbeiten zu dürfen. Der Kurs gibt insbesondere Sicherheitshinweise und erklärt die für Beginner wichtigsten Werkzeuge und Geräte.'
 participants: 
   min: 3
   max: 10
@@ -31,7 +31,6 @@ language: Deutsch
 prize: '€ 10,-'
 materialcosts: '€ 5,-'
 timeduration: 3h
-tags: ["SBD", "Textil", "Werkstatt-Starter"]
-categories: ["eintägig", "Einsteiger"]
+tags: ["Textil", "Werkstatt-Starter", "Einsteiger", "Eltern-Kind", "wenige Stunden"]
+# categories: ["eintägig", "Einsteiger"]
 ---
-Dieser Kurs ist ein Rundkurs durch die Siebdruckwerkstatt. Es werden die Werkzeuge und Maschinen erklärt und insbesondere Sicherheitshinweise gegeben.

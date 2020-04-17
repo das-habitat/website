@@ -17,7 +17,7 @@ stage:
   right_alt: 'Schweissen'
   width: 400
   height: 750
-statement: 'Ein schönes Schneidbrett für die Küche kann jeder gebrauchen und ist auch eine tolle Geschenkidee. Dieser Kurs dient ideal als Einstieg in unsere Holzwerkstatt, weil der Einsatz der zwei wichtigsten Holzbearbeitungsmaschinen erlernt werden: Die Formatkreissäge und die Hobelmaschine'
+statement: 'Ein schönes Schneidbrett für die Küche kann jeder gebrauchen und ist auch eine tolle Geschenkidee. Dieser Kurs dient ideal als Einstieg in unsere Holzwerkstatt, weil der Einsatz der wichtigsten Holzbearbeitungsmaschinen erlernt werden: Die Formatkreissäge, die Hobelmaschine und die Schleifmaschinen.'
 participants: 
   min: 3
   max: 5
@@ -32,7 +32,7 @@ language: Deutsch
 prize: '€ 20,-'
 materialcosts: '€ 10,-'
 timeduration: 4h
-tags: ["HLZ", "Holz", "Schneidbrett"]
-categories: ["eintägig", "Einsteiger"]
+tags: ["Holz", "Schneidbrett", "Einsteiger", "eintägig"]
+# categories: ["eintägig", "Einsteiger"]
 ---
-Dieser Kurs zeigt, wie tolle Schneidbretter für die Küche angefertigt werden können. Du kannst an einem praktischen Beispiel den Gebrauch der Kreissäge, Hobelmaschine und Schleifmaschinen üben. 
+ 

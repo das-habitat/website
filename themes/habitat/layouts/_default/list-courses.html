@@ -1,6 +1,6 @@
 {{- define "before-page" }}
 {{- if .Params.statement }}
-	<h1 class="page__title page__title--statement">{{ .Title }}</h1>
+	<h1 class="page__title page__title--statement">Kursübersicht</h1>
 
 	{{- with .Params.stage }}
 	<figure class="stage">
@@ -8,44 +8,63 @@
 	</figure>
 	{{- end }}
 
-	<div class="statement">
-		<blockquote>
-			<p>{{ htmlUnescape .Params.statement }}</p>
-		</blockquote>
+	<div class="t-machine__technical">
+		<h1>{{ .Title }}</h1>
+		<div class="larger">
+			<blockquote>
+				<p>{{ htmlUnescape .Params.statement }}</p>
+			</blockquote>
+		</div>
 	</div>
+
 {{- end }}
 {{- end }}
 
 {{ define "main" }}
-	<main class="main{{ if .Params.grid}} main--grid{{ end }}">
+	<main class="">
 		{{ .Content }}
 
 		{{- if .Pages }}
-			{{- range .Pages }}
+			<!-- {{- range .Pages }}
 				{{ if .Params.tags }}<strong>Tags:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}
 				{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}
-			{{- end }}
+			{{- end }} -->
+			<h3>Kurse filtern nach:</h3> <a href="/kurse">ungefiltert</a> | <a href="/tags/holz">Holz</a> | <a href="/tags/metall">Metall</a> | <a href="/tags/textil">Textil</a> | <a href="/tags/werkstatt-starter">Werkstatt-Starter</a> | <a href="/tags/einsteiger">Einsteiger</a> | <a href="/tags/eltern-kind">Eltern-Kind</a> | <a href="/tags/wenige-stunden">wenige Stunden</a> | <a href="/tags/eintägig">eintägig</a> | <a href="/tags/mehrtägig">mehrtägig</a>
+			<!-- <div class="grid">
+				{{- range .Pages }}
+					<span class="cs1-lg c3-lg large">
+						<a href="{{ .RelPermalink }}"><img src="{{ .Params.teaser.src }}" alt="{{ .Params.teaser.alt }}" width="{{ .Params.teaser.width }}" height="{{ .Params.teaser.height }}"></a>
+					</span>
+					<span class="cs6-lg c3-lg">
+						<h2>{{ .Title }}</h2>
+					</span>
+				{{- end }}
+			</div> -->
 			<table class="table table--pricing">
 				{{- range .Pages }}
 					<tbody>
 						<tr>
-							<th rowspan="2"><img src="{{ .Params.teaser.src }}" alt="{{ .Params.teaser.alt }}" width="{{ .Params.teaser.width }}" height="{{ .Params.teaser.height }}"></th>
-							<th><h2>{{ .Title }}</h2></th>
+							<th rowspan="2"><a href="{{ .RelPermalink }}"><img src="{{ .Params.teaser.src }}" alt="{{ .Params.teaser.alt }}" width="{{ .Params.teaser.width }}" height="{{ .Params.teaser.height }}"></a></th>
+							<td colspan="2"><h2>{{ .Title }}</h2></td>
 						</tr>
 						<tr>
-							<td>
-								<p><a href="{{ .RelPermalink }}"></p>
-									Details zum Kurs
-								</a>
-								<p>Voraussetzungen: {{- if .Params.preconditions.src }} <a href="{{ .Params.preconditions.src }}">{{ .Params.preconditions.text }}</a> {{- else }} keine {{ end }}</p>
-								<p>Preis (pro teilnehmende Person): {{ .Params.prize }}</p>
-								<p>Kurssprache: {{ .Params.language }}</p>
+							<td colspan="2">
+								<p><a href="{{ .RelPermalink }}">&rarr; Details zum Kurs</a><p>
+								<p><strong>Dauer:</strong> {{ .Params.timeduration }}</p>
+								<p><strong>Voraussetzungen:</strong> {{- if .Params.preconditions.src }} <a href="{{ .Params.preconditions.src }}">&rarr; {{ .Params.preconditions.text }}</a> {{- else }} keine {{ end }}</p>
+								<p><strong>Preis (pro teilnehmende Person):</strong> {{ .Params.prize }}</p>
+								<p><strong>Materialkosten:</strong> {{ .Params.materialcosts }}</p>
+								<p><strong>Kurssprache:</strong> {{ .Params.language }}</p>
+								
+							</td>
+							<td colspan="1">
+								<h3>Kategorien:</h3>
 								<p><a>
-									{{ if .Params.tags }}<strong>Tags:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}
+									{{ if .Params.tags }}{{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> <br> {{end}}{{end}}
 								</a></p>
-								<p><a>
+								<!-- <p><a>
 									{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}
-								</a></p>
+								</a></p> -->
 							</td>
 						</tr>
 					</tbody>

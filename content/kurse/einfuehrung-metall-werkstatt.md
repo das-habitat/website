@@ -16,7 +16,7 @@ stage:
   right_alt: 'Werkstatt-Starter Metallwerkstatt'
   width: 400
   height: 400
-statement: 'Dies ist der Werkstatt-Starter für die Metallwerkstatt. Er ist die Voraussetzung um selbständig in der Metallwerkstatt arbeiten zu dürfen.'
+statement: 'Dies ist der Werkstatt-Starter für die Metallwerkstatt. Er ist die Voraussetzung um selbständig in der Metallwerkstatt arbeiten zu dürfen. Der Kurs gibt insbesondere Sicherheitshinweise und erklärt die für Beginner wichtigsten Werkzeuge und Maschinen.'
 participants: 
   min: 3
   max: 10
@@ -31,7 +31,6 @@ language: Deutsch
 prize: '€ 10,-'
 materialcosts: 'keine'
 timeduration: 2h
-tags: ["MET", "Metall", "Werkstatt-Starter"]
-categories: ["eintägig", "Einsteiger"]
+tags: ["Metall", "Werkstatt-Starter", "Einsteiger", "wenige Stunden"]
+# categories: ["eintägig"]
 ---
-Dieser Kurs ist ein Rundkurs durch die Metallwerkstatt. Es werden die Werkzeuge und Maschinen erklärt und insbesondere Sicherheitshinweise gegeben.

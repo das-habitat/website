@@ -16,7 +16,7 @@ stage:
   right_alt: 'Werkstatt-Starter Holzwerkstatt'
   width: 400
   height: 750
-statement: 'Dies ist der Werkstatt-Starter für die Holzwerkstatt. Er ist die Voraussetzung um selbständig in der Holzwerkstatt arbeiten zu dürfen.'
+statement: 'Dies ist der Werkstatt-Starter für die Holzwerkstatt. Er ist die Voraussetzung um selbständig in der Holzwerkstatt arbeiten zu dürfen. Der Kurs gibt insbesondere Sicherheitshinweise und erklärt die für Beginner wichtigsten Werkzeuge und Maschinen.'
 participants: 
   min: 3
   max: 10
@@ -31,7 +31,9 @@ language: Deutsch
 prize: '€ 10,-'
 materialcosts: 'keine'
 timeduration: 2h
-tags: ["HLZ", "Holz", "Werkstatt-Starter"]
-categories: ["eintägig", "Einsteiger"]
+tags: ["Holz", "Werkstatt-Starter", "Einsteiger", "wenige Stunden"]
+# categories: ["eintägig", "Einsteiger"]
+# Werkstaetten: ["Holz"]
+# Laenge: ["Stunden"]
+# Zielgruppen: ["Beginner"]
 ---
-Dieser Kurs ist ein Rundkurs durch die Holzwerkstatt. Es werden die Werkzeuge und Maschinen erklärt und insbesondere Sicherheitshinweise gegeben.

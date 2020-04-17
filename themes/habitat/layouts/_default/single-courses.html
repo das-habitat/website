@@ -1,8 +1,10 @@
 {{- define "before-page" }}
 {{- if .Params.statement }}
-	<h1 class="page__title page__title--statement">{{ .Title }}</h1>
+	<!-- <h1 class="page__title page__title--statement">{{ .Title }}</h1> -->
 	{{- with .Params.stage }}
-	<figure class="">
+	<h1 class="page__title page__title--statement">Kursdetail</h1>
+	<figure class="cs2-lg larger align-right">
+		<!-- <h2>Kursdetails</h2> -->
 		<table>
 			<tr>
 				<td><img src="{{ .left_src }}" alt="{{ .left_alt }}" width="{{ .width }}" height="{{ .height }}"></td>
@@ -11,33 +13,106 @@
 			</tr>
 		</table>
 	</figure>
+	<!-- <figure class="stage t-machine__stage">
+		<img src="{{ .src }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}">
+	</figure> -->
+	{{ else }}
+	<figure class="stage t-machine__stage">
+		<img src="/placeholder.svg" alt="" width="1000" height="750">
+	</figure>
 	{{- end }}
+	<nav class="nav t-machine__paginate">
+		{{- $nextPage := (default (index (first 1 .CurrentSection.Pages) 0) .PrevInSection) -}}
+		{{- $prevPage := (default (index (last 1 .CurrentSection.Pages) 0) .NextInSection) -}}
+		<a href="{{ $nextPage.RelPermalink }}">&rarr; {{ $nextPage.Title }} </a>
+		<!-- <a href="{{ $prevPage.RelPermalink }}" title="{{ $prevPage.Title }}">&larr;</a> -->
+	</nav>
 
-	<div class="statement">
-		<blockquote>
-			<p>{{ htmlUnescape .Params.statement }}</p>
-		</blockquote>
+	<div class="t-machine__technical">
+		<h1>{{ .Title }}</h1>
+		<div class="larger">
+			<blockquote>
+				<p>{{ htmlUnescape .Params.statement }}</p>
+			</blockquote>
+		</div>
+		{{- with (.Param "technical") }}
+		<table class="table table--technical">
+			<tbody>
+				{{ range . }}
+				<tr>
+					<th> {{ .label }} </th>
+					<td>{{ .value }}</td>
+				</tr>
+				{{ end }}
+			</tbody>
+		</table>
+		{{- end }}
 	</div>
+	
+
 {{- else }}
 	<h1 class="page__title">{{ .Title }}</h1>
-{{- end }}
+{{- end }}	
 {{- end }}
 
 {{ define "main" }}
 	<main class="main{{ if .Params.grid}} main--grid{{ end }}">
-		{{ .Content }}
-		<h2>Kursdetails</h2>
-		<div><strong>Voraussetzungen:</strong> {{- if .Params.preconditions.src }} <a href="{{ .Params.preconditions.src }}">{{ .Params.preconditions.text }}</a> {{- else }} keine {{ end }}</div>
-		<div><strong>Teilnehmeranzahl (min/max):</strong> {{ .Params.participants.min }} / {{ .Params.participants.max }}</div>
-		<div><strong>Mindestalter:</strong> {{ .Params.minage }}</div>
-		<div><strong>Schutzausrüstung:</strong> {{ .Params.safetyclothes }}</div>
-		<div><strong>Sicherheitshinweise:</strong> {{ .Params.safetyhints }}</div>
-		<div><strong>Kurssprache:</strong> {{ .Params.language }}</div>
-		<div><strong>Preis (pro teilnehmende Person):</strong> {{ .Params.prize }}</div>
-		<div><strong>Materialkosten:</strong> {{ .Params.materialcosts }}</div>
-		<div><strong>Dauer:</strong> {{ .Params.timeduration }}</div>
-		<div><strong>Bitte mitbringen:</strong> {{ .Params.ownequipment }}</div>
-		<h2>Termine</h2>
-		<div><strong>Die Buchung erfolgt über unser Ticketsystem!</strong> hier Link zu den Terminen im Ticketsystem einfügen</div>
+		<!-- {{ .Content }} -->
+		<div class="">
+			<!-- <h2>Kursdetails</h2> -->
+			<table class="table table--technical">
+				<tbody>
+					<tr>
+						<th><strong>Voraussetzungen:</strong></th>
+						<td>{{- if .Params.preconditions.src }} <a href="{{ .Params.preconditions.src }}">{{ .Params.preconditions.text }}</a> {{- else }} keine {{ end }}</td>
+					</tr>
+					<tr>
+						<th><strong>Teilnehmeranzahl (min/max):</strong></th>
+						<td>{{ .Params.participants.min }} / {{ .Params.participants.max }}</td>
+					</tr>
+					<tr>
+						<th><strong>Mindestalter:</strong></th>
+						<td>{{ .Params.minage }}</td>
+					</tr>
+					<tr>
+						<th><strong>Schutzausrüstung:</strong></th>
+						<td>{{ .Params.safetyclothes }}</td>
+					</tr>
+					<tr>
+						<th><strong>Sicherheitshinweise:</strong></th>
+						<td>{{ .Params.safetyhints }}</td>
+					</tr>
+					<tr>
+						<th><strong>Kurssprache:</strong></th>
+						<td>{{ .Params.language }}</td>
+					</tr>
+					<tr>
+						<th><strong>Preis (pro teilnehmende Person):</strong></th>
+						<td>{{ .Params.prize }}</td>
+					</tr>
+					<tr>
+						<th><strong>Materialkosten:</strong></th>
+						<td>{{ .Params.materialcosts }}</td>
+					</tr>
+					<tr>
+						<th><strong>Dauer:</strong></th>
+						<td>{{ .Params.timeduration }}</td>
+					</tr>
+					<tr>
+						<th><strong>Bitte mitbringen:</strong></th>
+						<td>{{ .Params.ownequipment }}</td>
+					</tr>
+					<tr>
+						<th><strong></strong></th>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			<h2>Termine</h2>
+			<div><strong>Die Buchung erfolgt über unser Ticketsystem!</strong> hier Link zu den Terminen im Ticketsystem einfügen</div>
+		</div>
 	</main>
+	<nav class="nav ">
+		<a href="../">&larr; Kursübersicht</a>
+	</nav>
 {{ end }}
