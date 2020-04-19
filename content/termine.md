@@ -1,6 +1,7 @@
 ---
-title: Kurstermine
+title: Termine
 draft: false
+layout: termine
 menu:
   courses:
     identifier: kurstermine
@@ -11,6 +12,6 @@ stage:
   width: 1000
   height: 750
   alt: 'Termine'
-statement: Prima, du hast deinen Kurs gefunden. Nun kannst du mit unserem Ticketsystem einen Termin wählen und deinen Platz direkt buchen. Bitte folge dem unten angegebenen Link zum Ticketsystem.
+statement: Folgende Übersicht zeigt dir die nächsten Kurs- und Veranstaltungstermine im Habitat. 
 grid: true
 ---

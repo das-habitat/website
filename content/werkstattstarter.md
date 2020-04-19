@@ -1,6 +1,7 @@
 ---
 title: Werkstatt-Starter
 draft: false
+layout: list-courses
 menu:
   courses:
     identifier: workshop basics
@@ -14,9 +15,8 @@ stage:
 statement: Sicherheit hat Prio. Um Maschinen, Werkzeuge und Werkstätten sicher nutzen zu können, geben wir dir Sicherheitshinweise und zeigen, was man mit unserem Equipment machen kann.
 grid: true
 ---
-{{< css "cs3-lg c4-lg larger" >}}
+{{< css "cs3-lg c4-lg " >}}
 Um alle unsere Maschinen und Werkzeuge in den Werkstätten selbständig nutzen zu können, setzen wir eine Sicherheits- und Funktionseinweisung voraus. Diese finden werkstattspezifisch statt, sprich pro Werkstatt. Wir nennen sie "Werkstatt-Starter". Wir vermitteln dir die Details zu jeder Maschine und worauf im Speziellen zu achten ist.
 Im Rahmen der Werkstatt-Starter hast Du die Möglichkeit, die Maschinen gründlich kennenzulernen, bevor du diese benutzt. 
 Es werden keine Vorkenntnisse vorausgesetzt.
 {{< /css >}}
-<a href="/tags/werkstatt-starter/">Unsere Werkstatt-Starter Kurse findest du hier</a>

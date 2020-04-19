@@ -25,21 +25,12 @@
 		{{ .Content }}
 
 		{{- if .Pages }}
-			<!-- {{- range .Pages }}
-				{{ if .Params.tags }}<strong>Tags:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}
-				{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}
-			{{- end }} -->
-			<h3>Kurse filtern nach:</h3> <a href="/kurse">ungefiltert</a> | <a href="/tags/holz">Holz</a> | <a href="/tags/metall">Metall</a> | <a href="/tags/textil">Textil</a> | <a href="/tags/werkstatt-starter">Werkstatt-Starter</a> | <a href="/tags/einsteiger">Einsteiger</a> | <a href="/tags/eltern-kind">Eltern-Kind</a> | <a href="/tags/wenige-stunden">wenige Stunden</a> | <a href="/tags/eintägig">eintägig</a> | <a href="/tags/mehrtägig">mehrtägig</a>
-			<!-- <div class="grid">
-				{{- range .Pages }}
-					<span class="cs1-lg c3-lg large">
-						<a href="{{ .RelPermalink }}"><img src="{{ .Params.teaser.src }}" alt="{{ .Params.teaser.alt }}" width="{{ .Params.teaser.width }}" height="{{ .Params.teaser.height }}"></a>
-					</span>
-					<span class="cs6-lg c3-lg">
-						<h2>{{ .Title }}</h2>
-					</span>
-				{{- end }}
-			</div> -->
+			<p class="note">
+				<span><strong>Kurse filtern nach: <br></strong></span>
+				{{ range .Site.Taxonomies.tags }}
+					 <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }}) | 
+				{{ end }}
+			</p>
 			<table class="table table--pricing">
 				{{- range .Pages }}
 					<tbody>
@@ -71,5 +62,20 @@
 				{{- end }}
 			</table>
 		{{- end }}
+		{{ if  eq .Title "Werkstatt-Starter" }}
+			<p class="larger">
+				Unsere aktuellen Werkstatt-Starter findest du hier:<br> 
+				{{ range .Site.Taxonomies.tags }}
+					{{ if  eq .Page.Title "Werkstatt-Starter" }}
+						<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})
+					{{ end }}
+				{{ end }}
+			</p>
+			<p>&nbsp;</p>
+			<hr>
+		{{- end}}
+		<h3>Vermisst du einen Kurs oder sollen wir ein Thema / Workshop in unser Programm aufnehmen?</h3>
+		<p>Schreib uns deinen Wunsch!</p>
+		{{ partial "contactform.html" (dict "context" . "class" "t-home__contact") }}
 	</main>
 {{ end }}
