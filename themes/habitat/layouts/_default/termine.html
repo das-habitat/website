@@ -21,21 +21,13 @@
 
 
 	<main class="main main--grid">
-		<ul class="sponsors">
+		<ul class="">
 			{{- range .Site.Data.termine }}
-			<p>test</p>
-			<li>
-				<a href="{{ .href }}" target="_blank" rel="noopener">
-					<img
-						src="/logos/{{ .id }}.svg"
-						alt="{{ .name }} - {{ .description }}"
-						height="50"
-						loading="lazy"
-					/>
-					{{ .text }}
-					{{ .date }}
-				</a>
-			</li>
+				<p>
+				{{ .date }} {{ .type }}: <a href="{{ .link }}"> {{ .text }} </a><br>
+				Beginn: {{ .begin }} Uhr<br>
+				Ende: {{ .end }} Uhr
+				</p>
 			{{- end }}
 		</ul>
 

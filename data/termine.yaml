@@ -1,4 +1,12 @@
 - text: Werkstatt-Starter Holzwerkstatt.
-  date: "2020-06-10"
+  date: "2020-05-10"
+  begin: "10:00"
+  end: "14:00"
+  link: "/kurse/einfuehrung-holz-werkstatt/"
+  type: Kurs
 - text: Werkstatt-Starter Metallwerkstatt.
-  date: "2020-04-12"
+  date: "2020-06-12"
+  begin: "16:00"
+  end: "18:00"
+  link: "/kurse/einfuehrung-metall-werkstatt/"
+  type: Kurs
