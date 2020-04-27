@@ -48,16 +48,18 @@
 		</table>
 		{{- end }}
 	</div>
-	
+
 
 {{- else }}
 	<h1 class="page__title">{{ .Title }}</h1>
-{{- end }}	
+{{- end }}
 {{- end }}
 
 {{ define "main" }}
 	<main class="main{{ if .Params.grid}} main--grid{{ end }}">
 		<!-- {{ .Content }} -->
+
+		{{/*
 		<div class="">
 			<!-- <h2>Kursdetails</h2> -->
 			<table class="table table--technical">
@@ -108,6 +110,8 @@
 					</tr>
 				</tbody>
 			</table>
+
+			*/}}
 			<h2>Termine</h2>
 			<div><strong>Die Buchung erfolgt über unser Ticketsystem!</strong> hier Link zu den Terminen im Ticketsystem einfügen</div>
 		</div>

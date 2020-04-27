@@ -1,0 +1,41 @@
+.tags {
+	display: block;
+	list-style: none;
+}
+
+.tags li {
+	display: inline-block;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+}
+
+.tag {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	background: #fff;
+
+	&,
+	&:link,
+	&:visited {
+		box-shadow: 0 0 2px 0 transparentize($color-brand-gray, 0.9),
+			0 2px 3px -2px transparentize($color-brand-gray, 0.77),
+			0 3px 8px -3px transparentize($color-brand-gray, 0.77);
+	}
+}
+
+.tag__title {
+	//
+}
+
+.tag__count {
+	//
+}
+
+.tag--active {
+	&,
+	&:link,
+	&:visited {
+		background: $color-brand-blue;
+		color: #fff;
+	}
+}

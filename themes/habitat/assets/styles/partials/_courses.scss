@@ -1,0 +1,42 @@
+.list-courses {
+	display: flex;
+	flex-flow: row wrap;
+	list-style: none;
+	margin: var(--offset-vertical-2) calc(-1 * var(--grid-column-gap) / 2);
+	padding: 0;
+	width: calc(100% + var(--grid-column-gap));
+}
+
+.list-courses__item {
+	position: relative;
+	display: block;
+	width: calc(100% / 3 - var(--grid-column-gap));
+	margin: 0 calc(var(--grid-column-gap) / 2) var(--offset-vertical-2);
+}
+
+.list-courses__item img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.list-courses__item a {
+	float: left;
+	font-weight: 600;
+}
+
+.list-courses__item a:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	clear: left;
+}
+
+.list-courses__item p {
+	clear: left;
+	padding-top: 0.25rem;
+	color: $color-brand-gray-50;
+}

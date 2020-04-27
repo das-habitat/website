@@ -17,20 +17,20 @@ stage:
   width: 400
   height: 750
 statement: Wir erklären dir das Metall-Aktiv-Gas-Schweißenverfahren (MAG) und die Einstellungsmöglichkeiten des Merkle Schweißgeräts. Der Kurs sieht die Möglichkeiten zum Üben vor. Es werden Stumpf-, Überlapp- und T-Stoßnähte an Stahlblechen geübt.
-participants: 
+participants:
   min: 2
   max: 4
 minage: 18 Jahre
-preconditions: 
-  text: keine
-  src: ''
+preconditions:
+  - text: keine
+    src: ''
 ownequipment: 'eigene Sicherheitsschuhe, falls vorhanden'
 safetyclothes: 'Festes Schuhwerk, besser Sicherheitsschuhe'
 safetyhints: 'Achtung: UV-Strahlung'
 language: Deutsch
-prize: '€ 10,-'
-materialcosts: 'keine'
+cost:
+  fee: 10€
 timeduration: 2h
-tags: ["Metall", "Fügetechniken", "Fortgeschrittene", "eintägig"]
+tags: ['Metall', 'Fügetechniken', 'Fortgeschrittene', 'eintägig']
 # categories: ["eintägig", "Einsteiger"]
 ---

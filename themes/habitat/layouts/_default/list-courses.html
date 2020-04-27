@@ -1,79 +1,49 @@
 {{- define "before-page" }}
-{{- if .Params.statement }}
-	<h1 class="page__title page__title--statement">Kursübersicht</h1>
-
 	{{- with .Params.stage }}
 	<figure class="stage">
 		<img src="{{ .src }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}">
 	</figure>
 	{{- end }}
 
-	<div class="t-machine__technical">
-		<h1>{{ .Title }}</h1>
-		<div class="larger">
-			<blockquote>
-				<p>{{ htmlUnescape .Params.statement }}</p>
-			</blockquote>
-		</div>
+	<div class="statement t-home__statement">
+		<blockquote>
+			<p>{{ htmlUnescape .Params.statement }}</p>
+		</blockquote>
 	</div>
-
-{{- end }}
 {{- end }}
 
-{{ define "main" }}
-	<main class="">
-		{{ .Content }}
+{{- define "main" -}}
+	<main>
+		{{- .Content }}
 
-		{{- if .Pages }}
-			<p class="note">
-				<span><strong>Kurse filtern nach: <br></strong></span>
-				{{ range .Site.Taxonomies.tags }}
-					 <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }}) | 
-				{{ end }}
-			</p>
-			<table class="table table--pricing">
-				{{- range .Pages }}
-					<tbody>
-						<tr>
-							<th rowspan="2"><a href="{{ .RelPermalink }}"><img src="{{ .Params.teaser.src }}" alt="{{ .Params.teaser.alt }}" width="{{ .Params.teaser.width }}" height="{{ .Params.teaser.height }}"></a></th>
-							<td colspan="2"><h2>{{ .Title }}</h2></td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<p><a href="{{ .RelPermalink }}">&rarr; Details zum Kurs</a><p>
-								<p><strong>Dauer:</strong> {{ .Params.timeduration }}</p>
-								<p><strong>Voraussetzungen:</strong> {{- if .Params.preconditions.src }} <a href="{{ .Params.preconditions.src }}">&rarr; {{ .Params.preconditions.text }}</a> {{- else }} keine {{ end }}</p>
-								<p><strong>Preis (pro teilnehmende Person):</strong> {{ .Params.prize }}</p>
-								<p><strong>Materialkosten:</strong> {{ .Params.materialcosts }}</p>
-								<p><strong>Kurssprache:</strong> {{ .Params.language }}</p>
-								
-							</td>
-							<td colspan="1">
-								<h3>Kategorien:</h3>
-								<p><a>
-									{{ if .Params.tags }}{{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> <br> {{end}}{{end}}
-								</a></p>
-								<!-- <p><a>
-									{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}
-								</a></p> -->
-							</td>
-						</tr>
-					</tbody>
-				{{- end }}
-			</table>
-		{{- end }}
-		{{ if  eq .Title "Werkstatt-Starter" }}
-			<p class="larger">
-				Unsere aktuellen Werkstatt-Starter findest du hier:<br> 
-				{{ range .Site.Taxonomies.tags }}
-					{{ if  eq .Page.Title "Werkstatt-Starter" }}
-						<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})
-					{{ end }}
-				{{ end }}
-			</p>
-			<p>&nbsp;</p>
-			<hr>
-		{{- end}}
+		<h2>Finde dein nächstes Projekt</h2>
+		{{- partial "courses-tags.html" (dict "context" .)}}
+
+		<ul class="list-courses">
+			{{- range .Pages }}
+				<li class="list-courses__item">
+					<img
+						class="list-courses__image"
+						src="{{ .Params.teaser.src }}"
+						alt="{{ .Params.teaser.alt }}"
+						width="{{ .Params.teaser.width }}"
+						height="{{ .Params.teaser.height }}"
+					/>
+
+					<a href="{{ .RelPermalink }}">
+						{{ .Title }} &rarr;
+					</a>
+
+					<p>
+						{{ .Params.cost.fee }}
+						{{- if isset .Params.cost "material" }} Gebühren +
+						{{ .Params.cost.material }} Material
+						{{- end }}
+					</p>
+				</li>
+			{{- end }}
+		</ul>
+
 		<h3>Vermisst du einen Kurs oder sollen wir ein Thema / Workshop in unser Programm aufnehmen?</h3>
 		<p>Schreib uns deinen Wunsch!</p>
 		{{ partial "contactform.html" (dict "context" . "class" "t-home__contact") }}

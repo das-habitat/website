@@ -19,7 +19,7 @@ function setEnv() {
 		return {
 			watch: true,
 			filename: '[name]',
-			command: `${binary} serve --buildDrafts=true --buildFuture=true  --bind=0.0.0.0 --baseURL=http://0.0.0.0:1313`,
+			command: `${binary} serve --buildDrafts=true --buildFuture=true --baseURL=http://localhost:1313`,
 		};
 	}
 

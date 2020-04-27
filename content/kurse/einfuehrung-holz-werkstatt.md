@@ -17,23 +17,20 @@ stage:
   width: 400
   height: 750
 statement: 'Dies ist der Werkstatt-Starter für die Holzwerkstatt. Er ist die Voraussetzung um selbständig in der Holzwerkstatt arbeiten zu dürfen. Der Kurs gibt insbesondere Sicherheitshinweise und erklärt die für Beginner wichtigsten Werkzeuge und Maschinen.'
-participants: 
+participants:
   min: 3
   max: 10
 minage: 18 Jahre
-preconditions: 
-  text: keine
-  src: ''
 ownequipment: 'eigenen Gehörschutz und Sicherheitsschuhe, falls vorhanden'
 safetyclothes: 'Festes Schuhwerk, besser Sicherheitsschuhe, eng anliegende Kleidung, Haarbedeckung'
 safetyhints: 'es kann staubig werden'
 language: Deutsch
-prize: '€ 10,-'
-materialcosts: 'keine'
+cost:
+  fee: 10€
 timeduration: 2h
-tags: ["Holz", "Werkstatt-Starter", "Einsteiger", "wenige Stunden"]
-# categories: ["eintägig", "Einsteiger"]
-# Werkstaetten: ["Holz"]
-# Laenge: ["Stunden"]
-# Zielgruppen: ["Beginner"]
+tags:
+  - 'Holz'
+  - 'Werkstatt-Starter'
+  - 'Einsteiger'
+  - 'wenige Stunden'
 ---

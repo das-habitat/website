@@ -18,21 +18,21 @@ stage:
   width: 400
   height: 750
 statement: 'Ein schönes Schneidbrett für die Küche kann jeder gebrauchen und ist auch eine tolle Geschenkidee. Dieser Kurs dient ideal als Einstieg in unsere Holzwerkstatt, weil der Einsatz der wichtigsten Holzbearbeitungsmaschinen erlernt werden: Die Formatkreissäge, die Hobelmaschine und die Schleifmaschinen.'
-participants: 
+participants:
   min: 3
   max: 5
 minage: 18 Jahre
-preconditions: 
-  text: Einführung in die Holzwerkstatt
-  src: '/courses/desc/einfuehrung-holz-werkstatt/'
+preconditions:
+  - text: Einführung in die Holzwerkstatt
+    src: 'einfuehrung-holz-werkstatt'
 ownequipment: 'eigenen Gehörschutz und Sicherheitsschuhe, falls vorhanden'
 safetyclothes: 'Festes Schuhwerk, besser Sicherheitsschuhe, eng anliegende Kleidung, Haarbedeckung'
 safetyhints: 'es kann staubig werden'
 language: Deutsch
-prize: '€ 20,-'
-materialcosts: '€ 10,-'
+cost:
+  fee: 20€
+  material: 10€
 timeduration: 4h
-tags: ["Holz", "Schneidbrett", "Einsteiger", "eintägig"]
+tags: ['Holz', 'Schneidbrett', 'Einsteiger', 'eintägig']
 # categories: ["eintägig", "Einsteiger"]
 ---
- 
