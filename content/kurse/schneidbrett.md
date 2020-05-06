@@ -33,6 +33,6 @@ cost:
   fee: 20€
   material: 10€
 timeduration: 4h
-tags: ['Holz', 'Schneidbrett', 'Einsteiger', 'eintägig']
+tags: ['Holz', 'Einsteiger', 'eintägig']
 # categories: ["eintägig", "Einsteiger"]
 ---

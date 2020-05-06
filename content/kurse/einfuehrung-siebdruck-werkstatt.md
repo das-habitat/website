@@ -30,7 +30,7 @@ cost:
   material: 5€
 timeduration: 3h
 tags:
-  - 'Textil'
+  - 'Siebdruck'
   - 'Werkstatt-Starter'
   - 'Einsteiger'
   - 'Eltern-Kind'
