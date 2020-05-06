@@ -1,0 +1,5 @@
+{{- define "main" -}}
+	{{- partial "workshops/start.html" . }}
+	{{- partial "workshops/list.html" (.Site.GetPage "kurse") }}
+	{{- partial "workshops/end.html" . }}
+{{- end }}

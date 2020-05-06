@@ -30,7 +30,7 @@ title: 'Das Habitat'
 # Menus
 
 menu:
-  courses:
+  events:
     - identifier: index
       name: Übersicht
       url: /kurse/

@@ -1,0 +1,38 @@
+.workshop__tags {
+	margin-top: 0;
+
+	li {
+		display: block;
+	}
+}
+
+@include media-lg {
+	.workshop__title {
+		grid-column: 3 / -1;
+		grid-row: 2;
+		margin: 0;
+	}
+
+	.workshop__title + .workshop__stage {
+		grid-row: 3;
+	}
+
+	.workshop__title + .workshop__stage + .workshop__statement {
+		grid-row: 3;
+	}
+
+	.workshop__details {
+		grid-column: 1 / span 2;
+		grid-row: 2 / span 2;
+	}
+
+	.workshop__cost {
+		grid-column: -3 / span 2;
+		grid-row: 1 / span 2;
+	}
+
+	.workshop__tags {
+		grid-column: -3 / span 2;
+		grid-row: 2;
+	}
+}

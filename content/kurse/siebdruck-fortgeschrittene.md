@@ -1,7 +1,7 @@
 ---
 title: Siebdruck für Fortgeschrittene
 draft: false
-layout: single-courses
+layout: kurs-single
 teaser:
   src: https://res.cloudinary.com/das-habitat/q_auto:best,w_200,h_200,c_fill,f_auto,dpr_auto/v1588771819/kurse/siebdruck2_uibfyp.jpg
   alt: 'Siebdruck Schnupperkurs'
@@ -31,13 +31,14 @@ safetyhints: 'es kann staubig werden'
 language: Deutsch
 cost:
   fee: 50€
-timeduration: 3h
-tags:
+duration: 3h
+kurse:
   - 'Siebdruck'
   - 'Eltern-Kind'
   - 'Fortgeschrittene'
   - 'wenige Stunden'
 ---
+
 Wir gehen alle Arbeitschritte in Theorie und Praxis vom blanken Sieb, über das Beschichten, Belichten bis hin zum druckfertigen Sieb durch. Behandeln Tips und Tricks zum einfarbigen und mehrfarbigen drucken am Textilkarousell und lernen wie man Siebe dann wieder reinigt, entschichtet und entfettet.
 Außerdem besprechen wir die Vorraussetzungen und Möglichkeiten eure eigenen Belichtungsvorlagen herzustellen.
 

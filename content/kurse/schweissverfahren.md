@@ -1,7 +1,7 @@
 ---
 title: Einführung in MAG-Schweißen
 draft: false
-layout: single-courses
+layout: kurs-single
 teaser:
   src: https://res.cloudinary.com/das-habitat/q_auto:best,w_200,h_200,c_fill,f_auto,dpr_auto/v1586981056/kurse/_DSC9837_preview_jlpwtf.jpg
   alt: 'MAG schweissen'
@@ -30,7 +30,10 @@ safetyhints: 'Achtung: UV-Strahlung'
 language: Deutsch
 cost:
   fee: 10€
-timeduration: 2h
-tags: ['Metall', 'Fügetechniken', 'Fortgeschrittene', 'eintägig']
-# categories: ["eintägig", "Einsteiger"]
+duration: 2h
+kurse:
+  - 'Metall'
+  - 'Fügetechniken'
+  - 'Fortgeschrittene'
+  - 'eintägig'
 ---

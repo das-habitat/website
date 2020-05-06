@@ -1,6 +1,7 @@
 .tags {
 	display: block;
 	list-style: none;
+	padding: 0;
 }
 
 .tags li {
@@ -28,7 +29,14 @@
 }
 
 .tag__count {
-	//
+	color: mix($color-brand-gray, $color-brand-white, 50%);
+
+	&:before {
+		content: '(';
+	}
+	&:after {
+		content: ')';
+	}
 }
 
 .tag--active {
@@ -37,5 +45,9 @@
 	&:visited {
 		background: $color-brand-blue;
 		color: #fff;
+	}
+
+	.tag__count {
+		color: mix($color-brand-blue, $color-brand-white, 50%);
 	}
 }

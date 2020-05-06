@@ -1,0 +1,27 @@
+<ul class="tags">
+	{{- if (or (eq .Kind "taxonomyTerm") (eq .Kind "section")) }}
+		<li>
+			<a class="tag tag--active" href="{{ .RelPermalink }}">
+				<span class="tag__title">Alle Kurse </span>
+				<span class="tag__count">{{ len .Site.Taxonomies.kurse }}</span>
+			</a>
+		</li>
+	{{ else }}
+		<li>
+			<a class="tag" href="{{ .Parent.RelPermalink }}">
+				<span class="tag__title">Alle Kurse</span>
+				<span class="tag__count">{{ len .Site.Taxonomies.kurse }}</span>
+			</a>
+		</li>
+	{{- end }}
+
+	{{ $page := . }}
+	{{- range .Site.Taxonomies.kurse }}
+		<li>
+			<a class="tag{{ if (eq .Page $page) }} tag--active{{ end }}" href="{{ .Page.RelPermalink }}">
+				<span class="tag__title">{{ .Page.Title }}</span>
+				<span class="tag__count">{{ .Count }}</span>
+			</a>
+		</li>
+	{{- end }}
+</ul>

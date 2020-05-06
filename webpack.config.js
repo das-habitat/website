@@ -7,26 +7,24 @@ const ShellPlugin = require('webpack-shell-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
 const theme = 'habitat';
-const hugoBinary = process.platform.startsWith('win')
-	? path.join('.hugo', 'hugo.exe')
-	: './.hugo/hugo';
+const hugoBinary = path.join('.hugo', process.platform.startsWith('win') ? 'hugo.exe' : 'hugo');
 const useLocalHugo = fs.existsSync(hugoBinary);
 
 function setEnv() {
-	const binary = useLocalHugo ? hugoBinary : 'hugo';
+	const command = useLocalHugo ? hugoBinary : 'hugo';
 
 	if (process.env.APP_ENV === 'dev') {
 		return {
 			watch: true,
 			filename: '[name]',
-			command: `${binary} serve --buildDrafts=true --buildFuture=true --baseURL=http://localhost:1313`,
+			command: `${command} serve --buildDrafts=true --buildFuture=true --baseURL=http://localhost:1313`,
 		};
 	}
 
 	return {
 		watch: false,
 		filename: '[name].[contenthash:5]',
-		command: binary,
+		command,
 	};
 }
 

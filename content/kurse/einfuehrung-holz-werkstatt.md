@@ -1,7 +1,7 @@
 ---
 title: Einführung in die Holzwerkstatt
 draft: false
-layout: single-courses
+layout: kurs-single
 teaser:
   src: https://res.cloudinary.com/das-habitat/q_auto:best,w_200,h_200,c_fill,f_auto,dpr_auto/v1586981042/kurse/_DSC9820_preview_nvndnb.jpg
   alt: 'Werkstatt-Starter Holzwerkstatt'
@@ -27,8 +27,8 @@ safetyhints: 'es kann staubig werden'
 language: Deutsch
 cost:
   fee: 10€
-timeduration: 2h
-tags:
+duration: 2h
+kurse:
   - 'Holz'
   - 'Werkstatt-Starter'
   - 'Einsteiger'

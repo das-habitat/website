@@ -1,6 +1,12 @@
 <head>
 	<meta charset="utf-8">
-	<title>{{ .Params.Title  }}{{ if .Params.Title }} | {{ end }}{{ .Site.Title }}</title>
+	<title>
+		{{- $title := .Params.Title -}}
+		{{- if (and (eq .Kind "taxonomyTerm") (eq .Section "kurse")) -}}
+		{{  $title = .Site.Data.kurse.title }}
+		{{- end -}}
+		{{- $title }}{{ if $title }} | {{ end }}{{ .Site.Title -}}
+	</title>
 	<link rel="stylesheet" href="/assets{{ if eq (getenv "APP_ENV") "dev" }}/main.css{{ else }}{{ index .Site.Data.manifest "main.css" | relURL }}{{ end }}" media="screen">
 	<link rel="canonical" href="{{ .RelPermalink | absURL }}"/>
 	{{- if (.Params.meta_keywords) }}

@@ -1,0 +1,25 @@
+<ul class="tags">
+	{{- if (or (eq .context.Kind "taxonomyTerm") (eq .context.Kind "section")) }}
+		<li>
+			<a class="tag tag--active" href="{{ .context.RelPermalink }}">
+				<span class="tag__title">#Alle</span>
+			</a>
+		</li>
+	{{ else }}
+		<li>
+			<a class="tag" href="{{ .context.Parent.RelPermalink }}">
+				<span class="tag__title">#Alle</span>
+			</a>
+		</li>
+	{{- end }}
+
+	{{ $page := .context }}
+	{{- range .taxonomy }}
+		<li>
+			<a class="tag{{ if (eq .Page $page) }} tag--active{{ end }}" href="{{ .Page.RelPermalink }}">
+				<span class="tag__title">#{{ .Page.Title }}</span>
+				<span class="tag__count">{{ .Count }}</span>
+			</a>
+		</li>
+	{{- end }}
+</ul>

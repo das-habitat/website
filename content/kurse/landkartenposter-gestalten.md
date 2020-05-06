@@ -1,7 +1,7 @@
 ---
 title: Landkartenposter gestalten
 draft: false
-layout: single-courses
+layout: kurs-single
 teaser:
   src: https://res.cloudinary.com/das-habitat/q_auto:best,w_200,h_200,c_fill,f_auto,dpr_auto/v1588773406/kurse/kartenposter4_ctfn6p.jpg
   alt: 'Landkartenposter gestalten'
@@ -16,8 +16,7 @@ stage:
   right_alt: 'Landkartenposter gestalten'
   width: 400
   height: 750
-statement: 'Landkartenposter sind ein toller Wandschmuck.
-Wir gestalten Poster aus Landkarten und bereiten alles vor für den finalen Druck.'
+statement: 'Landkartenposter sind ein toller Wandschmuck. Wir gestalten Poster aus Landkarten und bereiten alles vor für den finalen Druck.'
 participants:
   min: 3
   max: 6
@@ -28,10 +27,11 @@ safetyhints: 'keine'
 language: Deutsch
 cost:
   fee: 15€
-timeduration: 4h
-tags:
+duration: 4h
+kurse:
   - 'Computer'
   - 'Einsteiger'
   - 'wenige Stunden'
 ---
+
 Schlitz und Zapfen (eventuell auf Gehrung)

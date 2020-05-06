@@ -1,0 +1,64 @@
+{{- define "before-page" }}
+	<nav class="nav nav--up">
+		<a href="../">&larr; Kurse</a>
+	</nav>
+
+	<h1 class="page__title workshop__title">{{ .Title }}</h1>
+
+	<figure class="stage workshop__stage">
+		<img src="/placeholder.svg" alt="" width="1000" height="750">
+	</figure>
+
+	<div class="statement workshop__statement">
+		<blockquote>
+			<p>{{ htmlUnescape .Params.statement }}</p>
+		</blockquote>
+	</div>
+{{- end }}
+
+{{ define "main" }}
+	<main class="main main--grid">
+		{{ .Content }}
+
+		<aside class="workshop__cost">
+			{{- with .Params.cost }}
+				<div>
+					<h2>Kosten</h2>
+					{{- with .fee }}
+					<h3 class="label">Kursgebühr</h3>
+					<p>{{ . }}</p>
+					{{- end }}
+					{{- with .material }}
+					<h3 class="label">Materialkosten</h3>
+					<p>{{ . }}</p>
+					{{- end }}
+				</div>
+			{{- end }}
+		</aside>
+
+		<ul class="workshop__tags tags">
+			{{ range (.GetTerms "kurse") }}
+				<li>
+					<a class="tag" href="{{ .RelPermalink }}">
+						<span class="tag__title">{{ .LinkTitle }}</span>
+					</a>
+				</li>
+			{{ end }}
+		</ul>
+
+		<aside class="workshop__details">
+			<h2>Details</h2>
+			<p>
+				{{ .Params.participants.min }}-{{ .Params.participants.max }} Teilnehmer*innnen
+			</p>
+			{{- range .Params.details }}
+			<p>
+				{{ markdownify . }}
+			</p>
+			{{- end }}
+			<p>
+				Der Kurs dauert ca. {{ .Params.duration }} Stunden.
+			</p>
+		</aside>
+	</main>
+{{ end }}

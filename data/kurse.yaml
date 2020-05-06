@@ -1,17 +1,8 @@
----
-title: Kurse und Werkstatt-Starter
-draft: false
+title: Kurse, Workshops & Projekte
 statement: 'Unsere Kurse geben dir neue Ideen und das Wissen um mit Maschinen, Werkzeugen und Materialien effizient und sicher umzugehen. Mach was Neues!'
-layout: list-courses
-menu:
-  courses:
-    identifier: alle Kursbeschreibungen
-    weight: 100
-    name: Übersicht
 stage:
   src: https://res.cloudinary.com/das-habitat/q_auto:best,w_1000,h_750,c_fill,f_auto,dpr_auto/v1586981024/kurse/_DSC9763_preview_jsmkwp.jpg
   width: 1000
   height: 750
   alt: 'Überblick über die Kurse im Habitat'
 description: Kursübersicht mit Filtermöglichkeit.
----

@@ -1,7 +1,7 @@
 ---
 title: Einführung in die Siebdruckwerkstatt
 draft: false
-layout: single-courses
+layout: kurs-single
 teaser:
   src: https://res.cloudinary.com/das-habitat/q_auto:best,w_200,h_200,c_fill,f_auto,dpr_auto/v1586981093/kurse/R0012238_wwebau.jpg
   alt: 'Werkstatt-Starter Siebdruckwerkstatt'
@@ -28,8 +28,8 @@ language: Deutsch
 cost:
   fee: 10€
   material: 5€
-timeduration: 3h
-tags:
+duration: 3h
+kurse:
   - 'Siebdruck'
   - 'Werkstatt-Starter'
   - 'Einsteiger'

@@ -1,0 +1,24 @@
+<ul class="list-courses">
+	{{- range .Pages }}
+		<li class="list-courses__item">
+			<img
+				class="list-courses__image"
+				src="{{ .Params.teaser.src }}"
+				alt="{{ .Params.teaser.alt }}"
+				width="{{ .Params.teaser.width }}"
+				height="{{ .Params.teaser.height }}"
+			/>
+
+			<a href="{{ .RelPermalink }}">
+				{{ .Title }} &rarr;
+			</a>
+
+			<p>
+				{{ .Params.cost.fee }}
+				{{- if isset .Params.cost "material" }} Gebühren +
+				{{ .Params.cost.material }} Material
+				{{- end }}
+			</p>
+		</li>
+	{{- end }}
+</ul>

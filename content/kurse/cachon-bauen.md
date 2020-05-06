@@ -1,7 +1,7 @@
 ---
 title: Cachon bauen
 draft: false
-layout: single-courses
+layout: kurs-single
 teaser:
   src: https://res.cloudinary.com/das-habitat/q_auto:best,w_200,h_200,c_fill,f_auto,dpr_auto/v1588769662/kurse/cachonbauen_d0k6dp.png
   alt: 'Cachon bauen'
@@ -28,8 +28,8 @@ safetyhints: 'es kann staubig werden'
 language: Deutsch
 cost:
   fee: 70€
-timeduration: 8h
-tags:
+duration: 8h
+kurse:
   - 'Holz'
   - 'Eltern-Kind'
   - 'Einsteiger'

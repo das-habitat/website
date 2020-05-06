@@ -1,7 +1,7 @@
 ---
 title: Siebdruck Schnupperkurs
 draft: false
-layout: single-courses
+layout: kurs-single
 teaser:
   src: https://res.cloudinary.com/das-habitat/q_auto:best,w_200,h_200,c_fill,f_auto,dpr_auto/v1588770401/kurse/siebdruck_s1h2wm.jpg
   alt: 'Siebdruck Schnupperkurs'
@@ -31,13 +31,14 @@ safetyhints: 'es kann staubig werden'
 language: Deutsch
 cost:
   fee: 50€
-timeduration: 3h
-tags:
+duration: 3h
+kurse:
   - 'Siebdruck'
   - 'Eltern-Kind'
   - 'Einsteiger'
   - 'wenige Stunden'
 ---
+
 Kosten reduzieren sich mit Abo auf 40 €
 Beinhaltet sämtiche Verbrauchsmaterialien, wie Reiniger, Kopierschicht und Farbe. Bedruckmaterialien (T-Shirts, Jutebeutel, Kissenbezüge (alles aus reiner Baumwolle)) könnt ihr selber mitbringen oder euch etwas aus unserem separat erhältlichen Sortiment an Jutebeuteln und 2nd-Hand-Klamotten auswählen.
 
