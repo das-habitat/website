@@ -13,3 +13,8 @@ resourceDir: '.resources'
 sitemap:
   changefreq: 'monthly'
   filename: 'sitemap.xml'
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
