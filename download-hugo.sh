@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-HUGOVERSION=0.56.3
+HUGOVERSION=0.72.0
 HUGOARCHITECTURE=$(uname -m)
 HUGOPLATFORM=$(uname -s)
 
