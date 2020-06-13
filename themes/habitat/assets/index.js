@@ -1,4 +1,4 @@
-import 'instant.page';
+import 'prerender_all';
 
 import './styles/index.scss';
 import './modules/matomo';
