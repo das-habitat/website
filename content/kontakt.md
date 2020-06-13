@@ -5,11 +5,8 @@ menu:
   main:
     name: 'Kontakt'
     weight: 900
+layout: 'contact'
 ---
-
-## Das Wichtigste auf einen Blick
-
-{{< contact >}}
 
 ## Anfahrt mit öffentlichen Verkehrsmitteln
 
@@ -39,4 +36,3 @@ Das Habitat Augsburg e. V.
 IBAN: DE28 7205 0000 0251 7188 54  
 BIC: AUGSDE77XXX  
 Stadtsparkasse Augsburg
-

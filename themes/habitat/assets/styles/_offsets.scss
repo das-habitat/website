@@ -1,3 +1,17 @@
+.mt-lg {
+	margin-top: var(--offset-vertical-2);
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+
+@include media-sm {
+	.sm\:mt-lg {
+		margin-top: var(--offset-vertical-2);
+	}
+}
+
 @include media-lg {
 	.before-lg {
 		margin-top: var(--offset-vertical-2);
