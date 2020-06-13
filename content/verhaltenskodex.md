@@ -7,7 +7,6 @@ menu:
     weight: 900
 ---
 
-## Verhaltenskodex
 
 #### Wir lehnen jegliche Form von Diskriminierung ab
 
