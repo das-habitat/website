@@ -1,0 +1,60 @@
+%formelement {
+	padding: 1rem 1.5rem;
+	line-height: 2rem;
+	appearance: none;
+	border: 0;
+}
+
+form {
+	p {
+		margin: 0;
+	}
+
+	p + * {
+		margin-top: 1rem;
+	}
+}
+
+label {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: $color-brand-gray;
+	letter-spacing: 0.1rem;
+	line-height: 2.5rem;
+	text-transform: uppercase;
+}
+
+button {
+	@extend %formelement;
+
+	display: inline-block;
+	appearance: none;
+	font-size: 1.8rem;
+	border-radius: 0;
+	color: $color-brand-white;
+	background: $color-brand-blue;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+	@extend %formelement;
+
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 1.5rem;
+	box-shadow: 0 0 0 3px rgba(76, 77, 74, 0.1);
+	outline: 0;
+	color: $color-brand-blueAlt;
+	border-radius: 0;
+
+	&:active,
+	&:focus {
+		box-shadow: 0 0 0 3px $color-brand-blueAlt;
+	}
+}
+
+.form-contact {
+	grid-column: 1 / span 3;
+}

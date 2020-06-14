@@ -18,3 +18,15 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+preserveTaxonomyNames: true
+
+disableFastRender: true
+
+Params:
+  # Using staticforms.xyz
+  forms:
+    contact:
+      email: kontakt+formular@das-habitat.de
+      accessKey: 8b79d8d6-3a17-4148-9da1-8bc9c184cad8
+      redirect: /danke

@@ -1,0 +1,31 @@
+<form class="form-contact" method="post" action="https://api.staticforms.xyz/submit">
+	<p>
+		<input type="hidden" name="accessKey" value="{{ .Site.Params.forms.contact.accessKey }}">
+		<input type="hidden" name="replyTo" value="@">
+		<input type="text" name="honeypot" style="display:none">
+		<input type="hidden" name="redirectTo" value="{{ (.Site.GetPage .Site.Params.forms.contact.redirect).Permalink }}">
+
+		<label for="contact-name">Name*</label>
+		<input class="form-control" type="text" id="contact-name" name="name"  required>
+	</p>
+
+	<p>
+		<label for="contact-email">E-Mail*</label>
+		<input class="form-control" type="email" id="contact-email" name="email" required>
+	</p>
+
+	<p>
+		<label for="contact-message">Deine Nachricht an das Habitat*</label>
+		<textarea class="form-control" name="message" id="contact-message" rows="12" placeholder="" required></textarea>
+	</p>
+
+	<p>
+		<button type="submit" value="Submit">Senden</button>
+	</p>
+
+	<p>
+		<small>
+			Alle Felder müssen ausgefüllt sein.
+		</small>
+	</p>
+</form>
