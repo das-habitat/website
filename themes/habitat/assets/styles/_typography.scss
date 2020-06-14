@@ -36,7 +36,7 @@ h1,
 
 h2,
 .h2 {
-	margin-bottom: 1rem;
+	margin-bottom: calc(var(--offset-vertical) / 2);
 
 	* + & {
 		margin-top: var(--offset-vertical-2);
@@ -51,10 +51,6 @@ h3,
 
 	* + & {
 		margin-top: 2rem;
-	}
-
-	+ p {
-		margin-top: 0;
 	}
 }
 
@@ -73,6 +69,24 @@ ol,
 dl {
 	* + & {
 		margin-top: var(--offset-vertical);
+	}
+
+	h1 + &,
+	.h1 + &,
+	h2 + &,
+	.h2 + &,
+	h3 + &,
+	.h3 + & {
+		margin-top: calc(var(--offset-vertical) / 2);
+	}
+}
+
+ul,
+ol {
+	padding-left: 2.5rem;
+
+	li + li {
+		margin-top: calc(var(--offset-vertical) / 4);
 	}
 }
 
