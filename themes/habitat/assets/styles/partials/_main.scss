@@ -8,3 +8,11 @@ main {
 		}
 	}
 }
+
+.main--grid {
+	@include grid;
+
+	> * {
+		grid-column: 1 / -1;
+	}
+}

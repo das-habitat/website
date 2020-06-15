@@ -6,39 +6,54 @@
 	</figure>
 	{{- end }}
 
+	{{- if .Params.statement }}
 	<div class="statement">
 		<blockquote>
 			<p>{{ htmlUnescape .Params.statement }}</p>
 		</blockquote>
 	</div>
+	{{- end }}
 {{- end }}
 
 {{ define "main" }}
 	<main class="main main--grid">
-		<div>
-			{{ range .Pages.GroupByDate "2006-01-01" }}
+		{{ range (where .Pages "Date" "ge" now).GroupByDate "2006-01-01" "asc" }}
+		<div class="events">
 			<h2>{{ index $.Site.Data.intl.months (string (dateFormat "1" .Key)) }} {{ dateFormat "2006" .Key }}</h2>
 
-			<ul>
+			<ul class="plain events__list">
 				{{ range .Pages }}
 					<li>
-						<h3>
-							<a href="{{ .Permalink }}">{{ .Title }}</a>
-						</h3>
+						<article class="event">
+							<time datetime="{{ .Date }}">
+								{{ index $.Site.Data.intl.weekdays (string (time .Date).Weekday) }}, {{ .Date.Format "2." }} {{ index $.Site.Data.intl.months (string (dateFormat "1" .Date)) }} {{ .Date.Format "2006 ab 15:04" }}
+							</time>
 
-						{{ .Content }}
+							<h3>
+								{{- if .Params.link }}
+								<a href="{{ .Params.link }}">{{ .Title }}</a>
+								{{- else }}
+									{{ .Title }}
+								{{- end }}
+							</h3>
 
-						{{partial "debugprint.html" .Date }}
+							<div>
+								{{ .Content }}
+							</div>
 
-						{{ (time .Date).Weekday }}
-
-						{_{ index $.Site.Data.intl.months (string (dateFormat "1" .Date.WeekDay)) }}
-
-						<div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+							<footer>
+							</footer>
+						</article>
 					</li>
 				{{ end }}
 			</ul>
-			{{ end }}
+		</div>
+		{{ end }}
+
+		<hr>
+
+		<div class="cs3-lg c3-lg large mt-lg">
+			{{ .Content }}
 		</div>
 	</main>
 {{ end }}

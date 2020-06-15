@@ -12,3 +12,5 @@ stage:
   alt: 'Termine'
 grid: true
 ---
+
+Weitere Termine findet ihr außerdem auch noch [auf unserer Facebook-Seite](https://www.facebook.com/habitataugsburg).

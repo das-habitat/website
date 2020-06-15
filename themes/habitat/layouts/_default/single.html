@@ -9,7 +9,7 @@
 
 	<div class="statement">
 		<blockquote>
-			<p>{{ htmlUnescape .Params.statement }}</p>
+			<p>{{ htmlUnescape .Params.statement | markdownify }}</p>
 		</blockquote>
 	</div>
 {{- else }}

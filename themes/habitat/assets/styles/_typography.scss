@@ -103,13 +103,17 @@ h3,
 
 nav {
 	display: block;
+}
 
-	ul,
-	li {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
+nav ul,
+nav li,
+ul.plain,
+ol.plain,
+ul.plain > li,
+ol.plain > li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .meta {
