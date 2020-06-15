@@ -1,9 +1,12 @@
 .t-machine__up {
 	@include media-lg {
-		grid-row: 1;
-		align-self: end;
+		grid-row: 2;
 		margin-bottom: calc(8 * var(--offset-vertical));
 	}
+}
+
+.t-machine__stage {
+	grid-row: 2;
 }
 
 .t-machine__technical {

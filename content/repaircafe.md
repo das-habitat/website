@@ -4,7 +4,7 @@ description:
 draft: false
 menu:
   events:
-    weight: 100
+    weight: 900
     identifier: repaircafe
 statement: 'Kaputt ist nur ein temporärer Zustand. Reparier dein Zeug! Jeden ersten Samstag im Monat von 12:00 bis 18:00 Uhr im Repair-Café im Habitat.'
 stage:

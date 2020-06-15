@@ -1,0 +1,44 @@
+{{- define "before-page" }}
+	<h1 class="page__title page__title--statement">{{ .Title }}</h1>
+	{{- with .Params.stage }}
+	<figure class="stage">
+		<img src="{{ .src }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}">
+	</figure>
+	{{- end }}
+
+	<div class="statement">
+		<blockquote>
+			<p>{{ htmlUnescape .Params.statement }}</p>
+		</blockquote>
+	</div>
+{{- end }}
+
+{{ define "main" }}
+	<main class="main main--grid">
+		<div>
+			{{ range .Pages.GroupByDate "2006-01-01" }}
+			<h2>{{ index $.Site.Data.intl.months (string (dateFormat "1" .Key)) }} {{ dateFormat "2006" .Key }}</h2>
+
+			<ul>
+				{{ range .Pages }}
+					<li>
+						<h3>
+							<a href="{{ .Permalink }}">{{ .Title }}</a>
+						</h3>
+
+						{{ .Content }}
+
+						{{partial "debugprint.html" .Date }}
+
+						{{ (time .Date).Weekday }}
+
+						{_{ index $.Site.Data.intl.months (string (dateFormat "1" .Date.WeekDay)) }}
+
+						<div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+					</li>
+				{{ end }}
+			</ul>
+			{{ end }}
+		</div>
+	</main>
+{{ end }}
