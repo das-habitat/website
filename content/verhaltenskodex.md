@@ -1,10 +1,6 @@
 ---
 title: 'Verhaltenskodex'
 draft: false
-menu:
-  main:
-    name: 'Verhaltenskodex'
-    weight: 900
 ---
 
 ### Wir lehnen jegliche Form von Diskriminierung ab

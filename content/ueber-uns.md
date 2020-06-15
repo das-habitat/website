@@ -35,4 +35,9 @@ Egal ob für den Privatgebrauch, zum Testen einer Produkt- oder Geschäftsidee, 
 Es ist die schützende Hülle, die mutigen Ideen Zeit und Raum bietet, zu wachsen und sich zu bewähren um positiven Einfluss auf unsere Zukunft zu nehmen. Ähnlich einem Gewächshaus oder dem Regenwald soll hier wachsen und gedeihen, was gut für unsere Gesellschaft, Wirtschaft, Umwelt und Kultur ist.
 
 Inspiriert durch die Ideen für Mond- und Mars-Habitate wollen wir forschen und entwickeln. Selbst wenn es zu Beginn unmöglich scheint. Das Habitat stellt die Verbindung zwischen Technologie, sozialem Zusammenleben und der Nähe zur Natur dar. Das Habitat steht für einen Neustart in unerforschter Umgebung.
+
+## Unser Verhaltenscodex
+
+Um unser Miteinander für alle angenehm zu gestalten, gibt es unseren [Verhaltenskodex](/verhaltenskodex) oder auch Code of Conduct, dem alle Mitgliedern, Nutzer\*innen und Teilnehmende folgen müssen.
+
 {{< /css >}}
