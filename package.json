@@ -14,7 +14,8 @@
     "start": "cross-env APP_ENV=dev webpack --config=webpack.config.js",
     "now-build": "sh ./download-hugo.sh; HUGO_PATH='./.hugo/hugo' webpack --mode=production",
     "now-dev": "sh ./download-hugo.sh; HUGO_PATH='./.hugo/hugo' APP_ENV=dev webpack",
-    "format": "prettier '**/*.scss' --write; prettier '**/*.js' --write"
+    "format": "prettier '**/*.scss' --write; prettier '**/*.js' --write",
+    "hugo": "./.hugo/hugo"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",

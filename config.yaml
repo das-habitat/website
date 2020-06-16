@@ -1,27 +1,50 @@
-baseURL: 'https://das-habitat.de'
-languageCode: 'de-de'
-title: 'Das Habitat'
-theme:
-  - 'hugo-debugprint'
-  - 'habitat'
-publishDir: 'dist'
-enableRobotsTXT: true
-defaultContentLanguage: 'de'
+# Hugo configuration
+
+disableFastRender: true
 enableEmoji: true
-resourceDir: '.resources'
-
-sitemap:
-  changefreq: 'monthly'
-  filename: 'sitemap.xml'
-
+enableRobotsTXT: true
 markup:
   goldmark:
     renderer:
       unsafe: true
+publishDir: 'dist'
+resourceDir: '.resources'
+
+# Site configuration
+
+baseURL: 'https://das-habitat.de'
+buildFuture: true # required for events page
+defaultContentLanguage: 'de'
+languages:
+  de:
+    weight: 1
+languageCode: 'de-de'
+sitemap:
+  changefreq: 'monthly'
+  filename: 'sitemap.xml'
+theme:
+  - 'hugo-debugprint'
+  - 'habitat'
+title: 'Das Habitat'
+
+# Menus
+
+menu:
+  courses:
+    - identifier: index
+      name: Übersicht
+      url: /kurse/
+      weight: -100
+
+# Taxonomies
 
 preserveTaxonomyNames: true
+taxonomies:
+  category: categories
+  tag: tags
+  kurs: kurse
 
-disableFastRender: true
+# Global attributes
 
 Params:
   # Using staticforms.xyz

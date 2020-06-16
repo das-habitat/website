@@ -25,16 +25,19 @@
 @import 'elements/offsets';
 @import 'elements/table';
 
+// Before (for selector order)
+@import 'partials/main';
+
 // Partials
 @import 'partials/announcement';
 @import 'partials/box';
 @import 'partials/claim';
 @import 'partials/contact';
+@import 'partials/events';
 @import 'partials/feature';
 @import 'partials/follow-us';
 @import 'partials/footer';
 @import 'partials/header';
-@import 'partials/main';
 @import 'partials/nav';
 @import 'partials/note';
 @import 'partials/sidebar';
