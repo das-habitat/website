@@ -5,7 +5,7 @@ draft: false
 
 ### Wir lehnen jegliche Form von Diskriminierung ab
 
-Im Interesse eines offenen und einladenden Umfeldes wollen wir uns als Teilnehmer\*innen und Verantwortliche des Habitats verpflichten, die Teilnahme am Habitat und unserer Gemeinschaft zu einer von Belästigung freien Erfahrung zu machen – unabhängig von Alter, Körpergröße, Behinderung, ethnischer Zuordnung, geschlechtlicher Identität und Ausdruck, Erfahrungsstufe, Nationalität, persönlicher Erscheinung, Rasse, Religion oder sexueller Identität oder Orientierung.
+Im Interesse eines offenen und einladenden Umfeldes wollen wir uns als Teilnehmer\*innen und Verantwortliche des Habitats verpflichten, die Teilnahme am Habitat und unserer Gemeinschaft zu einer von Belästigung freien Erfahrung zu machen – unabhängig von Alter, Körpergröße, Behinderung, ethnischer Zuordnung, geschlechtlicher Identität und Ausdruck, Erfahrungsstufe, Nationalität, persönlicher Erscheinung, Religion oder sexueller Identität oder Orientierung.
 
 ### Unser Handeln beruht auf Erfahrung und Professionalität, ohne diese einzufordern
 
