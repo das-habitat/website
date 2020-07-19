@@ -19,10 +19,10 @@ Registernummer: VR202180
 
 ## Vertreten durch
 
-- Sven Ten Pas (Vorstand) (+49 174 310 71 79)
-- Tim Thiede (Vorstand) (+49 172 135 03 82)
-- Mathias Schuh (Vorstand) (+49 170 109 46 07)
-- Hermann Steiner (Vorstand) (+49 174 848 69 41)
+- Jan Krause (Vorstand)
+- Jennifer Leis (Vorständin)
+- Florian Pichler (Vorstand)
+- Sven Ten Pas (Vorstand)
 
 Diese Rufnummern hier, weil wir wahrscheinlich verpflichtet sind diese anzugeben.
 Wenn du diese anrufst, rufst du einen Menschen ganz privat und persönlich an. Bitte mach das nur, wenn es wirklich wirklich nicht anders geht. Wir lieben unser Habitat sehr, aber wir können leider nicht immer dort sein.
