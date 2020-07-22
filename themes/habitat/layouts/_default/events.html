@@ -26,7 +26,9 @@
 					<li>
 						<article class="event">
 							<time datetime="{{ .Date }}">
-								{{ index $.Site.Data.intl.weekdays (string (time .Date).Weekday) }}, {{ .Date.Format "2." }} {{ index $.Site.Data.intl.months (string (dateFormat "1" .Date)) }} {{ .Date.Format "2006 ab 15:04" }}
+								{{ index $.Site.Data.intl.weekdays (string (time .Date).Weekday) }}, {{ .Date.Format "2." }} {{ index $.Site.Data.intl.months (string (dateFormat "1" .Date)) }} {{ .Date.Format "2006 " }} <br>{{ .Date.Format "15:04" }} {{ with .Params.end }}
+									bis {{ (time .).Format "15:04" }}
+								{{ end }}
 							</time>
 
 							<h3>
