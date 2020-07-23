@@ -6,7 +6,13 @@
 	}
 
 	li + li {
-		margin-top: var(--offset-vertical);
+		margin-top: var(--offset-vertical-2);
+	}
+
+	@include media-lg {
+		li + li {
+			margin-top: var(--offset-vertical-3);
+		}
 	}
 }
 
