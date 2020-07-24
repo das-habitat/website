@@ -22,6 +22,7 @@
 		<script type="text/javascript" src="/assets{{ if eq (getenv "APP_ENV") "dev" }}/main.js{{ else }}{{ index .Site.Data.manifest "main.js" | relURL }}{{ end }}"></script>
 		{{ if not (eq (getenv "APP_ENV") "dev") }}
 		<noscript><img src="https://statistik.das-habitat.de/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></noscript>
+		<script src="https://cdn.usefathom.com/script.js" site="LGSVGZYI" defer></script>
 		{{- end }}
 	</body>
 </html>
