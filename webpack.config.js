@@ -55,7 +55,7 @@ module.exports = (env = setEnv()) => {
 		module: {
 			rules: [
 				{
-					test: /.(jpg|jpeg|png|svg)$/,
+					test: /.(jpg|jpeg|png|svg|woff|woff2)$/,
 					use: [
 						{
 							loader: 'file-loader',
@@ -79,6 +79,15 @@ module.exports = (env = setEnv()) => {
 					],
 				},
 			],
+		},
+
+		resolve: {
+			alias: {
+				'/assets/fonts/IBM-Plex-Sans/fonts': path.resolve(
+					__dirname,
+					'themes/habitat/static/assets/fonts/IBM-Plex-Sans/fonts'
+				),
+			},
 		},
 
 		plugins: [

@@ -10,3 +10,4 @@ dist
 /.hugo
 
 .now
+themes/habitat/static/assets/*.woff2
