@@ -1,13 +1,4 @@
-node_modules
-resources
-dist
-/data/manifest.json
+Icon
 .DS_Store
-/themes/habitat/static/assets/main.js
-/themes/habitat/static/assets/main.css
-/themes/habitat/static/assets/main.*.js
-/themes/habitat/static/assets/main.*.css
-/.hugo
 
-.now
-themes/habitat/static/assets/*.woff2
+node_modules

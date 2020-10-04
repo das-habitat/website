@@ -1,0 +1,4 @@
+title: Kontakt
+extends: default
+options:
+  changeTemplate: false

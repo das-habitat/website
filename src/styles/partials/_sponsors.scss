@@ -1,0 +1,25 @@
+.sponsors {
+  margin: 0;
+  padding: 0;
+	list-style: none;
+
+	li {
+    display: inline-block;
+    margin: 0 var(--offset-vertical) 0 0;
+
+	}
+
+	a {
+		@include link-plain;
+
+		display: inline-block;
+		overflow: hidden;
+		height: var(--offset-vertical-3);
+	}
+
+	img {
+		display: block;
+		height: calc(3 * var(--offset-vertical));
+		width: auto;
+	}
+}

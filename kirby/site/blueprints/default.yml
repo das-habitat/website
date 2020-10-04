@@ -1,0 +1,22 @@
+title: Default
+preset: page
+
+fields:
+  Text:
+    label: Text
+    type: textarea
+    size: large
+  StageImage:
+    label: Stage image
+    type: files
+    max: 1
+    min: 0
+    multiple: false
+  StageAlt:
+    label: Image description for the stage image
+    type: text
+    when:
+      StageImage: true
+
+sidebar:
+  fields: fields/meta

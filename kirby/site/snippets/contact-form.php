@@ -1,0 +1,31 @@
+<form class="form-contact" method="post" action="https://postbote.das-habitat.de/form/contact">
+	<p>
+		<label for="contact-name">Name*</label>
+		<input class="form-control" type="text" id="contact-name" name="name" autocomplete="name" required>
+	</p>
+
+	<p>
+		<label for="contact-email">E-Mail*</label>
+		<input class="form-control" type="email" id="contact-email" name="email" autocomplete="email" required>
+	</p>
+
+	<p>
+		<label for="contact-subject">In welcher Stadt ist das Habitat?*</label>
+		<input class="form-control" type="text" id="contact-subject" name="subject" autocomplete="off" required>
+	</p>
+
+	<p>
+		<label for="contact-body">Deine Nachricht an das Habitat*</label>
+		<textarea class="form-control" name="body" id="contact-body" rows="12" placeholder="" required></textarea>
+	</p>
+
+	<p>
+		<button type="submit" value="Submit">Senden</button>
+	</p>
+
+	<p>
+		<small>
+			Alle Felder müssen ausgefüllt sein.
+		</small>
+	</p>
+</form>

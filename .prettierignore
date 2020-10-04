@@ -1,5 +1,5 @@
-dist
-resources
-themes/habitat/assets/styles/plex-sans
-themes/habitat/static/assets/main.js
-**/*.html
+kirby
+media
+site/cache
+site/plugins
+vendor

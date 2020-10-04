@@ -1,0 +1,11 @@
+type: fields
+fields:
+  navTitle:
+    label: Navigation title
+    type: text
+    help: Used in Navigation and Menus
+  description:
+    label: Description
+    type: textarea
+    size: small
+    help: Für Suchmaschinen und Social Media
