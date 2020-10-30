@@ -1,5 +1,8 @@
 - text: Wir haben wieder geöffnet! Die für Corona geltenden Vorsichtsmaßnahmen erfahrt ihr vor Ort. **Mund-Nasen-Schutz ist Pflicht.**
-  active: true
+  active: false
   type: happy
 - text: 'Das Habitat macht Urlaub und bleibt vom 21.8-23.8 geschlossen.'
   active: false
+- text: Gemäß der von der Stadt Augsburg und der Bundesregierung verkündeten Maßnahmen bleibt das Habitat vorerst geschlossen. Für Fragen und Unterstützung nutzt [unser Kontaktformular](/kontakt).
+  active: true
+  type: urgent
