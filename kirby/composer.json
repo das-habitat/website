@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=7.1.0",
-        "getkirby/cms": "^3.0",
+        "getkirby/cms": "3.5.0-rc.4",
         "bnomei/kirby3-dotenv": "^1.2"
     },
     "config": {

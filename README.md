@@ -9,7 +9,7 @@
 ## Installation
 
 - `yarn install`
-- `cd kirby; composer install`
+- `yarn composer install`
 
 ## Running locally
 
