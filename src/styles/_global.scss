@@ -1,8 +1,12 @@
 html,
 body,
 :after,
-:before {
-	font-family: 'IBM Plex Sans Web', sans-serif;
+:before,
+*,
+*:after,
+*:before {
+  font-family: 'IBM Plex Sans Web', sans-serif;
+  box-sizing: border-box;
 }
 
 html,
@@ -19,29 +23,4 @@ html {
 body {
 	font-size: 1.5rem;
 	line-height: calc(25 / 15);
-}
-
-a {
-	@include link;
-}
-
-hr {
-	display: block;
-	width: 100%;
-	height: 0;
-	margin-top: calc(var(--offset-vertical-2) - 2px);
-	margin-top: calc(var(--offset-vertical-2) - 1px);
-	border-top: 3px solid $color-brand-gray-10;
-}
-
-figure {
-	display: block;
-	margin: 0;
-	padding: 0;
-
-	img {
-		display: block;
-		max-width: 100%;
-		height: auto;
-	}
 }
