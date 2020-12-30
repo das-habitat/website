@@ -50,7 +50,10 @@ function watchTask() {
     proxy: 'localhost:8000',
   });
 
-  watch('kirby/**/!(*.lock)').on('change', browserSync.reload);
+  watch(['kirby/**/*', '!kirby/cache/**/*', '!.lock']).on(
+    'all',
+    browserSync.reload
+  );
 }
 
 exports.build = build;

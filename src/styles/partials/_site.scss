@@ -1,0 +1,8 @@
+.site {
+  display: grid;
+  grid-template-columns: 1fr 95rem 1fr;
+}
+
+.site > * {
+  grid-column: 2 / span 1;
+}

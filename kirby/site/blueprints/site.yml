@@ -1,3 +1,32 @@
 title: Site
-preset: pages
 unlisted: true
+
+tabs:
+  pages:
+    label:
+      de: Seiten
+      en: Pages
+    sections:
+      drafts:
+        type: pages
+        status: draft
+      unlisted:
+        type: pages
+        status: unlisted
+      listed:
+        type: pages
+        status: listed
+  menus:
+    label:
+      de: Menüs
+      en: Menus
+    fields:
+      menus:
+        type: structure
+        fields:
+          menuHeadline:
+            type: text
+            label: Menu headline
+          menuItems:
+            type: pages
+            label: Menu item

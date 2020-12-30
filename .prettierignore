@@ -3,3 +3,4 @@ media
 site/cache
 site/plugins
 vendor
+src/styles/plex-sans

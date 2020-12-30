@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5832d265b5449943fecaf4f36c04f75d",
+    "content-hash": "893537cdbced8f7bcaafac3e3efd1cd4",
     "packages": [
         {
             "name": "bnomei/kirby3-dotenv",
@@ -181,16 +181,16 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "3.5.0-rc.4",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "c541d0cf6fe7256521642d67dfc11dd5e77a5c0b"
+                "reference": "0d2751af7cb478df14f30fac47fe9a2cd3b38114"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/c541d0cf6fe7256521642d67dfc11dd5e77a5c0b",
-                "reference": "c541d0cf6fe7256521642d67dfc11dd5e77a5c0b",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/0d2751af7cb478df14f30fac47fe9a2cd3b38114",
+                "reference": "0d2751af7cb478df14f30fac47fe9a2cd3b38114",
                 "shasum": ""
             },
             "require": {
@@ -242,7 +242,13 @@
                 "issues": "https://github.com/getkirby/kirby/issues",
                 "source": "https://github.com/getkirby/kirby"
             },
-            "time": "2020-12-03T16:51:31+00:00"
+            "funding": [
+                {
+                    "url": "https://getkirby.com/buy",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-12-15T08:09:43+00:00"
         },
         {
             "name": "getkirby/composer-installer",
@@ -986,9 +992,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "getkirby/cms": 5
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

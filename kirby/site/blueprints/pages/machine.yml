@@ -1,0 +1,13 @@
+title: Maschine
+extends: default
+
+fields:
+  specs:
+    label: Spezifikationen
+    type: structure
+    fields:
+      label:
+        type: text
+      value:
+        type: text
+

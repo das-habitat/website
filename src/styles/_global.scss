@@ -11,16 +11,17 @@ body,
 
 html,
 body {
-	background: $color-brand-white;
-	color: $color-brand-black;
-	font-weight: 450;
+  background: $color-brand-white;
+  color: $color-brand-black;
+  font-weight: 450;
 }
 
 html {
-	font-size: 10/16 * 100%; // 1rem == 10px
+  border-top: 0.5rem solid $brand-yellow;
+  font-size: 10/16 * 100%; // 1rem == 10px
 }
 
 body {
-	font-size: 1.5rem;
-	line-height: calc(25 / 15);
+  font-size: 1.5rem;
+  line-height: calc(25 / 15);
 }

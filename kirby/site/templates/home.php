@@ -1,11 +1,12 @@
 <?php snippet('header') ?>
 
-<blockquote class="claim t-home__claim">
+<div>
   <p>
-  Dein Makerspace. <br>
-  Deine offene Werkstatt.
+    Das Fundament für dein nächstes Projekt.
+  Das Habitat ist Makerspace, Werkstatt für Macher
+  & Lebensraum für Visionäre.
   </p>
-</blockquote>
+</div>
 
 <?php snippet('contact-info') ?>
 <?php snippet('stage') ?>

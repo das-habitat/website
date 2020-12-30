@@ -1,0 +1,8 @@
+.top {
+  margin: 0 auto;
+  padding: $spacing-md;
+
+  @include media-md {
+    padding: $spacing-lg $spacing-md;
+  }
+}

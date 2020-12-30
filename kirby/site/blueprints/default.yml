@@ -4,8 +4,19 @@ preset: page
 fields:
   Text:
     label: Text
-    type: textarea
-    size: large
+    type: blocks
+    fieldsets:
+      text:
+        extends: blocks/text
+        fields:
+          classNames:
+            label:
+              de: CSS-Klassen
+              en: CSS Classes
+            type: multiselect
+            options: query
+            query: site.ClassNames.yaml
+
   StageImage:
     label: Stage image
     type: files
@@ -20,3 +31,5 @@ fields:
 
 sidebar:
   fields: fields/meta
+
+  pages: true
