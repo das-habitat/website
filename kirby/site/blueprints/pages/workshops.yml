@@ -1,0 +1,38 @@
+title:
+  de: Kurse
+  en: Workshops
+
+columns:
+  left:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          Text:
+            label: Text
+            type: textarea
+            font: monospace
+      drafts:
+        headline:
+          de: Entwürfe
+          en: Drafts
+        type: pages
+        template: workshop
+        status: draft
+        sortable: true
+      published:
+        headline:
+          de: Öffentlich
+          en: Published
+        type: pages
+        template: workshop
+        status: published
+        sortable: true
+
+
+  right:
+    width: 1/3
+    sections:
+      fields: fields/meta
+

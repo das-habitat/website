@@ -1,0 +1,30 @@
+title: Sponsor
+
+fields:
+  Title:
+    label:
+      de: Titel
+      en: Title
+    type: text
+  Description:
+    label:
+      de: Beschreibung
+      en: Description
+    type: textarea
+  Visible:
+    label:
+      de: Sichtbar
+      en: Visbile
+    type: toggle
+    default: true
+    text:
+      -
+        en: 'No'
+        de: Nein
+      -
+        en: 'Yes'
+        de: Ja
+
+accept:
+  mime: image/svg+xml
+  type: image

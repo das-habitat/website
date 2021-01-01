@@ -10,12 +10,15 @@ tabs:
       drafts:
         type: pages
         status: draft
-      unlisted:
+        headline:
+          de: Entwürfe
+          en: Drafts
+      published:
         type: pages
-        status: unlisted
-      listed:
-        type: pages
-        status: listed
+        status: unlisted,listed
+        headline:
+          de: Veröffentlicht
+          en: Published
   menus:
     label:
       de: Menüs
