@@ -1,0 +1,64 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 4rem;
+  row-gap: 0;
+}
+
+@for $i from 1 through 3 {
+  .column-start#{$i} {
+    grid-column-start: $i;
+  }
+
+  .column-end#{$i} {
+    grid-column-start: $i;
+  }
+
+  .column-start-#{$i} {
+    grid-column-start: -$i;
+  }
+
+  .column-end-#{$i} {
+    grid-column-end: -$i;
+  }
+
+  .column-span#{$i} {
+    grid-column-end: span $i;
+  }
+}
+
+@include media-large {
+  @for $i from 1 through 3 {
+    .lg\:column-start#{$i} {
+      grid-column-start: $i;
+    }
+
+    .lg\:column-end#{$i} {
+      grid-column-start: $i;
+    }
+
+    .lg\:column-start-#{$i} {
+      grid-column-start: -$i;
+    }
+
+    .lg\:column-end-#{$i} {
+      grid-column-end: -$i;
+    }
+
+    .lg\:column-span#{$i} {
+      grid-column-end: span $i;
+    }
+  }
+}
+
+.column-span4,
+.column-span-all {
+  grid-column-end: span 4;
+}
+
+@include media-large {
+  .lg\:column-span4,
+  .lg\:column-span-all {
+    grid-column-end: span 4;
+  }
+}

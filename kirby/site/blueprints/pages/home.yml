@@ -1,2 +1,2 @@
 title: Homepage
-extends: default
+extends: pages/default

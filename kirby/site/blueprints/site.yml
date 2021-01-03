@@ -15,16 +15,20 @@ tabs:
           en: Drafts
       published:
         type: pages
-        status: unlisted,listed
+        status: published
         headline:
           de: Veröffentlicht
           en: Published
+        sortable: true
   menus:
     label:
-      de: Menüs
-      en: Menus
+      de: Einstellungen
+      en: Settings
     fields:
       menus:
+        label:
+          de: Menüs
+          en: Menus
         type: structure
         fields:
           menuHeadline:
@@ -33,3 +37,17 @@ tabs:
           menuItems:
             type: pages
             label: Menu item
+            status: all
+
+      # colorextractor:
+      #   label:
+      #     de: Farbauszüge
+      #     en: Color extractor
+      #   type: colorextractor
+      #   help:
+      #     de: |
+      #       Die Seite nutzt die dominanten Farben von Bildern als Platzhalter während des Ladevorgangs.
+      #       Für manuell via SFTP hochgeladene Bilder müssen die Farben nachträglich ermittelt werden.
+      #     en: |
+      #       The site uses dominant colors as placeholders while images are loaded.
+      #       Manully uploaded images via SFTP require manual extraction of colors.

@@ -1,0 +1,62 @@
+type: group
+fields:
+  Text:
+    label: Text
+    type: blocks
+    fieldsets:
+      heading:
+        extends: blocks/heading
+        fields:
+          classNames:
+            label:
+              de: CSS-Klassen
+              en: CSS Classes
+            type: multiselect
+            options: query
+            query:
+              fetch: site.ClassNames.toStructure
+              text: "{{ structureItem.text }}"
+              value: "{{ structureItem.value }}"
+      list: true
+      image: true
+      gallery: true
+      video: true
+      code: true
+      markdown:
+        extends: blocks/markdown
+        fields:
+          classNames:
+            label:
+              de: CSS-Klassen
+              en: CSS Classes
+            type: multiselect
+            options: query
+            query:
+              fetch: site.ClassNames.toStructure
+              text: "{{ structureItem.text }}"
+              value: "{{ structureItem.value }}"
+      text:
+        extends: blocks/text
+        fields:
+          classNames:
+            label:
+              de: CSS-Klassen
+              en: CSS Classes
+            type: multiselect
+            options: query
+            query:
+              fetch: site.ClassNames.toStructure
+              text: "{{ structureItem.text }}"
+              value: "{{ structureItem.value }}"
+  Statement:
+    type: writer
+    marks: false
+    inline: true
+  Thumbnail:
+    type: files
+    label:
+      de: Vorschau
+      en: Preview
+    max: 1
+    multiple: false
+    link: false

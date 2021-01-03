@@ -18,21 +18,24 @@ columns:
             label:
               de: Mitzubringen
               en: Own Equipment
-            type: textarea
+            type: writer
+            inline: true
             size: small
           Clothing:
             width: 1/2
             label:
               de: Kleidung
               en: Clothing
-            type: textarea
+            type: writer
+            inline: true
             size: small
           Hints:
             width: 1/2
             label:
               de: Sicherheitshinweise
               en: Safety hints
-            type: textarea
+            type: writer
+            inline: true
             size: small
           Tags:
             width: 1/2
@@ -47,14 +50,14 @@ columns:
   right:
     width: 1/3
     fields:
-      CostFee:
+      Fee:
         type: number
         label:
           de: Gebühr
           en: Fee
         min: 0
         after: '€'
-      CostMaterial:
+      Material:
         type: number
         label:
           de: Materialkosten

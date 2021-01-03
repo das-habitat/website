@@ -1,13 +1,30 @@
 title: Maschine
-extends: default
+extends: pages/default
 
-fields:
-  specs:
-    label: Spezifikationen
-    type: structure
-    fields:
-      label:
-        type: text
-      value:
-        type: text
+columns:
+  left:
+    sections:
+      content:
+        fields:
+          specs:
+            label: Spezifikationen
+            type: structure
+            fields:
+              label:
+                type: text
+              value:
+                type: text
+  right:
+    sections:
+      tags:
+        type: fields
+        fields:
+          tags:
+            type: tags
+            label:
+              de: Tags
+              en: Tags
+            min: 1
+            options: query
+            query: page.siblings.pluck("Tags", ",", true)
 

@@ -1,20 +1,20 @@
 <?php snippet('header') ?>
 
-<main class="main main--grid">
-  <div class="cs1-lg c3-lg">
+<main class="main grid">
+  <div class="column-start1 column-span2">
     <h2>Das Wichtigste auf einen Blick</h2>
 
-    <?php snippet('contact-info') ?>
+    <?php snippet('partials/address') ?>
   </div>
 
-  <div class="cs4-lg sm:mt-lg">
+  <div class="column-start3 column-span2">
     <h2>E-Mail schreiben</h2>
 
-    <?php snippet('contact-form') ?>
+    <?php snippet('forms/contact') ?>
   </div>
 
-  <div class="mt-lg">
-  <?= $page->text()->kt() ?>
+  <div class="column-start1 column-span3">
+    <?= $page->text()->kt() ?>
   </div>
 </main>
 

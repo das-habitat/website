@@ -1,4 +1,10 @@
 title: Kontakt
-extends: default
+extends: pages/plain
+
 options:
   changeTemplate: false
+
+columns:
+  right:
+    sections:
+      pages: false

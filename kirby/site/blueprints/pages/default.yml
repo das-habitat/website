@@ -1,2 +1,26 @@
 title: Seite mit Block-Inhalten
-extends: default
+
+changeTemplate:
+  - default
+  - plain
+
+columns:
+  left:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          content:
+            extends: fields/content
+  right:
+    width: 1/3
+    sections:
+      meta:
+        type: fields
+        fields:
+          meta: fields/meta
+      pages:
+        headline:
+          de: Unterseiten
+          en: Pages

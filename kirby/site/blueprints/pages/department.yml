@@ -1,6 +1,2 @@
 title: Werkstatt
-extends: default
-
-sidebar:
-  pages:
-    template: machine
+extends: pages/default

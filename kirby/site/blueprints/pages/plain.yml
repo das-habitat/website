@@ -1,11 +1,14 @@
 title: Seite mit Markdown
-extends: default
+extends: pages/default
 
-sections:
-  content:
-    type: fields
-    fields:
-      Text:
-        label: Text
-        type: textarea
-        font: monospace
+columns:
+  left:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          Text:
+            label: Text
+            type: textarea
+            font: monospace
