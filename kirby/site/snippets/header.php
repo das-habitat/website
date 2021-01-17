@@ -24,9 +24,9 @@
 </head>
 
 <body>
-  <div class="site">
-    <header id="top" class="container top <?= $page->isHomePage() ? "top--home" : "" ?>">
-      <a href="/" class="header__logo">
+  <div class="site grid">
+    <header id="top" class="container grid-inner top <?= $page->isHomePage() ? "top--home" : "" ?>">
+      <a href="/" class="top_logo">
         <svg width="152" height="23" viewBox="0 0 152 23" xmlns="http://www.w3.org/2000/svg">
           <title>Das Habitat Augsburg e.V.</title>
           <g fill="#0F0F0E" fill-rule="nonzero">
@@ -36,20 +36,23 @@
       </a>
 
       <nav id="nav" class="top-nav">
-        <?php $menus = $site->menus()->toStructure(); ?>
-        <?php if ($menus->isNotEmpty()) : ?>
-          <?php foreach ($menus as $menu) : ?>
-            <?php $menuItems = $menu->menuItems()->toPages(); ?>
-            <?php if ($menuItems->isNotEmpty()) : ?>
-              <h4><?= $menu->menuHeadline()->html() ?></h4>
-              <ul>
-                <?php foreach ($menuItems as $menuItem) : ?>
-                  <li><a href="<?= $menuItem->url() ?>"><?= $menuItem->title() ?></a></li>
-                <?php endforeach ?>
-              </ul>
-            <?php endif ?>
-          <?php endforeach ?>
-        <?php endif ?>
+        <div class="top-nav_inner">
+          <?php $menus = $site->menus()->toStructure(); ?>
+          <?php if ($menus->isNotEmpty()) : ?>
+            <?php foreach ($menus as $menu) : ?>
+              <?php $menuItems = $menu->menuItems()->toPages(); ?>
+              <?php if ($menuItems->isNotEmpty()) : ?>
+                <h4><?= $menu->menuHeadline()->html() ?></h4>
+                <div>
+                  <ul>
+                    <?php foreach ($menuItems as $menuItem) : ?>
+                      <li><a href="<?= $menuItem->url() ?>"><?= $menuItem->navtitle()->or($menuItem->title()) ?></a></li>
+                    <?php endforeach ?>
+                  </ul>
+                </div>
+              <?php endif ?>
+            <?php endforeach ?>
+          <?php endif ?>
+        </div>
       </nav>
     </header>
-    <div class="page">

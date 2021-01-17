@@ -1,11 +1,19 @@
 type: group
 fields:
   navTitle:
-    label: Navigation title
+    label:
+      de: Link-Titel
+      en: Link title
     type: text
-    help: Used in Navigation and Menus
+    help:
+      de: Für Menüs
+      en: Für menus
   description:
-    label: Description
+    label:
+      de: Kurzbeschreibung
+      en: Description
     type: textarea
     size: small
-    help: Für Suchmaschinen und Social Media
+    help:
+      de: Für Suchmaschinen und Social Media. Im besten Fall unter 160 Zeichen.
+      en: For search engines and social media. Keep below 160 characters.

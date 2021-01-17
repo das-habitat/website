@@ -1,7 +1,9 @@
 </div>
 
-<footer class="end">
-  &copy; 2018-<?= date('Y') ?> Das Habitat Augsburg e.V.
+<footer class="grid end">
+  <div class="end_copy">
+    &copy; 2018-<?= date('Y') ?> Das Habitat Augsburg e.V.
+  </div>
 </footer>
 
 <?= js('assets/main.js') ?>

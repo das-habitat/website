@@ -1,6 +1,7 @@
 .site {
   display: grid;
   grid-template-columns: 1fr 95rem 1fr;
+  flex: 1;
 }
 
 .site > * {

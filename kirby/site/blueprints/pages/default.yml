@@ -1,4 +1,6 @@
-title: Seite mit Block-Inhalten
+title:
+  de: Seite mit Blöcken
+  en: Default page with content blocks
 
 changeTemplate:
   - default

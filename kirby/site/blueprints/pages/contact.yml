@@ -1,4 +1,6 @@
-title: Kontakt
+title:
+  de: Kontakt
+  en: Contact
 extends: pages/plain
 
 options:

@@ -8,7 +8,9 @@
 
 // Toolkit
 @import 'functions/inline-svg';
-@import 'functions/media';
+
+// Mixins
+@import 'mixins/media';
 
 // Globals
 
@@ -16,8 +18,15 @@
 
 // Partials
 
+@import 'partials/site';
+@import 'partials/grids';
+@import 'partials/blocks';
 @import 'partials/container';
 @import 'partials/forms';
-@import 'partials/grids';
-@import 'partials/site';
+@import 'partials/sidebar';
 @import 'partials/top';
+@import 'partials/end';
+
+// Templates
+
+@import 'templates/home';

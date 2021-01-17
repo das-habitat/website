@@ -18,7 +18,30 @@ fields:
               text: "{{ structureItem.text }}"
               value: "{{ structureItem.value }}"
       list: true
-      image: true
+      image:
+        extends: blocks/image
+        fields:
+          location:
+            type: hidden
+          image:
+            label: field.blocks.image.name
+            type: files
+            multiple: false
+            image:
+              back: black
+            uploads:
+              template: blocks/image
+          link: false
+          classNames:
+            label:
+              de: CSS-Klassen
+              en: CSS Classes
+            type: multiselect
+            options: query
+            query:
+              fetch: site.ClassNames.toStructure
+              text: "{{ structureItem.text }}"
+              value: "{{ structureItem.value }}"
       gallery: true
       video: true
       code: true

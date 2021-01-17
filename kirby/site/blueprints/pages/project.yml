@@ -1,0 +1,20 @@
+title:
+  de: Projekt
+  en: Project
+extends: pages/default
+
+columns:
+  left:
+    width: 2/3
+    sections:
+      content:
+        fields:
+          Statement: false
+
+          Related:
+            label:
+              de: Zugehörige Projekte
+              en: Related projects
+            type: pages
+            layout: cards
+            query: page.siblings

@@ -1,4 +1,6 @@
-title: Maschine
+title:
+  de: Maschine
+  en: Machine
 extends: pages/default
 
 columns:

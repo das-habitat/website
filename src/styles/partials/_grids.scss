@@ -1,11 +1,22 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr repeat(4, 14.5rem) 21rem 1fr;
   column-gap: 4rem;
   row-gap: 0;
 }
 
-@for $i from 1 through 3 {
+.grid-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 21rem;
+  column-gap: 4rem;
+}
+
+.grid > * {
+  grid-column-start: 2;
+  grid-column-end: -3;
+}
+
+@for $i from 1 through 5 {
   .column-start#{$i} {
     grid-column-start: $i;
   }
@@ -27,8 +38,8 @@
   }
 }
 
-@include media-large {
-  @for $i from 1 through 3 {
+@include media-lg {
+  @for $i from 1 through 5 {
     .lg\:column-start#{$i} {
       grid-column-start: $i;
     }
@@ -56,7 +67,7 @@
   grid-column-end: span 4;
 }
 
-@include media-large {
+@include media-lg {
   .lg\:column-span4,
   .lg\:column-span-all {
     grid-column-end: span 4;
