@@ -1,8 +1,7 @@
 import 'prerender_all';
 
-import './styles/index.scss';
-import './modules/matomo';
-import './modules/menu';
+import './matomo';
+import './menu';
 
 console.log(
   'Das Habitat Augsburg e.V. sucht Entwickler! Komm doch mal vorbei.'
