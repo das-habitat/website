@@ -13,9 +13,8 @@
 - Install [brew](https://brew.sh/) 
 - `brew install php` to get a recent version of PHP
 - `brew install composer` to get a recent version of Composer, the package manager for PHP
-- `brew install volta` to install a reliable manager for Node.js and Yarn
+- `brew install volta` to install a reliable manager for Node.js
 - `volta install node@lts` to install the latest LTS release of Node.js
-- `volta install yarn` to install the yarn package manager for Node.js
 
 **On Windows**
 
@@ -23,27 +22,26 @@
 - `choco install php`
 - `choco install composer`
 - Install [volta](https://docs.volta.sh/guide/getting-started#windows-installation) 
-  to manage Node.js and Yarn
+  to manage Node.js
 - `volta install node@lts` to install the latest LTS release of Node.js
-- `volta install yarn` to install the yarn package manager for Node.js
 
 ## Project dependendencies
 
-- `yarn install`
-- `yarn composer install`
+- `npm install`
+- `npm run composer install`
 
 ## Running locally
 
 Kirby
 
 ```sh
-yarn kirby
+npm run kirby
 ```
 
 Asset generation
 
 ```sh
-yarn gulp
+npm run gulp
 ```
 
 ## Development
