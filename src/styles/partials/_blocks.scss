@@ -1,3 +1,7 @@
+.block + .block {
+  margin-top: $spacing-lg;
+}
+
 .block-type-image > figure[data-ratio="auto"] img {
   max-width: 100%;
   height: auto;

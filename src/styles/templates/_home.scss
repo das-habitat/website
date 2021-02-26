@@ -4,12 +4,31 @@
 }
 
 .t\:home-statement {
-  margin: 0;
+  margin: 0 0 $spacing-2xl;
   padding: 0;
   font-size: 2.8rem;
   line-height: 4.5rem;
 }
 
 .t\:home-departments {
-  margin: 0 0 8rem;
+  margin: $spacing-3xl 0 $spacing-2xl;
+}
+
+.t\:home-follow {
+  margin-top: $spacing-lg;
+
+  li + li {
+    margin-top: $spacing-md;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    height: 1.3em;
+    width: auto;
+    margin-right: $spacing-sm;
+  }
 }

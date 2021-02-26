@@ -35,6 +35,31 @@ figure {
   padding: 0;
 }
 
+nav ul, nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;;
+}
+
+ul, ol, p, h1, h2, h3, h4 , h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, p {
+  * + & {
+    margin-top: $spacing-lg;
+  }
+}
+
+h1, h2, h3, h4 , h5, h6 {
+  margin-bottom: $spacing-md;
+
+  * + & {
+    margin-top: $spacing-2xl;
+  }
+}
+
 a,
 a:link,
 a:visited {
