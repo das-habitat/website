@@ -3,6 +3,7 @@
   grid-template-columns: 1fr repeat(4, 14.5rem) 21rem 1fr;
   column-gap: 4rem;
   row-gap: 0;
+  align-content: start;
 }
 
 .grid-inner {

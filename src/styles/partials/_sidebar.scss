@@ -2,3 +2,10 @@
   grid-column: -3 / span 1;
   grid-row: 2;
 }
+
+.contact a,
+.contact a:link,
+.contact a:visited {
+  color: inherit;
+  text-decoration: none;
+}

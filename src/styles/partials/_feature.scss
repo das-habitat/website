@@ -1,0 +1,20 @@
+.feature {
+  display: grid;
+  grid-template-columns: repeat(4, 14.5rem);
+  column-gap: 4rem;
+}
+
+.feature_title {
+  grid-column: 1 / -1;
+}
+
+.feature_img {
+  display: block;
+  grid-column: 1 / span 2;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

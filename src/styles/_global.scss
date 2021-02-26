@@ -34,3 +34,12 @@ figure {
   margin: 0;
   padding: 0;
 }
+
+a,
+a:link,
+a:visited {
+  color: $color-brand-blueAlt;
+  text-decoration-color: transparentize($color-brand-blueAlt, 0.7);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.1em;
+}

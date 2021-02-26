@@ -8,7 +8,44 @@
   <?php snippet('partials/blocks', ['blocks' => $page->text()]); ?>
 </main>
 
-<?php snippet('templates/home/departments') ?>
+<section class="t:home-departments">
+  <h2>Unsere Werkstätten &amp; Bereiche</h2>
+
+  <?php 
+    $index = 0;
+    foreach($kirby->collection('departments') as $department): 
+      if ($imageId = A::first($department->Thumbnail()->yaml())):
+        if ($image = $department->files()->findById($imageId)):
+          $resized = $image->resize(808);
+  ?>
+    <div class="feature <?= e($index % 2, 'feature--reverse') ?> cs1-lg c5-lg">
+      <h3 class="feature_title">
+        <a href="<?= $department->url() ?>">
+          <?= $department->title()->html() ?>
+        </a>
+      </h3>
+
+      <a href="<?= $department->url() ?>" class="feature_img" aria-hidden="true">
+        <img src="<?= $resized->url() ?>" alt="" role="presentation" width="<?= $resized->width() / 2 ?>" height="<?= $resized->height() / 2 ?>">
+      </a>
+
+      <div class="feature_content">
+        <?= $department->description()->html(); ?>
+      </div>
+    </div>
+  <?php if ($index === 0): ?>
+    <div class="cs1-lg c4-lg larger">
+      <?= $page->workshops()->html(); ?>
+    </div>
+  <?php endif; ?>
+
+  <?php 
+        endif;
+      endif;
+    $index++;
+    endforeach; 
+  ?>
+</section>
 
 <aside class="sidebar">
   <?php snippet('partials/address') ?>

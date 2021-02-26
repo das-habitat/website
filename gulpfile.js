@@ -56,5 +56,5 @@ function watchTask() {
   );
 }
 
-exports.build = build;
+exports.build = series(clean, build);
 exports.default = series(clean, build, watchTask);
