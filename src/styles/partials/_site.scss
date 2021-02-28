@@ -7,3 +7,7 @@
 .site > * {
   grid-column: 2 / span 1;
 }
+
+.site main {
+  margin-bottom: $spacing-3xl;
+}
