@@ -8,6 +8,8 @@
 
 <aside class="t:project-side">
   <nav>
+    <h2>Weitere Projekte</h2>
+
     <ul>
       <?php foreach($page->siblings() as $child): ?>
         <li>
