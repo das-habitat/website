@@ -1,6 +1,5 @@
-import 'prerender_all';
+import 'prerender_all/prerender';
 
-import './matomo';
 import './menu';
 
 console.log(

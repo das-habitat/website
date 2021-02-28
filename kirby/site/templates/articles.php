@@ -1,22 +1,22 @@
 <?php snippet('header') ?>
 
-<div class="page">
-  <main>
-    <h1><?= $page->title() ?></h1>
-  
-    <?= $page->text()->kirbytext() ?>
+<main class="t:articles-main">
+  <h1><?= $page->title() ?></h1>
 
-    <ul>
-      <?php foreach($page->children() as $child): ?>
-        <li>
-          <a href="<?= $child->url() ?>">
+  <?= $page->text()->kirbytext() ?>
+
+  <ul class="t:articles-list">
+    <?php foreach($page->children() as $child): ?>
+      <li>
+        <a href="<?= $child->url() ?>">
+          <?php if($child->hasFiles()): ?>
             <img src="" />
-            <h2><?= $child->title() ?></h2>
-          </a>
-        </li>
-      <?php endforeach; ?>
-    </ul>
-  </main>
-</div>
+          <?php endif; ?>
+          <h2><?= $child->title() ?></h2>
+        </a>
+      </li>
+    <?php endforeach; ?>
+  </ul>
+</main>
 
 <?php snippet('footer') ?>

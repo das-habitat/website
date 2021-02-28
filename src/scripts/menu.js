@@ -1,39 +1,38 @@
 (() => {
-  const nav = document.querySelector('.header__nav');
+  const nav = document.querySelector('.top_nav');
   const header = nav.parentElement;
   const menuButton = document.createElement('button');
   const menuButtonText = 'Menü';
+  const container = document.createElement('div');
 
   menuButton.setAttribute('type', 'button');
   menuButton.setAttribute('aria-haspopup', true);
-  menuButton.classList.add('header__toggle');
+  menuButton.classList.add('top_toggle');
   menuButton.id = 'menu-button';
 
   const menuCallback = () => {
     if (!menuButton.hasAttribute('aria-expanded')) {
       menuButton.setAttribute('aria-expanded', true);
       menuButton.innerText = 'Schließen';
-      header.classList.add('header--expanded');
+      header.classList.add('top-expanded');
     } else {
       menuButton.removeAttribute('aria-expanded');
       menuButton.innerText = menuButtonText;
-      header.classList.remove('header--expanded');
+      header.classList.remove('top-expanded');
     }
   };
 
   menuButton.addEventListener('click', menuCallback);
   menuButton.addEventListener('touchdown', menuCallback);
 
-  const container = document.createElement('div');
-
   container.setAttribute('aria-labelledby', menuButton.id);
+  container.classList.add('top_mobilenav');
 
   const build = () => {
-    container.append(...nav.children);
-
     menuButton.innerText = menuButtonText;
     header.insertBefore(menuButton, nav);
-    nav.append(container);
+    header.insertBefore(container, nav);
+    container.append(nav);
   };
 
   const teardown = () => {
@@ -42,9 +41,10 @@
     }
 
     header.removeChild(menuButton);
-    nav.removeChild(container);
-    nav.append(...container.children);
-    header.classList.remove('header--expanded');
+    container.after(nav);
+    header.removeChild(container);
+    header.classList.remove('top-expanded');
+    menuButton.removeAttribute('aria-expanded');
   };
 
   const match = window.matchMedia('(max-width:879px)');
@@ -57,7 +57,7 @@
     }
   };
 
-  match.addListener(callback);
+  match.addEventListener('change', callback);
 
   callback(match);
 })();

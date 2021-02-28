@@ -16,9 +16,14 @@
     foreach($kirby->collection('departments') as $department): 
       if ($imageId = A::first($department->Thumbnail()->yaml())):
         if ($image = $department->files()->findById($imageId)):
-          $resized = $image->resize(808);
+          $resized = $image->thumb([
+            'width'   => 808,
+            'height'  => 505,
+            'quality' => 80,
+            'crop'    => true,
+          ]);
   ?>
-    <div class="feature <?= e($index % 2, 'feature--reverse') ?> cs1-lg c5-lg">
+    <div class="feature <?= e($index % 2, 'feature-reverse') ?> cs1-lg c5-lg">
       <h3 class="feature_title">
         <a href="<?= $department->url() ?>">
           <?= $department->title()->html() ?>
@@ -34,7 +39,7 @@
       </div>
     </div>
   <?php if ($index === 0): ?>
-    <div class="cs1-lg c4-lg larger">
+    <div class="cs1-lg c4-lg larger feature">
       <?= $page->workshops()->html(); ?>
     </div>
   <?php endif; ?>

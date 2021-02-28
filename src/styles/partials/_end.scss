@@ -1,6 +1,26 @@
 .end {
   background: $color-brand-gray;
   color: $color-white;
-  padding-top: $spacing-lg;
-  padding-bottom: $spacing-lg;
+  padding-top: $spacing-xl;
+  padding-bottom: $spacing-xl;
+}
+
+.end a,
+.end a:link,
+.end a:visited {
+  color: mix($color-white, $color-brand-gray, 70%);
+  text-decoration-color: transparentize(mix($color-white, $color-brand-gray), 0.5);
+}
+
+.end a:focus,
+.end a:hover {
+  color: $color-white;
+}
+
+.end_logo svg g {
+  fill: $color-white;
+}
+
+.end_nav {
+  margin-top: $spacing-xl;
 }

@@ -5,9 +5,13 @@ const cssnano = require('cssnano');
 const Fiber = require('fibers');
 const path = require('path');
 const postcss = require('gulp-postcss');
+const rollup = require('rollup');
 const rimraf = require('rimraf');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
+const { nodeResolve } = require('@rollup/plugin-node-resolve');
+const commonjs = require('@rollup/plugin-commonjs');
+const { terser } = require('rollup-plugin-terser');
 
 sass.compiler = require('sass');
 
@@ -40,10 +44,25 @@ function static() {
   );
 }
 
-const build = parallel(static, styles);
+async function scripts() {
+  const bundle = await rollup.rollup({
+    input: './src/scripts/index.js',
+    plugins: [nodeResolve(), commonjs(), terser()],
+  });
+
+  await bundle.write({
+    file: path.join(__dirname, 'kirby', 'assets', 'main.js'),
+    format: 'umd',
+    name: 'library',
+    sourcemap: true,
+  });
+}
+
+const build = parallel(static, styles, scripts);
 
 function watchTask() {
   watch(path.join(__dirname, 'src', 'styles', '**', '*.scss'), styles);
+  watch(path.join(__dirname, 'src', 'scripts', '**', '*.js'), scripts);
 
   browserSync.init({
     open: false,

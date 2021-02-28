@@ -3,6 +3,10 @@
   grid-row: 2;
 }
 
+.t\:home-main .block + .block {
+  margin-top: $spacing-xl;
+}
+
 .t\:home-statement {
   margin: 0 0 $spacing-2xl;
   padding: 0;

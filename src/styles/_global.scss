@@ -68,3 +68,8 @@ a:visited {
   text-decoration-thickness: 2px;
   text-underline-offset: 0.1em;
 }
+
+a:focus,
+a:hover {
+  color: $color-brand-blue;
+}

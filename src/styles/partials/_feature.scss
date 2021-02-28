@@ -1,20 +1,50 @@
 .feature {
-  display: grid;
-  grid-template-columns: repeat(4, 14.5rem);
-  column-gap: 4rem;
+  @include media-lg {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 4rem;
+  }
+}
+
+.feature + .feature {
+  margin-top: $spacing-lg;
 }
 
 .feature_title {
-  grid-column: 1 / -1;
+  grid-column: 1 / span 2;
+  text-align: right;
 }
 
 .feature_img {
   display: block;
   grid-column: 1 / span 2;
+  grid-row: 2;
 
   img {
     display: block;
     width: 100%;
     height: auto;
+  }
+}
+
+.feature_content {
+  grid-column: span 2;
+  grid-row: 2;
+}
+
+.feature-reverse {
+  .feature_title {
+    grid-column: 3 / -1;
+    text-align: left;
+  }
+
+  .feature_img {
+    grid-column: 3 / span 2;
+  }
+
+  .feature_content {
+    grid-column: 1 / span 2;
+    text-align: right;
   }
 }

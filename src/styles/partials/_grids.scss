@@ -1,9 +1,14 @@
 .grid {
   display: grid;
-  grid-template-columns: 1fr repeat(4, 14.5rem) 21rem 1fr;
-  column-gap: 4rem;
+  grid-template-columns: $spacing-sm repeat(5, 1fr) $spacing-md;
+  column-gap: $spacing-md;
   row-gap: 0;
   align-content: start;
+
+  @include media-lg {
+    column-gap: 4rem;
+    grid-template-columns: 1fr repeat(4, 14.5rem) 21rem 1fr;
+  }
 }
 
 .grid-inner {
@@ -14,8 +19,22 @@
 
 .grid > * {
   grid-column-start: 2;
-  grid-column-end: -3;
+  grid-column-end: -2;
 }
+
+@include media-lg {
+  .lg\:grid-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 21rem;
+    column-gap: 4rem;
+  }
+
+  .grid > * {
+    grid-column-start: 2;
+    grid-column-end: -3;
+  }
+}
+
 
 @for $i from 1 through 5 {
   .column-start#{$i} {
