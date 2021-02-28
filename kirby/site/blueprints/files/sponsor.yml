@@ -16,7 +16,7 @@ fields:
       de: Sichtbar
       en: Visbile
     type: toggle
-    default: true
+    default: false
     text:
       -
         en: 'No'

@@ -66,7 +66,8 @@ function watchTask() {
 
   browserSync.init({
     open: false,
-    proxy: 'localhost:8000',
+    proxy: '127.0.0.1:8000',
+    notify: false,
   });
 
   watch(['kirby/**/*', '!kirby/cache/**/*', '!.lock']).on(

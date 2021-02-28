@@ -1,5 +1,5 @@
 .feature {
-  @include media-lg {
+  @include media-lg-min {
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(4, 1fr);
@@ -13,7 +13,10 @@
 
 .feature_title {
   grid-column: 1 / span 2;
-  text-align: right;
+
+  @include media-lg-min {
+    text-align: right;
+  }
 }
 
 .feature_img {
@@ -45,6 +48,8 @@
 
   .feature_content {
     grid-column: 1 / span 2;
-    text-align: right;
+    @include media-lg-min {
+      text-align: right;
+    }
   }
 }

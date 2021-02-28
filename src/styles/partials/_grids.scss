@@ -5,7 +5,7 @@
   row-gap: 0;
   align-content: start;
 
-  @include media-lg {
+  @include media-lg-min {
     column-gap: 4rem;
     grid-template-columns: 1fr repeat(4, 14.5rem) 21rem 1fr;
   }
@@ -22,7 +22,7 @@
   grid-column-end: -2;
 }
 
-@include media-lg {
+@include media-lg-min {
   .lg\:grid-inner {
     display: grid;
     grid-template-columns: repeat(4, 1fr) 21rem;
@@ -58,7 +58,7 @@
   }
 }
 
-@include media-lg {
+@include media-lg-min {
   @for $i from 1 through 5 {
     .lg\:column-start#{$i} {
       grid-column-start: $i;
@@ -87,7 +87,7 @@
   grid-column-end: span 4;
 }
 
-@include media-lg {
+@include media-lg-min {
   .lg\:column-span4,
   .lg\:column-span-all {
     grid-column-end: span 4;

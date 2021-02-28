@@ -4,7 +4,7 @@
   <main>
     <h1><?= $page->title() ?></h1>
   
-    <?= $page->text()->kirbytext() ?>
+    <?php snippet('partials/blocks', ['blocks' => $page->text()]); ?>
   </main>
 </div>
 

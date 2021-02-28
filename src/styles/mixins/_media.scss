@@ -4,7 +4,14 @@
   }
 }
 
-@mixin media-lg {
+@mixin media-lg-max {
+  @media (min-width: 989px) {
+    @content;
+  }
+}
+
+
+@mixin media-lg-min {
   @media (min-width: 990px) {
     @content;
   }

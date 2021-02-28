@@ -1,0 +1,30 @@
+.t\:sponsors_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $spacing-lg;
+  list-style: none;
+  margin: $spacing-xl 0;
+  padding: 0;
+
+  @include media-lg-min {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  h3 {
+    display: block;
+    width: auto;
+    margin: 0 0 §spacing-lg;
+    padding: $spacing-md;
+    background: mix($color-brand-white, $color-brand-pale, 80%);
+
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 9rem;
+    }
+  }
+}

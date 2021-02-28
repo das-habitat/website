@@ -10,8 +10,13 @@
 .t\:home-statement {
   margin: 0 0 $spacing-2xl;
   padding: 0;
-  font-size: 2.8rem;
-  line-height: 4.5rem;
+  font-size: 2.1rem;
+  line-height: 3rem;
+
+  @include media-lg-min {
+    font-size: 2.8rem;
+    line-height: 4.5rem;
+  }
 }
 
 .t\:home-departments {
