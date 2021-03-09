@@ -1,6 +1,6 @@
-<?php snippet('header') ?>
-<?php snippet('contact-info') ?>
-<?php snippet('stage') ?>
+<?php snippet('header'); ?>
+<?php snippet('contact-info'); ?>
+<?php snippet('stage'); ?>
 
 <h1><?= $page->title() ?></h1>
 
@@ -8,4 +8,4 @@
   <?php snippet('partials/blocks', ['blocks' => $page->text()]); ?>
 </main>
 
-<?php snippet('footer') ?>
+<?php snippet('footer'); ?>

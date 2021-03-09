@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('header'); ?>
 
 <div class="page">
   <main>
@@ -7,8 +7,8 @@
     <?= $page->text()->kirbytext() ?>
 
     <ul class="t:sponsors_list">
-      <?php foreach($page->files() as $file): ?>
-      <?php if($file->visible()->toBool(false)): ?>
+      <?php foreach ($page->files() as $file): ?>
+      <?php if ($file->visible()->toBool(false)): ?>
         <li>
           <h3>
             <a href="<?= $file->link() ?>">
@@ -17,10 +17,10 @@
           </h3>
           <?= $file->description()->kirbytext() ?>
         </li>
-      <?php endif ?>
-      <?php endforeach ?>
+      <?php endif; ?>
+      <?php endforeach; ?>
     </ul>
   </main>
 </div>
 
-<?php snippet('footer') ?>
+<?php snippet('footer'); ?>

@@ -24,31 +24,35 @@
 
 <body>
   <div class="site grid">
-    <header id="top" class="container lg:grid-inner top <?= $page->isHomePage() ? "top-home" : "" ?>">
+    <header id="top" class="container lg:grid-inner top <?= $page->isHomePage()
+      ? 'top-home'
+      : '' ?>">
       <h1 class="top_logo">
         <a href="/">
-          <?php snippet('partials/logo') ?>
+          <?php snippet('partials/logo'); ?>
         </a>
       </h1>
 
       <nav id="nav" class="top_nav">
         <div class="top_nav_inner">
           <?php $menus = $site->menus()->toStructure(); ?>
-          <?php if ($menus->isNotEmpty()) : ?>
-            <?php foreach ($menus as $menu) : ?>
+          <?php if ($menus->isNotEmpty()): ?>
+            <?php foreach ($menus as $menu): ?>
               <?php $menuItems = $menu->menuItems()->toPages(); ?>
-              <?php if ($menuItems->isNotEmpty()) : ?>
+              <?php if ($menuItems->isNotEmpty()): ?>
                 <h4><?= $menu->menuHeadline()->html() ?></h4>
                 <div>
                   <ul>
-                    <?php foreach ($menuItems as $menuItem) : ?>
-                      <li><a href="<?= $menuItem->url() ?>"><?= $menuItem->navtitle()->or($menuItem->title()) ?></a></li>
-                    <?php endforeach ?>
+                    <?php foreach ($menuItems as $menuItem): ?>
+                      <li><a href="<?= $menuItem->url() ?>"><?= $menuItem
+  ->navtitle()
+  ->or($menuItem->title()) ?></a></li>
+                    <?php endforeach; ?>
                   </ul>
                 </div>
-              <?php endif ?>
-            <?php endforeach ?>
-          <?php endif ?>
+              <?php endif; ?>
+            <?php endforeach; ?>
+          <?php endif; ?>
         </div>
       </nav>
     </header>

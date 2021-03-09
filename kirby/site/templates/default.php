@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('header'); ?>
 
 <div class="page">
   <main>
@@ -8,4 +8,5 @@
   </main>
 </div>
 
-<?php snippet('footer') ?>
+<?php snippet('footer');
+?>

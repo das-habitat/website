@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('header'); ?>
 
 <p></p>
 
@@ -13,12 +13,12 @@
   <h1><?= $page->title()->html() ?></h1>
   <table class="table table--technical">
     <tbody>
-      <?php foreach($page->data()->yaml() as $entry): ?>
+      <?php foreach ($page->data()->yaml() as $entry): ?>
       <tr>
         <th><?= $entry['label'] ?></th>
         <td><?= $entry['value'] ?></td>
       </tr>
-      <?php endforeach ?>
+      <?php endforeach; ?>
     </tbody>
   </table>
 </div>
@@ -28,4 +28,4 @@
 </div>
 
 
-<?php snippet('footer') ?>
+<?php snippet('footer'); ?>

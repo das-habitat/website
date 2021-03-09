@@ -3,7 +3,7 @@
 return [
   'isDevelopment' => true,
   'markdown' => [
-    'breaks' => false
+    'breaks' => false,
   ],
-  'debug'  => true
+  'debug' => true,
 ];

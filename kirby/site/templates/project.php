@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('header'); ?>
 
 <main class="t:project-main">
   <h1><?= $page->title() ?></h1>
@@ -11,9 +11,9 @@
     <h2>Weitere Projekte</h2>
 
     <ul>
-      <?php foreach($page->siblings() as $child): ?>
+      <?php foreach ($page->siblings() as $child): ?>
         <li>
-          <?php if($child->isActive()): ?>
+          <?php if ($child->isActive()): ?>
             <strong><?= $child->title() ?></strong>
           <?php else: ?>
             <a href="<?= $child->url() ?>"><?= $child->title() ?></a>
@@ -24,4 +24,4 @@
   </nav>
 </aside>
 
-<?php snippet('footer') ?>
+<?php snippet('footer'); ?>
