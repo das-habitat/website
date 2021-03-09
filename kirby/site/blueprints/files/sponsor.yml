@@ -24,6 +24,9 @@ fields:
       -
         en: 'Yes'
         de: Ja
+  Link:
+    label: Link
+    type: Url
 
 accept:
   mime: image/svg+xml

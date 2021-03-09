@@ -15,7 +15,8 @@
     "composer": "cd kirby; composer",
     "format": "prettier '**/*.scss' --write; prettier '**/*.js' --write",
     "gulp": "gulp",
-    "kirby": "cd kirby; php -S 127.0.0.1:8000 kirby/router.php",
+    "kirby": "cd kirby; php -S 127.0.0.1:8000 kirbyrouter.php",
+    "kirby:win": "cd .\\kirby && php -S 127.0.0.1:8000 .\\kirby\\router.php",
     "build": "gulp build"
   },
   "devDependencies": {
