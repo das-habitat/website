@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "gulp",
-    "composer": "cd kirby; composer",
+    "composer": "cd kirby && composer",
     "format": "prettier '**/*.scss' --write; prettier '**/*.js' --write",
     "gulp": "gulp",
     "kirby": "cd kirby; php -S 127.0.0.1:8000 kirbyrouter.php",
