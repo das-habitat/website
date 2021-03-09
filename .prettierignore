@@ -1,6 +1,11 @@
-kirby
-media
-site/cache
-site/plugins
-vendor
+kirby/kirby
+kirby/mediamedia
+kirby/site/cache
+kirby/site/plugins
+kirby/vendor
+
+kirby/content
+kirby/assets
+
+src/static
 src/styles/plex-sans

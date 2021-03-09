@@ -19,11 +19,31 @@
 **On Windows**
 
 - Install [Chocolatey](https://chocolatey.org)
-- `choco install php`
-- `choco install composer`
+- `choco install php composer imagemagick`
 - Install [volta](https://docs.volta.sh/guide/getting-started#windows-installation) 
   to manage Node.js
 - `volta install node@lts` to install the latest LTS release of Node.js
+
+#### PHP Setup
+
+Chocolatey will install PHP in `C:\tools\php80`. 
+
+To run the composer you need to edit the `php.ini` found in the folder above.
+
+You need to find this line (possibly line 927):
+
+```ini
+;extension=gd
+```
+
+and remove the leading `;` to enable the extension:
+
+```ini
+extension=gd
+```
+
+Kirby uses the `gd` extension to manipulate and generate thumbnails for uploaded images.
+
 
 ## Project dependendencies
 
@@ -32,10 +52,16 @@
 
 ## Running locally
 
+You need two terminal sessions. One should be running Kirby, one is for running the asset generation and reloading. 
+
 Kirby
 
 ```sh
+# On macOS/Linux
 npm run kirby
+
+# on windows
+npm run kirby:win
 ```
 
 Asset generation
@@ -43,6 +69,9 @@ Asset generation
 ```sh
 npm run gulp
 ```
+
+Once both are up and running you can open the page here:
+<http://localhost:3000>
 
 ## Development
 
