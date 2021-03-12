@@ -7,4 +7,5 @@ if ($imageId = A::first($page->StageImage()->yaml())):
 </figure>
 
 <?php
-endif; ?>
+endif;
+?>

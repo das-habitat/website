@@ -73,3 +73,8 @@ a:focus,
 a:hover {
   color: $color-brand-blue;
 }
+
+figure > img {
+  max-width: 100%;
+  height: auto;
+}
