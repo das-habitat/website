@@ -7,7 +7,7 @@ fields:
     type: text
     help:
       de: Für Menüs
-      en: Für menus
+      en: For menus
   description:
     label:
       de: Kurzbeschreibung
