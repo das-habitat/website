@@ -35,11 +35,14 @@ RewriteRule ^site/(.*) index.php [L]
 # block direct access to Kirby and the Panel sources
 RewriteRule ^kirby/(.*) index.php [L]
 
+# Custom rules
+RewriteRule ^favicon.ico$ assets/favicon.ico [L]
+RewriteRule ^apple-touch-icon.png$ assets/apple-touch-icon.png [L]
+
 # make site links work
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*) index.php [L]
-
 </IfModule>
 
 # pass the Authorization header to PHP
