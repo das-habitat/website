@@ -2,7 +2,7 @@
   $image = $block
     ->image()
     ->toFile()
-    ->resize(1600, 1600, 85)
+    ->resize(1200)
 ): ?>
 <figure<?= attr(
   ['data-ratio' => $block->ratio(), 'data-crop' => $block->crop()->isTrue()],

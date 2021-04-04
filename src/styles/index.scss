@@ -3,6 +3,21 @@
 // External modules
 @import 'normalize';
 
+@import 'core/foundation/animations';
+@import 'core/foundation/variables';
+@import 'core/object/modifiers/draggable';
+@import 'core/object/modifiers/fade';
+@import 'core/object/modifiers/rtl';
+@import 'core/object/modifiers/ttb';
+@import 'core/object/objects/container';
+@import 'core/object/objects/list';
+@import 'core/object/objects/pagination';
+@import 'core/object/objects/root';
+@import 'core/object/objects/slide';
+@import 'core/object/objects/slider';
+@import 'core/object/objects/spinner';
+@import 'core/object/objects/track';
+
 // Config
 @import 'config';
 
@@ -27,6 +42,7 @@
 @import 'partials/sidebar';
 @import 'partials/top';
 @import 'partials/end';
+@import 'partials/splide';
 
 // Templates
 

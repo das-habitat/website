@@ -29,7 +29,10 @@ function styles() {
     .pipe(
       sass({
         fiber: Fiber,
-        includePaths: ['node_modules/normalize.css/'],
+        includePaths: [
+          'node_modules/normalize.css/',
+          'node_modules/@splidejs/splide/src/sass/',
+        ],
       }).on('error', sass.logError)
     )
     .pipe(postcss(plugins))

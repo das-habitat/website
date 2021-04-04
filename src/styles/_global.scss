@@ -78,3 +78,7 @@ figure img {
   max-width: 100%;
   height: auto;
 }
+
+html:not([data-js]) [data-loading] {
+  display: none;
+}
