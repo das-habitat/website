@@ -1,10 +1,9 @@
 <?php snippet('header'); ?>
 
-<p></p>
-
 <nav class="nav nav--up t-machine__up">
   <a href="../">&larr; Schreinerei</a>
 </nav>
+
 <figure class="stage t-machine__stage">
   <img src="https://res.cloudinary.com/das-habitat/image/upload/w_1000,h_750,c_fill,f_auto/maschinen/holz_hobel_hofmann.jpg" alt="Blick auf den Hobel" width="1000" height="750">
 </figure>
