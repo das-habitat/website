@@ -1,4 +1,6 @@
 .top {
+  position: relative;
+  z-index: 20;
   margin: 0;
   display: grid;
   padding: $spacing-md 0;
