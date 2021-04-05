@@ -1,6 +1,6 @@
 <?php snippet('header'); ?>
 
-<div class="page">
+<div class="page t:sponsors_page">
   <main>
     <h1><?= $page->title() ?></h1>
   
