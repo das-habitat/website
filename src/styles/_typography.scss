@@ -21,10 +21,18 @@ h1, h2, h3, h4 , h5, h6 {
   }
 }
 
-
-
 strong,
 b {
   font-weight: 600;
 }
 
+.type-larger {
+  font-weight: 450;
+  color: $color-brand-gray;
+  font-size: 1.8rem;
+  line-height: calc(28 / 16);
+}
+
+.type-right {
+  text-align: right;
+}

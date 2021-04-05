@@ -24,3 +24,23 @@
 .end_nav {
   margin: $spacing-xl 0 $spacing-lg;
 }
+
+.end h4 {
+  color: inherit;
+}
+
+@include media-lg-min {
+  .end nav {
+    display: grid;
+    grid-template-rows: min-content auto;
+  }
+
+  .end nav h4 {
+    grid-row: 1;
+    margin-top: 0;
+  }
+
+  .end nav div {
+    grid-row: 2;
+  }
+}

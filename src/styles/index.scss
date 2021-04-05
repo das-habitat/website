@@ -34,14 +34,13 @@
 
 // Blocks
 
-@import 'blocks/markdown';
+@import 'blocks/index';
 
 // Partials
 
 @import 'partials/site';
 @import 'partials/grids';
 @import 'partials/page';
-@import 'partials/blocks';
 @import 'partials/container';
 @import 'partials/feature';
 @import 'partials/forms';
@@ -56,3 +55,5 @@
 @import 'templates/articles';
 @import 'templates/project';
 @import 'templates/sponsors';
+
+@import 'offsets';
