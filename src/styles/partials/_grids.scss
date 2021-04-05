@@ -36,7 +36,7 @@
 }
 
 
-@for $i from 1 through 5 {
+@for $i from 1 through 6 {
   .column-start#{$i} {
     grid-column-start: $i;
   }
@@ -59,7 +59,7 @@
 }
 
 @include media-lg-min {
-  @for $i from 1 through 5 {
+  @for $i from 1 through 6 {
     .lg\:column-start#{$i} {
       grid-column-start: $i;
     }
