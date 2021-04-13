@@ -1,9 +1,11 @@
 <?php
 
+$isCliServer = php_sapi_name() == 'cli-server';
+
 return [
-  'isDevelopment' => true,
+  'isDevelopment' => $isCliServer,
   'markdown' => [
     'breaks' => false,
   ],
-  'debug' => true,
+  'debug' => $isCliServer,
 ];
