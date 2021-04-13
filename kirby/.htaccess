@@ -26,6 +26,13 @@ RewriteBase /
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
+# Rewrite old urls
+RewriteRule ^schlosserei metallwerkstatt/ [R=301,L]
+RewriteRule ^ueber-uns das-projekt/ [R=301,L]
+RewriteRule ^ueber-uns das-projekt/ [R=301,L]
+RewriteRule ^repair-cafe repaircafe/ [R=301,L]
+RewriteRule ^reparieren repaircafe/ [R=301,L]
+
 # block files and folders beginning with a dot, such as .git
 # except for the .well-known folder, which is used for Let's Encrypt and security.txt
 RewriteRule (^|/)\.(?!well-known\/) index.php [L]
