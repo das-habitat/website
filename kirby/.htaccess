@@ -28,8 +28,8 @@ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 # Rewrite old urls
 RewriteRule ^schlosserei metallwerkstatt/ [R=301,L]
-RewriteRule ^ueber-uns das-projekt/ [R=301,L]
-RewriteRule ^ueber-uns das-projekt/ [R=301,L]
+RewriteRule ^ueber-uns das-habitat/ [R=301,L]
+RewriteRule ^das-habitat das-habitat/ [R=301,L]
 RewriteRule ^repair-cafe repaircafe/ [R=301,L]
 RewriteRule ^reparieren repaircafe/ [R=301,L]
 
