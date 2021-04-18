@@ -24,4 +24,5 @@
   </figcaption>
   <?php endif; ?>
 </figure>
-<?php endif; ?>
+<?php endif;
+?>

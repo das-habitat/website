@@ -32,6 +32,7 @@
 @include media-lg-min {
   .end nav {
     display: grid;
+    grid-auto-columns: 1fr;
     grid-template-rows: min-content auto;
   }
 

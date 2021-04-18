@@ -10,7 +10,9 @@
   </nav>
 
   <p class="end_copy">
-    &copy; 2018-<?= date('Y') ?> Das Habitat Augsburg e.V. &mdash; <a href="/impressum">Impressum</a> &mdash; <a href="/datenschutz">Datenschutz</a>
+    &copy; 2018-<?= date(
+      'Y'
+    ) ?> Das Habitat Augsburg e.V. &mdash; <a href="/impressum">Impressum</a> &mdash; <a href="/datenschutz">Datenschutz</a>
               </p>
 </footer>
 
