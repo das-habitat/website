@@ -47,7 +47,7 @@
     menuButton.removeAttribute('aria-expanded');
   };
 
-  const match = window.matchMedia('(max-width:879px)');
+  const match = window.matchMedia('(max-width:989px)');
 
   const callback = (mq) => {
     if (mq.matches) {
