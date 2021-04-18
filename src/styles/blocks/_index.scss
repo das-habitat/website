@@ -8,7 +8,17 @@
   }
 }
 
-.block-type-image > fi:first-childgure[data-ratio="auto"] img {
-  max-width: 100%;
-  height: auto;
+.block-type-image {
+  img {
+    vertical-align: bottom;
+  }
+
+  > fi:first-childgure[data-ratio="auto"] img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &.lg\:column-start1 figure {
+    text-align: right;
+  }
 }
