@@ -9,8 +9,8 @@
 		+49 821 90 79 75 70
 	</p>
 
-	<h3>Öffnungszeiten</h3>
+	<h3>Wichtige Informationen</h3>
 	<p>
-		Gemäß den von der Stadt Augsburg und der Bundesregierung verkündeten Maßnahmen bleibt das Habitat vorerst geschlossen. Für Fragen und Unterstützung nutzt <a href="/kontakt">unser Kontaktformular.</a>
+		Gemäß den von der Stadt Augsburg und der Regierung verkündeten Maßnahmen zu COVID-19 bleibt das Habitat vorerst geschlossen. Für Fragen und Unterstützung nutzt <a href="/kontakt">unser Kontaktformular.</a>
 	</p>
 </div>
