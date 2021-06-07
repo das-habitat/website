@@ -16,7 +16,7 @@
               </p>
 </footer>
 
-<?= js('assets/main.js') ?>
+<?= js('assets/main.js?1.0.0') ?>
 <?php if (!$kirby->option('isDevelopment')): ?>
   <script src="https://rabbit.das-habitat.de/script.js" included-domains="das-habitat.de" site="LGSVGZYI" defer></script>
 <?php endif; ?>

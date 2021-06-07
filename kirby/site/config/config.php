@@ -8,4 +8,9 @@ return [
     'breaks' => false,
   ],
   'debug' => $isCliServer,
+  'cache' => [
+    'pages' => [
+      'active' => true,
+    ],
+  ],
 ];

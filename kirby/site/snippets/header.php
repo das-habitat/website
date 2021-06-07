@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title><?= $page->title() ?> | <?= $site->title() ?></title>
 
-  <?= css(['assets/index.css', '@auto']) ?>
+  <?= css(['assets/index.css?1.0.0', '@auto']) ?>
 
   <link rel="canonical" href="<?= $page->url() ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
   <meta name="twitter:title" property="og:title" content="<?= $page->title() ?>">
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?= $page->url() ?>">
-  <meta name="twitter:image" property="og:image" content="{{ .Params.meta_image }}">
+  <meta name="twitter:image" property="og:image" content="<?= $page->image() ?>">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:description" content="<?= $page->description() ?>">
   <meta name="twitter:domain" content="<?= $site->domain() ?>">
