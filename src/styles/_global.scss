@@ -1,3 +1,5 @@
+@use "sass:math";
+
 html,
 body,
 :after,
@@ -18,7 +20,7 @@ body {
 
 html {
   border-top: 0.5rem solid $brand-yellow;
-  font-size: 10/16 * 100%; // 1rem == 10px
+  font-size: math.div(10, 16) * 100%; // 1rem == 10px
 }
 
 body {

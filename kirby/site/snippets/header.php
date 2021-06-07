@@ -16,7 +16,9 @@
   <meta name="twitter:title" property="og:title" content="<?= $page->title() ?>">
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?= $page->url() ?>">
-  <meta name="twitter:image" property="og:image" content="<?= $page->image()->url() ?>">
+  <?php if ($page->image()): ?>
+  <meta name="twitter:image" property="og:image" content="<?= $page->image()->url(); ?>">
+  <?php endif; ?>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:description" content="<?= $page->description() ?>">
   <meta name="twitter:domain" content="<?= $site->domain() ?>">
