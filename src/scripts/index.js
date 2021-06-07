@@ -1,4 +1,4 @@
-import 'prerender_all/prerender';
+import 'instant.page';
 
 import './menu';
 import './slideshows';
