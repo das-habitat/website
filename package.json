@@ -29,12 +29,12 @@
   "devDependencies": {
     "@babel/core": "~7.14.3",
     "@babel/preset-env": "~7.14.4",
-    "@babel/register": "~7.13.16",
-    "@prettier/plugin-php": "~0.16.3",
+    "@babel/register": "~7.14.5",
+    "@prettier/plugin-php": "~0.17.1",
     "@rollup/plugin-commonjs": "~19.0.0",
     "@rollup/plugin-node-resolve": "~13.0.0",
     "autoprefixer": "~10.2.6",
-    "browser-sync": "~2.26.14",
+    "browser-sync": "~2.27.1",
     "cross-env": "~7.0.3",
     "cssnano": "~5.0.5",
     "fibers": "~5.0.0",
@@ -50,14 +50,15 @@
     "postcss-inline-svg": "~5.0.0",
     "prettier": "~2.3.1",
     "rimraf": "~3.0.2",
-    "rollup": "~2.51.0",
+    "rollup": "~2.52.2",
     "rollup-plugin-terser": "~7.0.2",
-    "sass": "~1.34.1"
+    "sass": "~1.35.1"
   },
   "volta": {
     "node": "14.16.0"
   },
   "dependencies": {
-    "@splidejs/splide": "~2.4.21"
+    "@splidejs/splide": "~2.4.21",
+    "node-sass": "^6.0.1"
   }
 }
