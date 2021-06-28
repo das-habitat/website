@@ -2,18 +2,15 @@ const { dest, src, parallel, series, watch } = require('gulp');
 const autoprefixer = require('autoprefixer');
 const browserSync = require('browser-sync').create();
 const cssnano = require('cssnano');
-const Fiber = require('fibers');
 const path = require('path');
 const postcss = require('gulp-postcss');
 const rollup = require('rollup');
 const rimraf = require('rimraf');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs');
 const { terser } = require('rollup-plugin-terser');
-
-sass.compiler = require('sass');
 
 function clean(cb) {
   return rimraf(path.join(__dirname, 'kirby', 'assets', '**', '*'), cb);
@@ -28,7 +25,6 @@ function styles() {
     .pipe(sourcemaps.init())
     .pipe(
       sass({
-        fiber: Fiber,
         includePaths: [
           'node_modules/normalize.css/',
           'node_modules/@splidejs/splide/src/sass/',
