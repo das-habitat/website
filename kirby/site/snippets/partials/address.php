@@ -1,8 +1,8 @@
 <div class="contact">
   <p>
     Das Habitat Augsburg e.V.<br>
-    <a href="https://www.openstreetmap.org/way/707420374#map=18/48.36769/10.87144" target="_blank" rel="noopener">Eberlestraße 29, Gebäude D1<br>
-    86157 Augsburg</a>
+    Beim Glaspalast 5<br>
+    86153 Augsburg</a>
   </p>
   <p>
     <a href="/kontakt">kontakt@das-habitat.de</a><br>
