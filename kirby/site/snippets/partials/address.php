@@ -5,8 +5,7 @@
     86153 Augsburg</a>
   </p>
   <p>
-    <a href="/kontakt">kontakt@das-habitat.de</a><br>
-    +49 821 90 79 75 70
+    <a href="/kontakt">kontakt@das-habitat.de</a>
   </p>
 
   <h3>Wichtige Informationen</h3>
