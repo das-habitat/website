@@ -24,6 +24,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:description" content="<?= $page->description() ?>">
   <meta name="twitter:domain" content="<?= $site->domain() ?>">
+  <?php if (!$kirby->option('isDevelopment')): ?>
+  <script id="plausible" defer data-domain="das-habitat.de" src="https://havelock.das-habitat.de/js/script.js"></script>
+  <?php endif; ?>
 </head>
 
 <body>
