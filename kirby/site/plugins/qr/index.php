@@ -38,7 +38,7 @@ $action = function (string $path = null) {
     $isExternalUrl = $campaign->externalUrl()->toBool();
     $target = $isExternalUrl ? 
       $campaign->targetUrl() :
-      $campaign->targetPage()->url();
+      $campaign->targetPage()->toPage()->url();
     $url = $isExternalUrl ? 'https://das-habitat.de/qr/external' : $target;
 
     plausibleRequest($url, $path);
