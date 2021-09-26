@@ -38,6 +38,7 @@
 # Custom
 /kirby
 /content
-/site/plugins
+/site/plugins/*
 !/site/plugins/.gitkeep
+!/site/plugins/qr
 /vendor
