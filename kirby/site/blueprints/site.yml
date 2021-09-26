@@ -20,7 +20,7 @@ tabs:
           de: Veröffentlicht
           en: Published
         sortable: true
-  menus:
+  settings:
     label:
       de: Einstellungen
       en: Settings
@@ -38,16 +38,36 @@ tabs:
             type: pages
             label: Menu item
             status: all
-
-      # colorextractor:
-      #   label:
-      #     de: Farbauszüge
-      #     en: Color extractor
-      #   type: colorextractor
-      #   help:
-      #     de: |
-      #       Die Seite nutzt die dominanten Farben von Bildern als Platzhalter während des Ladevorgangs.
-      #       Für manuell via SFTP hochgeladene Bilder müssen die Farben nachträglich ermittelt werden.
-      #     en: |
-      #       The site uses dominant colors as placeholders while images are loaded.
-      #       Manully uploaded images via SFTP require manual extraction of colors.
+      qr_campaigns:
+        label:
+          de: QR-Code Kampagnen
+          en: QR-Code Campaigns
+        type: structure
+        columns:
+          slug:
+            width: 1/5
+          targetPage:
+            width: 2/5
+          targetUrl:
+            width: 2/5
+        fields:
+          slug:
+            type: text
+          externalUrl:
+            type: toggle
+            text:
+              -
+                en: "Internal page"
+                de: "Interne Seite"
+              -
+                en: "External URL"
+                de: "Externe URL"
+          targetPage:
+            type: pages
+            multiple: false
+            when:
+              externalUrl: false
+          targetUrl:
+            type: url
+            when:
+              externalUrl: true

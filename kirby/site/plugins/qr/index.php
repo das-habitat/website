@@ -1,6 +1,6 @@
 <?php
 
-function plausibleRequest(string $campaign = "default") {
+function plausibleRequest(string $url, string $campaign = "default") {
   file_get_contents(
     'https://plausible.io/api/event',
     false,
@@ -17,7 +17,7 @@ function plausibleRequest(string $campaign = "default") {
         ]),
         'content' => json_encode([
           'name' => 'QR',
-          'url' => 'https://das-habitat.de/qr',
+          'url' => $url,
           'domain' => 'das-habitat.de',
           'props' => json_encode([
             'campaign' => $campaign,
@@ -30,13 +30,18 @@ function plausibleRequest(string $campaign = "default") {
 
 $action = function (string $path = null) {
   $campaigns = site()
-    ->qr_campaigns()
-    ->yaml();
+    ->qr_campaigns()->toStructure();
 
-  if (array_key_exists($path, $campaigns)) {
-    $target = $campaigns[$path];
+  $campaign = $campaigns->findBy('slug', $path);
 
-    plausibleRequest($path);
+  if ($campaign) {
+    $isExternalUrl = $campaign->externalUrl()->toBool();
+    $target = $isExternalUrl ? 
+      $campaign->targetUrl() :
+      $campaign->targetPage()->url();
+    $url = $isExternalUrl ? 'https://das-habitat.de/qr/external' : $target;
+
+    plausibleRequest($url, $path);
   } else {
     $target = '/';
   }
